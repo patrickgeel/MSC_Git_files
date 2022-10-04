@@ -1,7 +1,4 @@
 numpy
 onnx 
 onnxruntime
-time
-os
 matplotlib
-csv
