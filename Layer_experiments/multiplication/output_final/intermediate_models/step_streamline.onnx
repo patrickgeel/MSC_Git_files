@@ -1,0 +1,30 @@
+multiply-model:—
+1
+	global_in
+Mul_0_param0
+global_outMul_0"Mulsimple_graph*Z"@«’z=C:/?g7»>“j>º'£<¼‰Œ>(@¨>ÙƒH?¨Š÷=èvO?$iP?CÀŽ>ûÔL>h«‘>dÇ¿>CZL?BMul_0_param0Z%
+	global_in
+
+
+
+€
+€b&
+
+global_out
+
+
+
+€
+€j&
+Mul_0_param0
+
+
+
+
+rM
+
+global_out
+finn_datatypeFLOAT32%
+tensor_layout['N', 'C', 'H', 'W']r2
+	global_in%
+tensor_layout['N', 'C', 'H', 'W']B
