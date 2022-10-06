@@ -1,4 +1,4 @@
-multiply-model:¼
+multiply-model:—
 1
 	global_in
 Mul_0_param0
@@ -21,7 +21,10 @@ global_out
 
 
 
-r&
+rM
 
 global_out
-finn_datatypeFLOAT32B
+finn_datatypeFLOAT32%
+tensor_layout['N', 'C', 'H', 'W']r2
+	global_in%
+tensor_layout['N', 'C', 'H', 'W']B
