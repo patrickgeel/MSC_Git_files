@@ -33,11 +33,11 @@ import numpy as np
 from qonnx.core.onnx_exec import execute_onnx
 from qonnx.transformation.create_generic_partitions import PartitionFromDict
 from qonnx.util.basic import get_by_name
-import qonnx.transformation.streamline.absorb as absorb
-from qonnx.transformation.streamline import Streamline
-from qonnx.transformation.streamline.reorder import MoveLinearPastFork
+import finn.transformation.streamline.absorb as absorb
+from finn.transformation.streamline import Streamline
+from finn.transformation.streamline.reorder import MoveLinearPastFork
 from qonnx.transformation.lower_convs_to_matmul import LowerConvsToMatMul
-from qonnx.transformation.streamline.reorder import MakeMaxPoolNHWC
+from finn.transformation.streamline.reorder import MakeMaxPoolNHWC
 from qonnx.transformation.infer_datatypes import InferDataTypes
 from qonnx.transformation.general import RemoveUnusedTensors
 from qonnx.transformation.general import GiveUniqueNodeNames
