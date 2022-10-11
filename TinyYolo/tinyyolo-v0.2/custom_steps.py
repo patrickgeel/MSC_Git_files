@@ -49,7 +49,7 @@ from finn.transformation.fpgadataflow.set_exec_mode import SetExecMode
 from finn.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
 from finn.transformation.fpgadataflow.compile_cppsim import CompileCppSim
 from qonnx.transformation.infer_shapes import InferShapes
-import qonnx.util.pyverilator as pyv
+import finn.util.pyverilator as pyv
 import os
 from qonnx.core.onnx_exec import execute_node
 from finn.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
