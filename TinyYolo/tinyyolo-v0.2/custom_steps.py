@@ -43,16 +43,16 @@ from qonnx.transformation.general import RemoveUnusedTensors
 from qonnx.transformation.general import GiveUniqueNodeNames
 import qonnx.core.data_layout as data_layout
 import onnx
-import qonnx.transformation.fpgadataflow.convert_to_hls_layers as to_hls
+import finn.transformation.fpgadataflow.convert_to_hls_layers as to_hls
 from qonnx.transformation.infer_data_layouts import InferDataLayouts
-from qonnx.transformation.fpgadataflow.set_exec_mode import SetExecMode
-from qonnx.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
-from qonnx.transformation.fpgadataflow.compile_cppsim import CompileCppSim
+from finn.transformation.fpgadataflow.set_exec_mode import SetExecMode
+from finn.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
+from finn.transformation.fpgadataflow.compile_cppsim import CompileCppSim
 from qonnx.transformation.infer_shapes import InferShapes
 import qonnx.util.pyverilator as pyv
 import os
 from qonnx.core.onnx_exec import execute_node
-from qonnx.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
+from finn.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
 from finn.custom_op.registry import getCustomOp
 from qonnx.core.datatype import DataType
 from qonnx.util.data_packing import npy_to_rtlsim_input, rtlsim_output_to_npy
@@ -60,9 +60,9 @@ from qonnx.util.pytorch import ToTensor
 import brevitas.onnx as bo
 from qonnx.transformation.make_input_chanlast import MakeInputChannelsLast
 from qonnx.transformation.merge_onnx_models import MergeONNXModels
-from qonnx.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
-from qonnx.transformation.fpgadataflow.compile_cppsim import CompileCppSim
-from qonnx.transformation.fpgadataflow.set_exec_mode import SetExecMode
+from finn.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
+from finn.transformation.fpgadataflow.compile_cppsim import CompileCppSim
+from finn.transformation.fpgadataflow.set_exec_mode import SetExecMode
 
 def custom_step_tinyyolo_preprocess(model: ModelWrapper, cfg: DataflowBuildConfig):
     # to be able to feed 8-bit camera input directly into the NN, add the divide-by-255
