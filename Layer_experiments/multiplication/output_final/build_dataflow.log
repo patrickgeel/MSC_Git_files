@@ -1,0 +1,13 @@
+[2022-10-11 09:38:33,107] Running step: step_qonnx_to_finn [1/17]
+[2022-10-11 09:38:33,111] Running step: step_tidy_up [2/17]
+[2022-10-11 09:38:33,134] Running step: step_streamline [3/17]
+[2022-10-11 09:38:33,254] /workspace/qonnx/src/qonnx/transformation/infer_data_layouts.py:119: UserWarning: Assuming 4D input is NCHW
+[2022-10-11 09:38:33,254]   warnings.warn("Assuming 4D input is NCHW")
+[2022-10-11 09:38:33,257] Running step: step_convert_to_hls [4/17]
+[2022-10-11 09:38:33,331] Running step: step_create_dataflow_partition [5/17]
+[2022-10-11 09:38:33,342] Running step: step_target_fps_parallelization [6/17]
+[2022-10-11 09:38:33,347] /workspace/finn/src/finn/transformation/fpgadataflow/set_folding.py:203: UserWarning: Node ConvolutionInputGenerator_0 is bottleneck with 591366 cycles, running second pass
+[2022-10-11 09:38:33,347]   warnings.warn(
+[2022-10-11 09:38:33,354] Running step: step_apply_folding_config [7/17]
+[2022-10-11 09:38:33,357] Running step: step_generate_estimate_reports [8/17]
+[2022-10-11 09:38:33,359] Running step: step_hls_codegen [9/17]
