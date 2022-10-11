@@ -53,7 +53,7 @@ import finn.util.pyverilator as pyv
 import os
 from qonnx.core.onnx_exec import execute_node
 from finn.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
-from finn.custom_op.registry import getCustomOp
+from qonnx.custom_op.registry import getCustomOp
 from qonnx.core.datatype import DataType
 from qonnx.util.data_packing import npy_to_rtlsim_input, rtlsim_output_to_npy
 from qonnx.util.pytorch import ToTensor
