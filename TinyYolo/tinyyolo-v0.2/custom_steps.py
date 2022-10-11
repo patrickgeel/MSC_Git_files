@@ -56,7 +56,7 @@ from finn.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
 from qonnx.custom_op.registry import getCustomOp
 from qonnx.core.datatype import DataType
 from finn.util.data_packing import npy_to_rtlsim_input, rtlsim_output_to_npy
-from qonnx.util.pytorch import ToTensor
+from finn.util.pytorch import ToTensor
 import brevitas.onnx as bo
 from qonnx.transformation.make_input_chanlast import MakeInputChannelsLast
 from qonnx.transformation.merge_onnx_models import MergeONNXModels
