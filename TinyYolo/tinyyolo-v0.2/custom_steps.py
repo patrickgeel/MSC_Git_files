@@ -32,7 +32,7 @@ import finn.builder.build_dataflow_steps as build_steps
 import numpy as np
 from qonnx.core.onnx_exec import execute_onnx
 from qonnx.transformation.create_generic_partitions import PartitionFromDict
-from finn.util.basic import get_by_name
+from qonnx.util.basic import get_by_name
 import qonnx.transformation.streamline.absorb as absorb
 from qonnx.transformation.streamline import Streamline
 from qonnx.transformation.streamline.reorder import MoveLinearPastFork
@@ -49,14 +49,14 @@ from qonnx.transformation.fpgadataflow.set_exec_mode import SetExecMode
 from qonnx.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
 from qonnx.transformation.fpgadataflow.compile_cppsim import CompileCppSim
 from qonnx.transformation.infer_shapes import InferShapes
-import finn.util.pyverilator as pyv
+import qonnx.util.pyverilator as pyv
 import os
 from qonnx.core.onnx_exec import execute_node
 from qonnx.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
 from finn.custom_op.registry import getCustomOp
 from qonnx.core.datatype import DataType
-from finn.util.data_packing import npy_to_rtlsim_input, rtlsim_output_to_npy
-from finn.util.pytorch import ToTensor
+from qonnx.util.data_packing import npy_to_rtlsim_input, rtlsim_output_to_npy
+from qonnx.util.pytorch import ToTensor
 import brevitas.onnx as bo
 from qonnx.transformation.make_input_chanlast import MakeInputChannelsLast
 from qonnx.transformation.merge_onnx_models import MergeONNXModels
