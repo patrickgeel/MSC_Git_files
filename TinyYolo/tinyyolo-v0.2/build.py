@@ -27,7 +27,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import finn.builder.build_dataflow as build
-from finn.core.modelwrapper import ModelWrapper
+from qonnx.core.modelwrapper import ModelWrapper
 import finn.builder.build_dataflow_config as build_cfg
 from custom_steps import (
     custom_step_tinyyolo_preprocess,
