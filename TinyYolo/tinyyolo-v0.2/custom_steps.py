@@ -31,38 +31,38 @@ from finn.builder.build_dataflow_config import DataflowBuildConfig, Verification
 import finn.builder.build_dataflow_steps as build_steps
 import numpy as np
 from qonnx.core.onnx_exec import execute_onnx
-from finn.transformation.create_generic_partitions import PartitionFromDict
+from qonnx.transformation.create_generic_partitions import PartitionFromDict
 from finn.util.basic import get_by_name
-import finn.transformation.streamline.absorb as absorb
-from finn.transformation.streamline import Streamline
-from finn.transformation.streamline.reorder import MoveLinearPastFork
-from finn.transformation.lower_convs_to_matmul import LowerConvsToMatMul
-from finn.transformation.streamline.reorder import MakeMaxPoolNHWC
-from finn.transformation.infer_datatypes import InferDataTypes
-from finn.transformation.general import RemoveUnusedTensors
-from finn.transformation.general import GiveUniqueNodeNames
+import qonnx.transformation.streamline.absorb as absorb
+from qonnx.transformation.streamline import Streamline
+from qonnx.transformation.streamline.reorder import MoveLinearPastFork
+from qonnx.transformation.lower_convs_to_matmul import LowerConvsToMatMul
+from qonnx.transformation.streamline.reorder import MakeMaxPoolNHWC
+from qonnx.transformation.infer_datatypes import InferDataTypes
+from qonnx.transformation.general import RemoveUnusedTensors
+from qonnx.transformation.general import GiveUniqueNodeNames
 import qonnx.core.data_layout as data_layout
 import onnx
-import finn.transformation.fpgadataflow.convert_to_hls_layers as to_hls
-from finn.transformation.infer_data_layouts import InferDataLayouts
-from finn.transformation.fpgadataflow.set_exec_mode import SetExecMode
-from finn.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
-from finn.transformation.fpgadataflow.compile_cppsim import CompileCppSim
-from finn.transformation.infer_shapes import InferShapes
+import qonnx.transformation.fpgadataflow.convert_to_hls_layers as to_hls
+from qonnx.transformation.infer_data_layouts import InferDataLayouts
+from qonnx.transformation.fpgadataflow.set_exec_mode import SetExecMode
+from qonnx.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
+from qonnx.transformation.fpgadataflow.compile_cppsim import CompileCppSim
+from qonnx.transformation.infer_shapes import InferShapes
 import finn.util.pyverilator as pyv
 import os
 from qonnx.core.onnx_exec import execute_node
-from finn.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
+from qonnx.transformation.fpgadataflow.prepare_rtlsim import PrepareRTLSim
 from finn.custom_op.registry import getCustomOp
 from qonnx.core.datatype import DataType
 from finn.util.data_packing import npy_to_rtlsim_input, rtlsim_output_to_npy
 from finn.util.pytorch import ToTensor
 import brevitas.onnx as bo
-from finn.transformation.make_input_chanlast import MakeInputChannelsLast
-from finn.transformation.merge_onnx_models import MergeONNXModels
-from finn.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
-from finn.transformation.fpgadataflow.compile_cppsim import CompileCppSim
-from finn.transformation.fpgadataflow.set_exec_mode import SetExecMode
+from qonnx.transformation.make_input_chanlast import MakeInputChannelsLast
+from qonnx.transformation.merge_onnx_models import MergeONNXModels
+from qonnx.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
+from qonnx.transformation.fpgadataflow.compile_cppsim import CompileCppSim
+from qonnx.transformation.fpgadataflow.set_exec_mode import SetExecMode
 
 def custom_step_tinyyolo_preprocess(model: ModelWrapper, cfg: DataflowBuildConfig):
     # to be able to feed 8-bit camera input directly into the NN, add the divide-by-255
