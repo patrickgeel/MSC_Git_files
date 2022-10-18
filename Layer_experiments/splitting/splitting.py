@@ -79,8 +79,12 @@ def split_onnx_model(split_node=''):
     split_model = ModelWrapper(helper.make_model(new_graph))
     # Set initalizer using the import model
     for t in init_tens.keys():
-        split_model.set_initializer(t,model.get_initializer(t))
-        
+        split_model.set_initializer(t,model.get_initializer(t))      
+        dt = model.get_tensor_datatype(t)
+        if  dt != "FLOAT32":
+            print(dt)
+            split_model.set_tensor_datatype(t,DataType[str(dt)])
+      
     split_model = split_model.transform(InferShapes())
     split_model = split_model.transform(InferDataTypes())
     if not os.path.exists("model_files"):

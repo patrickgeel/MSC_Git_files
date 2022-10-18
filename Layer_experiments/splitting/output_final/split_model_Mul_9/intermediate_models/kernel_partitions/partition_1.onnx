@@ -1,5 +1,5 @@
-:ö
-ü
+:∞
+µ
  ConvolutionInputGenerator_0_out0
 global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
 NumChannels†*
@@ -10,11 +10,11 @@ global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
 numInputVectors@@Ä@Ä@	†*
 streamWidth†*
 slrˇˇˇˇˇˇˇˇˇ†*
-partition_id†*h
-code_gen_dir_ipgen"O/workspace/results/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_k0oxvil9†*ç
+partition_id†*o
+code_gen_dir_ipgen"V/workspace/results/Mul_9//code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_z7_b29pm†*ï
 
-ipgen_path"|/workspace/results/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_k0oxvil9/project_StreamingDataflowPartition_2_IODMA_0†*ò
-ip_path"â/workspace/results/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_k0oxvil9/project_StreamingDataflowPartition_2_IODMA_0/sol1/impl/ip†*E
+ipgen_path"É/workspace/results/Mul_9//code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_z7_b29pm/project_StreamingDataflowPartition_2_IODMA_0†*ü
+ip_path"ê/workspace/results/Mul_9//code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_z7_b29pm/project_StreamingDataflowPartition_2_IODMA_0/sol1/impl/ip†*E
 ip_vlnv"7xilinx.com:hls:StreamingDataflowPartition_2_IODMA_0:1.0†:finn.custom_op.fpgadataflow	new_graphZ<
  ConvolutionInputGenerator_0_out0
 
@@ -34,13 +34,13 @@ global_out
 finn_datatypeINT8%
 tensor_layout['N', 'H', 'W', 'C']r9
  ConvolutionInputGenerator_0_out0
-finn_datatypeINT8BrD
-vivado_stitch_proj./workspace/results/vivado_stitch_proj_mhzqick7r
-clk_ns10.0r¥
-wrapper_filenameü/workspace/results/vivado_stitch_proj_mhzqick7/finn_vivado_stitch_proj.gen/sources_1/bd/StreamingDataflowPartition_2/hdl/StreamingDataflowPartition_2_wrapper.vrG
+finn_datatypeINT8BrK
+vivado_stitch_proj5/workspace/results/Mul_9//vivado_stitch_proj_rhmlhrjsr
+clk_ns10.0rª
+wrapper_filename¶/workspace/results/Mul_9//vivado_stitch_proj_rhmlhrjs/finn_vivado_stitch_proj.gen/sources_1/bd/StreamingDataflowPartition_2/hdl/StreamingDataflowPartition_2_wrapper.vrG
 vivado_stitch_vlnv1xilinx_finn:finn:StreamingDataflowPartition_2:1.0rÆ
 vivado_stitch_ifnamesî{"clk": ["ap_clk"], "rst": ["ap_rst_n"], "s_axis": [["s_axis_0", 24]], "m_axis": [], "aximm": [["m_axi_gmem0", 64]], "axilite": ["s_axi_control_0"]}r
-	exec_modertlsimrL
-floorplan_json:/workspace/results/vitis_floorplan_lrgxn6bd/floorplan.jsonr
+	exec_modertlsimrS
+floorplan_jsonA/workspace/results/Mul_9//vitis_floorplan_k1w9rhcm/floorplan.jsonr
 platform
 zynq-iodma
