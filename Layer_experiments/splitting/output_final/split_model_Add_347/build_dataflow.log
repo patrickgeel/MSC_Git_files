@@ -1,0 +1,6 @@
+[2022-10-18 14:44:08,573] Running step: step_qonnx_to_finn [1/17]
+[2022-10-18 14:44:08,588] Running step: step_tidy_up [2/17]
+[2022-10-18 14:44:10,420] Running step: step_streamline [3/17]
+[2022-10-18 14:44:43,592] /workspace/qonnx/src/qonnx/transformation/infer_data_layouts.py:119: UserWarning: Assuming 4D input is NCHW
+[2022-10-18 14:44:43,592]   warnings.warn("Assuming 4D input is NCHW")
+[2022-10-18 14:44:43,703] Running step: step_convert_to_hls [4/17]

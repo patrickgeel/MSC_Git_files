@@ -1,0 +1,93 @@
+[2022-10-18 14:37:48,904] Running step: step_qonnx_to_finn [1/17]
+[2022-10-18 14:37:48,908] Running step: step_tidy_up [2/17]
+[2022-10-18 14:37:48,919] Running step: step_streamline [3/17]
+[2022-10-18 14:37:49,096] /workspace/qonnx/src/qonnx/transformation/infer_data_layouts.py:119: UserWarning: Assuming 4D input is NCHW
+[2022-10-18 14:37:49,096]   warnings.warn("Assuming 4D input is NCHW")
+[2022-10-18 14:37:49,099] Running step: step_convert_to_hls [4/17]
+[2022-10-18 14:37:49,144] Running step: step_create_dataflow_partition [5/17]
+[2022-10-18 14:37:49,154] Running step: step_target_fps_parallelization [6/17]
+[2022-10-18 14:37:49,160] /workspace/finn/src/finn/transformation/fpgadataflow/set_folding.py:203: UserWarning: Node ConvolutionInputGenerator_0 is bottleneck with 591366 cycles, running second pass
+[2022-10-18 14:37:49,160]   warnings.warn(
+[2022-10-18 14:37:49,167] Running step: step_apply_folding_config [7/17]
+[2022-10-18 14:37:49,169] Running step: step_generate_estimate_reports [8/17]
+[2022-10-18 14:37:49,170] Running step: step_hls_codegen [9/17]
+[2022-10-18 14:37:49,221] Running step: step_hls_ipgen [10/17]
+[2022-10-18 14:38:44,625] Running step: step_set_fifo_depths [11/17]
+[2022-10-18 14:38:44,800] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_0
+[2022-10-18 14:38:44,801]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:38:44,813] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_0
+[2022-10-18 14:38:44,813]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:38:44,921] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_0
+[2022-10-18 14:38:44,922]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:38:45,006] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_0
+[2022-10-18 14:38:45,007]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:38:45,008] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_0
+[2022-10-18 14:38:45,009]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:38:45,009] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_0
+[2022-10-18 14:38:45,009]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:40:09,943] make: Entering directory '/workspace/results/Mul_9/pyverilator_ipstitched_xb5mkls_'
+[2022-10-18 14:40:09,945] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o pyverilator_wrapper.o /workspace/results/Mul_9//pyverilator_ipstitched_xb5mkls_/pyverilator_wrapper.cpp
+[2022-10-18 14:40:09,945] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+[2022-10-18 14:40:09,945] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+[2022-10-18 14:40:09,945] /usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vfinn_design_wrapper.cpp > Vfinn_design_wrapper__ALLcls.cpp
+[2022-10-18 14:40:09,946] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o Vfinn_design_wrapper__ALLcls.o Vfinn_design_wrapper__ALLcls.cpp
+[2022-10-18 14:40:09,946] /usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vfinn_design_wrapper__Trace.cpp Vfinn_design_wrapper__Syms.cpp Vfinn_design_wrapper__Trace__Slow.cpp > Vfinn_design_wrapper__ALLsup.cpp
+[2022-10-18 14:40:09,946] g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVL_PRINTF=printf -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=1 -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -fPIC --std=c++11   -c -o Vfinn_design_wrapper__ALLsup.o Vfinn_design_wrapper__ALLsup.cpp
+[2022-10-18 14:40:09,946]       Archiving Vfinn_design_wrapper__ALL.a ...
+[2022-10-18 14:40:09,946] ar r Vfinn_design_wrapper__ALL.a Vfinn_design_wrapper__ALLcls.o Vfinn_design_wrapper__ALLsup.o
+[2022-10-18 14:40:09,946] ranlib Vfinn_design_wrapper__ALL.a
+[2022-10-18 14:40:09,946] g++ -fPIC -shared pyverilator_wrapper.o verilated.o verilated_vcd_c.o Vfinn_design_wrapper__ALL.a    -o Vfinn_design_wrapper -lm -lstdc++  2>&1 | c++filt
+[2022-10-18 14:40:09,946] make: Leaving directory '/workspace/results/Mul_9/pyverilator_ipstitched_xb5mkls_'
+[2022-10-18 14:40:09,946] ar: creating Vfinn_design_wrapper__ALL.a
+[2022-10-18 14:41:56,218] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_0
+[2022-10-18 14:41:56,218]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:41:56,228] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_0
+[2022-10-18 14:41:56,228]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:41:56,229] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingDataWidthConverter_Batch_0
+[2022-10-18 14:41:56,229]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:41:56,229] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_0
+[2022-10-18 14:41:56,229]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:41:56,367] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingDataWidthConverter_Batch_0
+[2022-10-18 14:41:56,368]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:41:56,368] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_0
+[2022-10-18 14:41:56,368]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:41:56,371] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_0
+[2022-10-18 14:41:56,371]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:41:56,371] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_0
+[2022-10-18 14:41:56,372]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:42:20,405] Running step: step_create_stitched_ip [12/17]
+[2022-10-18 14:42:20,407] Running step: step_measure_rtlsim_performance [13/17]
+[2022-10-18 14:42:20,409] Running step: step_out_of_context_synthesis [14/17]
+[2022-10-18 14:42:20,411] Running step: step_synthesize_bitfile [15/17]
+[2022-10-18 14:42:20,432] /workspace/finn/src/finn/transformation/fpgadataflow/floorplan.py:108: UserWarning: 8 nodes have no entry in the provided floorplan, SLR was set to -1
+[2022-10-18 14:42:20,432]   warnings.warn(
+[2022-10-18 14:43:44,675] /workspace/finn/src/finn/transformation/fpgadataflow/insert_fifo.py:236: UserWarning: Overriding output FIFO depth to 32
+[2022-10-18 14:43:44,675]   warnings.warn("Overriding output FIFO depth to 32")
+[2022-10-18 14:43:44,679] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingDataflowPartition_1_StreamingFIFO_0
+[2022-10-18 14:43:44,679]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:43:44,680] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingDataflowPartition_1_FMPadding_Batch_0
+[2022-10-18 14:43:44,680]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:43:44,680] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingDataflowPartition_1_StreamingFIFO_1
+[2022-10-18 14:43:44,680]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:43:44,680] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingDataflowPartition_1_ConvolutionInputGenerator_0
+[2022-10-18 14:43:44,680]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:43:44,680] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingDataflowPartition_1_StreamingDataWidthConverter_Batch_0
+[2022-10-18 14:43:44,681]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:43:44,681] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingDataflowPartition_1_MatrixVectorActivation_0
+[2022-10-18 14:43:44,681]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-10-18 14:43:44,786] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingDataflowPartition_1_StreamingFIFO_0
+[2022-10-18 14:43:44,787]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:43:44,787] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingDataflowPartition_1_MatrixVectorActivation_0
+[2022-10-18 14:43:44,788]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:43:44,787] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingDataflowPartition_1_StreamingDataWidthConverter_Batch_0
+[2022-10-18 14:43:44,788]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:43:44,787] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingDataflowPartition_1_ConvolutionInputGenerator_0
+[2022-10-18 14:43:44,788]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:43:44,788] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingDataflowPartition_1_FMPadding_Batch_0
+[2022-10-18 14:43:44,789]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 14:43:44,788] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingDataflowPartition_1_StreamingFIFO_1
+[2022-10-18 14:43:44,789]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-10-18 15:14:02,579] Bitfile written into output_final/split_model_Mul_9/bitfile
+[2022-10-18 15:14:02,585] Running step: step_make_pynq_driver [16/17]
+[2022-10-18 15:15:14,414] PYNQ Python driver written into output_final/split_model_Mul_9/driver
+[2022-10-18 15:15:14,416] Running step: step_deployment_package [17/17]

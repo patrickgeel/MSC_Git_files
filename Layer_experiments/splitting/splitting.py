@@ -59,10 +59,10 @@ def split_onnx_model(split_node=''):
     # Make tensor value info for the input and output of the model
     # TODO: Replace make_tensor_value_info with model.get_tensor_value_info
     inputs = helper.make_tensor_value_info('x',TensorProto.FLOAT,ish)
-    # inputs = model.get_tensor_valueinfo('x')
+#     inputs = model.get_tensor_valueinfo('x')
     outputs = helper.make_tensor_value_info(up_n_ordered[-1].output[0],TensorProto.FLOAT,osh)
     # TODO: Set to output tensor
-    # outputs = model.get_tensor_valueinfo(up_n_ordered[-1].output[0])
+#     outputs = model.get_tensor_valueinfo(up_n_ordered[-1].output[0])
 
 
     # Make a value info list to include in the graph
