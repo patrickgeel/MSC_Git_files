@@ -22,18 +22,21 @@ def split_onnx_model(split_node=''):
     nodes = model.graph.node
     passed_tensors,inialized_tensors=[],[]
 
+    # Get all tensors in the model
     all_tensors = model.get_all_tensor_names()
     for ten in all_tensors:
+        # Make a list of all tensors which are initalized
         if not model.get_initializer(ten) is None:
             inialized_tensors.append(ten)
-
-    for i,n in enumerate(nodes):
+            
+    # Make a list of all nodes passed on the way to the split node
+    for n in nodes:
         if n.name != split_node:
             passed_tensors.append(n.input)
         else:
             s_node = n        
             break
-
+    # Create a dict which has the passed initalizers
     init_tens = {}
     for pt in passed_tensors:
         for t in pt:
