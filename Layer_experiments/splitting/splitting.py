@@ -91,5 +91,6 @@ def split_node(split_node=''):
     split_model.save(model_name)
     
     print("Split at node {}, and saved to {}".format(split_node,model_name))
+    return model_name
 
     

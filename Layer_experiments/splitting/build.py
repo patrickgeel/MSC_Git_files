@@ -6,7 +6,8 @@ import shutil
 def build_model(model_file):
     # model_file = "split_model_BatchNormalization_10.onnx"
 
-    final_output_dir = "output_final/{}".format(model_file)
+    final_output_dir = "output_final/{}".format(model_file.split("/")[1].split('.')[0])
+    print("Building model at {}".format(final_output_dir))
 
     #Delete previous run results if exist
     if os.path.exists(final_output_dir):
