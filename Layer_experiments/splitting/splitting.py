@@ -11,7 +11,7 @@ import os
 def find_input_node(x):
     return 'x' in x.input
 
-def split_node(split_node=''):
+def split_onnx_model(split_node=''):
     if split_node=='':
         print("Please define node to split at!")
         return
