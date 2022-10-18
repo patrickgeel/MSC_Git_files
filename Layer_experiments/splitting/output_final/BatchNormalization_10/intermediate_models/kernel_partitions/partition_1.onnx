@@ -1,39 +1,0 @@
-:¾
-Ã
- ConvolutionInputGenerator_0_out0
-global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
-NumChannels *
-backend"fpgadataflow *
-dataType"UINT8 *
-	direction"out *
-	intfWidth@ *
-numInputVectors@@€@€@	 *
-streamWidth *
-slrÿÿÿÿÿÿÿÿÿ *
-partition_id :finn.custom_op.fpgadataflow	new_graphZ<
- ConvolutionInputGenerator_0_out0
-
-
-€
-€
-b&
-
-global_out
-
-
-€
-€
-rJ
-
-global_out
-finn_datatypeINT8%
-tensor_layout['N', 'H', 'W', 'C']r9
- ConvolutionInputGenerator_0_out0
-finn_datatypeINT8BrD
-vivado_stitch_proj./workspace/results/vivado_stitch_proj_ll89dwa4r
-clk_ns10.0r‘
-wrapper_filename}/workspace/results/vivado_stitch_proj_ll89dwa4/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.vr6
-vivado_stitch_vlnv xilinx_finn:finn:finn_design:1.0rš
-vivado_stitch_ifnames€{"clk": ["ap_clk"], "rst": ["ap_rst_n"], "s_axis": [["s_axis_0", 24]], "m_axis": [["m_axis_0", 24]], "aximm": [], "axilite": []}r
-	exec_modertlsimrL
-floorplan_json:/workspace/results/vitis_floorplan_tlb9jccs/floorplan.json
