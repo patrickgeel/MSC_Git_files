@@ -1,0 +1,18 @@
+{
+  "FMPadding_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "70",
+    "LUT": "307",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "ConvolutionInputGenerator_0": {
+    "BRAM_18K": "0",
+    "FF": "705",
+    "LUT": "2957",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  }
+}

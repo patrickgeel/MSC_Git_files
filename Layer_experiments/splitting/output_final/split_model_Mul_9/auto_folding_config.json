@@ -1,0 +1,10 @@
+{
+  "Defaults": {},
+  "FMPadding_Batch_0": {
+    "SIMD": 3
+  },
+  "ConvolutionInputGenerator_0": {
+    "SIMD": 3,
+    "ram_style": "distributed"
+  }
+}
