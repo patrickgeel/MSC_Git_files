@@ -5,13 +5,14 @@ from qonnx.transformation.infer_datatypes import InferDataTypes
 from qonnx.transformation.infer_shapes import InferShapes
 from qonnx.core.datatype import DataType
 from qonnx.util.basic import gen_finn_dt_tensor
+import os
 
 # Define a finder_fx
 def find_input_node(x):
     return 'x' in x.input
 
 def split_node(split_node=''):
-    if split_model=='':
+    if split_node=='':
         print("Please define node to split at!")
         return
     # Open the tinyyolo model
@@ -82,8 +83,13 @@ def split_node(split_node=''):
         
     split_model = split_model.transform(InferShapes())
     split_model = split_model.transform(InferDataTypes())
-    model_name = "split_model_{}.onnx".format(split_node)
+    if not os.path.exists("model_files"):
+        os.mkdir("model_files")
+    else:
+        model_name = "model_files/split_model_{}.onnx".format(split_node)
 
     split_model.save(model_name)
+    
+    print("Split at node {}, and saved to {}".format(split_node,model_name))
 
     
