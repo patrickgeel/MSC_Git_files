@@ -20,23 +20,26 @@ def split_onnx_model(split_node=''):
 
     # Get onnx nodes
     nodes = model.graph.node
-    # Initialize a tensor
-    passed_tensors=[]
+    passed_tensors,inialized_tensors=[],[]
 
-    ###################################################################################################
-    # TODO: This part of the code can most likely be removed and replaced with the find_upstream part.
+    all_tensors = model.get_all_tensor_names()
+    for ten in all_tensors:
+        if not model.get_initializer(ten) is None:
+            inialized_tensors.append(ten)
 
     for i,n in enumerate(nodes):
         if n.name != split_node:
-            passed_tensors.append(n.input[1])
+            passed_tensors.append(n.input)
         else:
             s_node = n        
             break
+
     init_tens = {}
-    for t in passed_tensors:
-        init_tens[t] = [model.get_initializer(t),model.get_tensor_datatype(t)]
+    for pt in passed_tensors:
+        for t in pt:
+            if t in inialized_tensors:
+                init_tens[t] = model.get_initializer(t)
     start_node = s_node.input[0]
-    ###################################################################################################
 
     # Find nodes upstream of the cut node
     upstream_nodes = model.find_upstream(start_node,find_input_node)
@@ -82,7 +85,6 @@ def split_onnx_model(split_node=''):
         split_model.set_initializer(t,model.get_initializer(t))      
         dt = model.get_tensor_datatype(t)
         if  dt != "FLOAT32":
-            print(dt)
             split_model.set_tensor_datatype(t,DataType[str(dt)])
       
     split_model = split_model.transform(InferShapes())
