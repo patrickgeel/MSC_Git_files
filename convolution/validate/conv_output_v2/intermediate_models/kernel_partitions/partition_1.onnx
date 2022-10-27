@@ -1,0 +1,46 @@
+:·
+Â
+MatrixVectorActivation_0_out0
+global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
+NumChannels *
+backend"fpgadataflow *
+dataType"UINT8 *
+	direction"out *
+	intfWidth@ *
+numInputVectors@@@@ *
+streamWidth@ *
+slrÿÿÿÿÿÿÿÿÿ *
+partition_id *u
+code_gen_dir_ipgen"\/workspace/results/single_conv//code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_r2iodyby *›
+
+ipgen_path"‰/workspace/results/single_conv//code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_r2iodyby/project_StreamingDataflowPartition_2_IODMA_0 *¥
+ip_path"–/workspace/results/single_conv//code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_r2iodyby/project_StreamingDataflowPartition_2_IODMA_0/sol1/impl/ip *E
+ip_vlnv"7xilinx.com:hls:StreamingDataflowPartition_2_IODMA_0:1.0 :finn.custom_op.fpgadataflow	conv_testZ7
+MatrixVectorActivation_0_out0
+
+
+
+
+b$
+
+global_out
+
+
+
+
+rL
+
+global_out
+finn_datatypeUINT16%
+tensor_layout['N', 'H', 'W', 'C']r8
+MatrixVectorActivation_0_out0
+finn_datatypeUINT16BrQ
+vivado_stitch_proj;/workspace/results/single_conv//vivado_stitch_proj_dr1z0oair
+clk_ns10.0rÁ
+wrapper_filename¬/workspace/results/single_conv//vivado_stitch_proj_dr1z0oai/finn_vivado_stitch_proj.gen/sources_1/bd/StreamingDataflowPartition_2/hdl/StreamingDataflowPartition_2_wrapper.vrG
+vivado_stitch_vlnv1xilinx_finn:finn:StreamingDataflowPartition_2:1.0r®
+vivado_stitch_ifnames”{"clk": ["ap_clk"], "rst": ["ap_rst_n"], "s_axis": [["s_axis_0", 64]], "m_axis": [], "aximm": [["m_axi_gmem0", 64]], "axilite": ["s_axi_control_0"]}r
+	exec_modertlsimrY
+floorplan_jsonG/workspace/results/single_conv//vitis_floorplan_ts35l2x1/floorplan.jsonr
+platform
+zynq-iodma
