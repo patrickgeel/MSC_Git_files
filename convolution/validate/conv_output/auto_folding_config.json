@@ -1,0 +1,14 @@
+{
+  "Defaults": {},
+  "DownSampler_0": {
+    "SIMD": 8
+  },
+  "MatrixVectorActivation_0": {
+    "PE": 4,
+    "SIMD": 16,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  }
+}

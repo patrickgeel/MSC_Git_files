@@ -1,0 +1,18 @@
+{
+  "DownSampler_0": {
+    "BRAM_18K": "0",
+    "FF": "89",
+    "LUT": "243",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_0": {
+    "BRAM_18K": "0",
+    "FF": "434",
+    "LUT": "5505",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  }
+}

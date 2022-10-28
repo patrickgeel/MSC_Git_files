@@ -1,0 +1,22 @@
+{
+  "Defaults": {},
+  "StreamingFIFO_0": {
+    "ram_style": "auto",
+    "depth": 2,
+    "impl_style": "rtl"
+  },
+  "DownSampler_0": {
+    "SIMD": 8
+  },
+  "StreamingDataWidthConverter_Batch_0": {
+    "impl_style": "hls"
+  },
+  "MatrixVectorActivation_0": {
+    "PE": 4,
+    "SIMD": 16,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  }
+}
