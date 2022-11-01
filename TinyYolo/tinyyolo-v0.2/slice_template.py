@@ -9,7 +9,7 @@ from onnx.backend.test.case.node import expect
 
 from qonnx.transformation.infer_shapes import InferShapes
 
-class slice_template():
+class slice_node():
     def __init__(
             self, input_shape = [4], 
             output_shape = [2], param_shape = [1],
