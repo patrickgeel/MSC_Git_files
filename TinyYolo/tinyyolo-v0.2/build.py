@@ -27,14 +27,13 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import finn.builder.build_dataflow as build
-from qonnx.core.modelwrapper import ModelWrapper
+from finn.core.modelwrapper import ModelWrapper
 import finn.builder.build_dataflow_config as build_cfg
 from custom_steps import (
     custom_step_tinyyolo_preprocess,
     custom_step_tinyyolo_streamline,
     custom_step_tinyyolo_lower,
-    custom_step_tinyyolo_convert_to_hls,
-    custom_step_partition
+    custom_step_tinyyolo_convert_to_hls
 )
 
 model_name = "tinyyolo-20210831"
@@ -47,8 +46,7 @@ custom_steps = [
     custom_step_tinyyolo_streamline,
     custom_step_tinyyolo_lower,
     custom_step_tinyyolo_convert_to_hls,
-    custom_step_partition,
-    # "step_create_dataflow_partition",
+    "step_create_dataflow_partition",
     "step_target_fps_parallelization",
     "step_apply_folding_config",
     "step_generate_estimate_reports",
@@ -68,7 +66,7 @@ cfg = build_cfg.DataflowBuildConfig(
     synth_clk_period_ns = 10.0, 
     auto_fifo_depths = False,
     folding_config_file="tinyyolo-config-v0.2.json",
-    board = "KV260_SOM",
+    board = "Ultra96",
     stitched_ip_gen_dcp=True,
     shell_flow_type=build_cfg.ShellFlowType.VIVADO_ZYNQ,
     generate_outputs = [
