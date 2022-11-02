@@ -36,6 +36,9 @@ class slice_node():
         self.opset_version = helper.make_operatorsetid("", 9)
 
     def make_node(self):
+        ''' 
+        Make a new slice node with attributes instead of inputs
+        '''
         self.slice_node = helper.make_node(
             "Slice",
             name = self.name,
