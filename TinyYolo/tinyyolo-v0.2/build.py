@@ -37,7 +37,8 @@ from custom_steps import (
     custom_step_partition
 )
 
-model_name = "tinyyolo-20210831"
+# model_name = "tinyyolo-20210831"
+model_name = "tinyyolo_slice_update"
 model_filename = "%s.onnx" % model_name
 
 
@@ -80,13 +81,13 @@ cfg = build_cfg.DataflowBuildConfig(
         build_cfg.DataflowOutputType.DEPLOYMENT_PACKAGE,
     ],
     # verification options
-    verify_steps = [
-        build_cfg.VerificationStepType.STITCHED_IP_RTLSIM,
-    ],
-    verify_input_npy="sample_io/test_image_uint8_nhwc.npy",
-    verify_expected_output_npy="sample_io/test_pred.npy",
-    verify_save_full_context=True,
-    verify_save_rtlsim_waveforms=True,
+    # verify_steps = [
+    #     build_cfg.VerificationStepType.STITCHED_IP_RTLSIM,
+    # ],
+    # verify_input_npy="sample_io/test_image_uint8_nhwc.npy",
+    # verify_expected_output_npy="sample_io/test_pred.npy",
+    # verify_save_full_context=True,
+    # verify_save_rtlsim_waveforms=True,
 )
 
 build.build_dataflow_cfg(model_filename, cfg)
