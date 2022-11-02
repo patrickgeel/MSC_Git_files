@@ -16,8 +16,9 @@ class slice_node():
             starts_value = [0], ends_value = [2],
             axes_value = [0], splits_value = [],
             input_tensor = "slice_in", output_tensor = "slice_out",
-            dtype = TensorProto.INT64, paramdt = "INT64"):
+            dtype = TensorProto.INT64, paramdt = "INT64",node_name = "Slice"):
         
+        self.name = node_name
         self.inp_shp = [input_shape]
         self.out_shp = [output_shape]
         self.slice_shape = [param_shape]
@@ -37,6 +38,7 @@ class slice_node():
     def make_node(self):
         self.slice_node = helper.make_node(
             "Slice",
+            name = self.name,
             inputs=[self.input.name],
             outputs=[self.output.name],
             **self.slice_attr
