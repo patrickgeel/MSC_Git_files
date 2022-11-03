@@ -77,7 +77,7 @@ def custom_step_tinyyolo_preprocess(model: ModelWrapper, cfg: DataflowBuildConfi
     model = model.transform(MakeInputChannelsLast())
     # add input quantization annotation
     global_inp_name = model.graph.input[0].name
-    model.set_tensor_datatype(global_inp_name, DataType.UINT8)
+    model.set_tensor_datatype(global_inp_name, DataType['UINT8'])
 
     return model
 
@@ -127,11 +127,11 @@ def custom_step_tinyyolo_lower(model: ModelWrapper, cfg: DataflowBuildConfig):
     return model
 
 def custom_step_tinyyolo_convert_to_hls(model: ModelWrapper, cfg: DataflowBuildConfig):
-    model = model.transform(to_hls.InferQuantizedStreamingFCLayer("decoupled"))
+    model = model.transform(to_hls.InferQuantizedMatrixVectorActivation("decoupled"))
     model = model.transform(to_hls.InferStreamingMaxPool())
     model = model.transform(to_hls.InferUpsample())
     model = model.transform(to_hls.InferConvInpGen())
-    model = model.transform(to_hls.InferVVAU())
+    model = model.transform(to_hls.InferVectorVectorActivation())
     model = model.transform(to_hls.InferDuplicateStreamsLayer())
     model = model.transform(to_hls.InferThresholdingLayer())
     model = model.transform(GiveUniqueNodeNames())

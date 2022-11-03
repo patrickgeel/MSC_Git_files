@@ -30,7 +30,8 @@ class slice_node():
         self.slice_attr["starts"] = np.array(starts_value,dtype=np.int64)
         self.slice_attr["ends"] = np.array(ends_value,dtype=np.int64)
         self.slice_attr["axes"] = np.array(axes_value,dtype=np.int64)
-        if not splits_value == []:
+        print(splits_value)
+        if not splits_value == None:
             self.slice_attr["splits"] = np.array(splits_value,dtype=np.int64)
         
         self.opset_version = helper.make_operatorsetid("", 9)
