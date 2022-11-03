@@ -38,7 +38,7 @@ from custom_steps import (
 )
 
 # model_name = "tinyyolo-20210831"
-model_name = "tinyyolo-update_opset"
+model_name = "tinyyolo-20210831_updated"
 # model_name = "tinyyolo_slice_update"
 model_filename = "%s.onnx" % model_name
 

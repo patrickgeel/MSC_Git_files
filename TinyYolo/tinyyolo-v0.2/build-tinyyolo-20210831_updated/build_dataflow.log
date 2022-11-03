@@ -1,0 +1,4 @@
+[2022-11-03 11:59:25,332] Running step: step_qonnx_to_finn [1/17]
+[2022-11-03 11:59:25,352] Running step: step_tidy_up [2/17]
+[2022-11-03 12:05:47,920] Running step: step_qonnx_to_finn [1/17]
+[2022-11-03 12:05:47,940] Running step: step_tidy_up [2/17]
