@@ -39,7 +39,7 @@ from custom_steps import (
 
 # model_name = "tinyyolo-20210831"
 model_name = "tinyyolo-20210831_updated"
-# model_name = "tinyyolo_slice_update"
+# model_name = "/shares/bulk/pgeel/FINNv0.8.1_repo/TY_build_KV260/finn/notebooks/MSC_Git_files/TinyYolo/tinyyolo-v0.2/old_update_method/tinyyolo_slice_update"
 model_filename = "%s.onnx" % model_name
 
 
@@ -65,7 +65,7 @@ custom_steps = [
 ]
 
 cfg = build_cfg.DataflowBuildConfig(
-#     steps = custom_steps,
+    steps = custom_steps,
     output_dir="build-"+model_name, 
     synth_clk_period_ns = 10.0, 
     auto_fifo_depths = False,
