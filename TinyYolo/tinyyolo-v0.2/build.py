@@ -65,7 +65,7 @@ custom_steps = [
 ]
 
 cfg = build_cfg.DataflowBuildConfig(
-    steps = custom_steps,
+#     steps = custom_steps,
     output_dir="build-"+model_name, 
     synth_clk_period_ns = 10.0, 
     auto_fifo_depths = False,

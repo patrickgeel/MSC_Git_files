@@ -67,12 +67,16 @@ from finn.transformation.fpgadataflow.set_exec_mode import SetExecMode
 def custom_step_tinyyolo_preprocess(model: ModelWrapper, cfg: DataflowBuildConfig):
     # to be able to feed 8-bit camera input directly into the NN, add the divide-by-255
     # preprocessing (equivalent to ToTensor in PyTorch) at the beginning of the model
+    print("HELLO preproc")
+    
     totensor_pyt = ToTensor()
     ishape = (1, 3, 512, 512)
     preproc_filename = cfg.output_dir + "/intermediate_models/preproc.onnx"
     bo.export_finn_onnx(totensor_pyt, ishape, preproc_filename)
     pre_model = ModelWrapper(preproc_filename)
+    pre_model.save(cfg.output_dir + "/intermediate_models/Pre_model.onnx")
     model = model.transform(MergeONNXModels(pre_model))
+    model.save(cfg.out_dir + "/intermediate_models/merged.onnx")
     # add transpose node to use channels-last input
     model = model.transform(MakeInputChannelsLast())
     # add input quantization annotation
