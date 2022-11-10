@@ -164,7 +164,7 @@ def custom_step_v07_to_v08(model: ModelWrapper, cfg: DataflowBuildConfig):
     # model = ModelWrapper("build-custom_step_tinyyolo_lower/intermediate_models/step_generate_estimate_reports.onnx")
     for n in model.graph.node:
         if n.op_type == "DuplicateStreams_Batch":
-            n.attribute.append(helper.make_attribute("NumOutputStreams",2))
+            n.attribute.append(helper.make_attribute("NumOutputStreams",len(n.output)))
         elif n.op_type == "StreamingMaxPool_Batch":
             n.attribute.append(helper.make_attribute("PE",1))
     model.save(cfg.output_dir + "/intermediate_models/custom_step_v07_to_v08.onnx")
