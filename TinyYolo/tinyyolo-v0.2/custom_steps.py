@@ -63,6 +63,8 @@ from qonnx.transformation.merge_onnx_models import MergeONNXModels
 from finn.transformation.fpgadataflow.prepare_cppsim import PrepareCppSim
 from finn.transformation.fpgadataflow.compile_cppsim import CompileCppSim
 from finn.transformation.fpgadataflow.set_exec_mode import SetExecMode
+from onnx import helper
+import shutil
 
 def custom_step_tinyyolo_preprocess(model: ModelWrapper, cfg: DataflowBuildConfig):
     # to be able to feed 8-bit camera input directly into the NN, add the divide-by-255
@@ -145,3 +147,25 @@ def custom_step_tinyyolo_convert_to_hls(model: ModelWrapper, cfg: DataflowBuildC
         model = model.transform(SetExecMode("cppsim"))
         build_steps.verify_step(model, cfg, "initial_hls", need_parent=False)
     return model
+
+def custom_partition_0_update(model: ModelWrapper, cfg: DataflowBuildConfig):
+    shutil.copy("partition_0_v07.onnx", cfg.output_dir + "/intermediate_models/partition_0_v07.onnx")
+    # model = ModelWrapper("build-custom_step_tinyyolo_lower/intermediate_models/partition_0_v07.onnx")
+    for n in model.graph.node:
+        if n.op_type == "StreamingFCLayer_Batch":
+            n.op_type = "MatrixVectorActivation" 
+        if n.op_type == "Vector_Vector_Activate_Batch":
+            n.op_type = "VectorVectorActivation"
+    model.save(cfg.output_dir + "/intermediate_models/partition_0.onnx")
+
+def custom_step_v07_to_v08(model: ModelWrapper, cfg: DataflowBuildConfig):
+    # Take in the model from generate estimate reports
+    # model = ModelWrapper("build-custom_step_tinyyolo_lower/intermediate_models/step_generate_estimate_reports.onnx")
+    for n in model.graph.node:
+        if n.op_type == "DuplicateStreams_Batch":
+            n.attribute.append(helper.make_attribute("NumOutputStreams",2))
+        elif n.op_type == "StreamingMaxPool_Batch":
+            n.attribute.append(helper.make_attribute("PE",1))
+    model.save(cfg.output_dir + "/intermediate_models/custom_step_v07_to_v08.onnx")
+    return model
+
