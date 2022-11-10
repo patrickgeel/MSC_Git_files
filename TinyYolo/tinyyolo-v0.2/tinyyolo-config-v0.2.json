@@ -26,7 +26,7 @@
   "StreamingDataWidthConverter_Batch_0": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_0": {
+  "MatrixVectorActivation_0": {
     "PE": 8,
     "SIMD": 9,
     "ram_style": "auto",
@@ -57,14 +57,14 @@
     "SIMD": 8,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_0": {
+  "VectorVectorActivation_0": {
     "PE": 8,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_3": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_1": {
+  "MatrixVectorActivation_1": {
     "PE": 2,
     "SIMD": 16,
     "ram_style": "auto",
@@ -92,11 +92,11 @@
     "SIMD": 16,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_1": {
+  "VectorVectorActivation_1": {
     "PE": 16,
     "resType": "lut"
   },
-  "StreamingFCLayer_Batch_2": {
+  "MatrixVectorActivation_2": {
     "PE": 4,
     "SIMD": 16,
     "ram_style": "auto",
@@ -127,14 +127,14 @@
     "SIMD": 16,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_2": {
+  "VectorVectorActivation_2": {
     "PE": 16,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_7": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_3": {
+  "MatrixVectorActivation_3": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -162,14 +162,14 @@
     "SIMD": 8,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_3": {
+  "VectorVectorActivation_3": {
     "PE": 8,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_9": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_4": {
+  "MatrixVectorActivation_4": {
     "PE": 1,
     "SIMD": 16,
     "ram_style": "auto",
@@ -177,14 +177,14 @@
     "mem_mode": "decoupled",
     "runtime_writeable_weights": 0
   },
-  "Vector_Vector_Activate_Batch_4": {
+  "VectorVectorActivation_4": {
     "PE": 1,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_10": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_5": {
+  "MatrixVectorActivation_5": {
     "PE": 2,
     "SIMD": 16,
     "ram_style": "auto",
@@ -228,14 +228,14 @@
     "SIMD": 4,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_5": {
+  "VectorVectorActivation_5": {
     "PE": 4,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_14": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_6": {
+  "MatrixVectorActivation_6": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -263,14 +263,14 @@
     "SIMD": 8,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_6": {
+  "VectorVectorActivation_6": {
     "PE": 8,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_16": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_7": {
+  "MatrixVectorActivation_7": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -298,14 +298,14 @@
     "SIMD": 4,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_7": {
+  "VectorVectorActivation_7": {
     "PE": 4,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_18": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_8": {
+  "MatrixVectorActivation_8": {
     "PE": 1,
     "SIMD": 16,
     "ram_style": "auto",
@@ -313,14 +313,14 @@
     "mem_mode": "decoupled",
     "runtime_writeable_weights": 0
   },
-  "Vector_Vector_Activate_Batch_8": {
+  "VectorVectorActivation_8": {
     "PE": 1,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_19": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_9": {
+  "MatrixVectorActivation_9": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -359,14 +359,14 @@
     "SIMD": 2,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_9": {
+  "VectorVectorActivation_9": {
     "PE": 2,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_23": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_10": {
+  "MatrixVectorActivation_10": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -394,14 +394,14 @@
     "SIMD": 4,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_10": {
+  "VectorVectorActivation_10": {
     "PE": 4,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_25": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_11": {
+  "MatrixVectorActivation_11": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -429,14 +429,14 @@
     "SIMD": 2,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_11": {
+  "VectorVectorActivation_11": {
     "PE": 2,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_27": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_12": {
+  "MatrixVectorActivation_12": {
     "PE": 1,
     "SIMD": 16,
     "ram_style": "auto",
@@ -444,14 +444,14 @@
     "mem_mode": "decoupled",
     "runtime_writeable_weights": 0
   },
-  "Vector_Vector_Activate_Batch_12": {
+  "VectorVectorActivation_12": {
     "PE": 1,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_28": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_13": {
+  "MatrixVectorActivation_13": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -487,14 +487,14 @@
     "SIMD": 1,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_13": {
+  "VectorVectorActivation_13": {
     "PE": 1,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_31": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_14": {
+  "MatrixVectorActivation_14": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -502,7 +502,7 @@
     "mem_mode": "decoupled",
     "runtime_writeable_weights": 0
   },
-  "Vector_Vector_Activate_Batch_14": {
+  "VectorVectorActivation_14": {
     "PE": 1,
     "resType": "lut"
   },
@@ -514,7 +514,7 @@
     "depth": 32,
     "impl_style": "rtl"
   },
-  "StreamingFCLayer_Batch_15": {
+  "MatrixVectorActivation_15": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -530,7 +530,7 @@
     "depth": 32,
     "impl_style": "rtl"
   },
-  "Vector_Vector_Activate_Batch_15": {
+  "VectorVectorActivation_15": {
     "PE": 1,
     "resType": "lut"
   },
@@ -554,7 +554,7 @@
     "SIMD": 1,
     "ram_style": "block"
   },
-  "StreamingFCLayer_Batch_16": {
+  "MatrixVectorActivation_16": {
     "PE": 1,
     "SIMD": 8,
     "ram_style": "auto",
@@ -562,7 +562,7 @@
     "mem_mode": "decoupled",
     "runtime_writeable_weights": 0
   },
-  "Vector_Vector_Activate_Batch_16": {
+  "VectorVectorActivation_16": {
     "PE": 1,
     "resType": "lut"
   },
@@ -572,7 +572,7 @@
   "StreamingDataWidthConverter_Batch_35": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_17": {
+  "MatrixVectorActivation_17": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -604,7 +604,7 @@
   "FMPadding_Batch_13": {
     "SIMD": 1
   },
-  "StreamingFCLayer_Batch_18": {
+  "MatrixVectorActivation_18": {
     "PE": 1,
     "SIMD": 4,
     "ram_style": "auto",
@@ -624,14 +624,14 @@
     "SIMD": 2,
     "ram_style": "block"
   },
-  "Vector_Vector_Activate_Batch_17": {
+  "VectorVectorActivation_17": {
     "PE": 2,
     "resType": "lut"
   },
   "StreamingDataWidthConverter_Batch_39": {
     "impl_style": "hls"
   },
-  "StreamingFCLayer_Batch_19": {
+  "MatrixVectorActivation_19": {
     "PE": 1,
     "SIMD": 32,
     "ram_style": "auto",
@@ -647,7 +647,7 @@
     "depth": 32,
     "impl_style": "rtl"
   },
-  "StreamingFCLayer_Batch_20": {
+  "MatrixVectorActivation_20": {
     "PE": 1,
     "SIMD": 8,
     "ram_style": "auto",
