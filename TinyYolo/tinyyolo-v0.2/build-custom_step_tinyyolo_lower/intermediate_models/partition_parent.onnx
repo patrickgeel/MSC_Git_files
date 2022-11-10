@@ -1,26 +1,0 @@
-
-fuse_model:‹
-©
-	global_in
-global_outGenericPartition_1"GenericPartition*Q
-model"Ebuild-custom_step_tinyyolo_lower/intermediate_models/partition_1.onnx :qonnx.custom_op.general
-fuse-graphZ%
-	global_in
-
-
-€
-€
-b!
-
-global_out
-
-
-€
-r;
-
-global_out
-finn_datatypeFLOAT32
-tensor_layout[]rJ
-	global_in%
-tensor_layout['N', 'H', 'W', 'C']
-finn_datatypeUINT8B
