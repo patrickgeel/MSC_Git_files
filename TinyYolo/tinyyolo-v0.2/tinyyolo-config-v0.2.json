@@ -1,10 +1,10 @@
 {
   "Defaults": {},
   "Thresholding_Batch_0": {
-    "PE": 3,
-    "ram_style": "distributed",
-    "mem_mode": "const",
-    "runtime_writeable_weights": 0
+    "PE": 2, //3,
+    // "ram_style": "distributed",
+    // "mem_mode": "const",
+    // "runtime_writeable_weights": 0
   },
   "StreamingFIFO_1": {
     "ram_style": "auto",
