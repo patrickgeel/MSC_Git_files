@@ -1,0 +1,666 @@
+[2022-11-14 11:32:19,381] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-14 11:32:19,488] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-14 11:32:19,718] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_35
+[2022-11-14 11:32:19,718]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-14 11:32:19,730] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_38
+[2022-11-14 11:32:19,730]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-14 11:32:20,501] /workspace/finn/src/finn/custom_op/fpgadataflow/vectorvectoractivation.py:100: UserWarning: Clipping some thresholds in VectorVectorActivation_MatMul_31
+[2022-11-14 11:32:20,501]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-14 11:32:21,567] Running step: step_create_dataflow_partition [3/14]
+[2022-11-14 11:32:21,754] Running step: step_target_fps_parallelization [4/14]
+[2022-11-14 11:32:21,771] Running step: step_apply_folding_config [5/14]
+[2022-11-14 11:32:21,797] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-14 11:32:21,797] No HW configuration for nodes: StreamingMaxPool_Batch_0, StreamingMaxPool_Batch_1, StreamingMaxPool_Batch_2, UpsampleNearestNeighbour_Batch_0
+[2022-11-14 11:32:21,797]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-14 11:32:21,797] /workspace/qonnx/src/qonnx/transformation/general.py:326: UserWarning:
+[2022-11-14 11:32:21,797] Unused HW configurations: StreamingFIFO_1, StreamingFIFO_2, StreamingDataWidthConverter_Batch_0, StreamingDataWidthConverter_Batch_1, StreamingFIFO_6, StreamingDataWidthConverter_Batch_2, StreamingFIFO_8, StreamingDataWidthConverter_Batch_3, StreamingFIFO_12, StreamingDataWidthConverter_Batch_4, StreamingFIFO_14, StreamingDataWidthConverter_Batch_5, StreamingFIFO_18, StreamingDataWidthConverter_Batch_6, StreamingFIFO_20, StreamingDataWidthConverter_Batch_7, StreamingFIFO_24, StreamingDataWidthConverter_Batch_8, StreamingFIFO_26, StreamingDataWidthConverter_Batch_9, StreamingDataWidthConverter_Batch_10, StreamingDataWidthConverter_Batch_11, StreamingFIFO_34, StreamingFIFO_35, StreamingDataWidthConverter_Batch_12, StreamingFIFO_36, StreamingDataWidthConverter_Batch_13, StreamingFIFO_38, StreamingDataWidthConverter_Batch_14, StreamingFIFO_42, StreamingDataWidthConverter_Batch_15, StreamingFIFO_44, StreamingDataWidthConverter_Batch_16, StreamingFIFO_48, StreamingDataWidthConverter_Batch_17, StreamingFIFO_50, StreamingDataWidthConverter_Batch_18, StreamingDataWidthConverter_Batch_19, StreamingDataWidthConverter_Batch_20, StreamingFIFO_59, StreamingDataWidthConverter_Batch_21, StreamingFIFO_60, StreamingDataWidthConverter_Batch_22, StreamingFIFO_62, StreamingDataWidthConverter_Batch_23, StreamingFIFO_66, StreamingDataWidthConverter_Batch_24, StreamingFIFO_68, StreamingDataWidthConverter_Batch_25, StreamingFIFO_72, StreamingDataWidthConverter_Batch_26, StreamingFIFO_74, StreamingDataWidthConverter_Batch_27, StreamingDataWidthConverter_Batch_28, StreamingDataWidthConverter_Batch_29, StreamingFIFO_83, StreamingDataWidthConverter_Batch_30, StreamingFIFO_84, StreamingFIFO_85, StreamingDataWidthConverter_Batch_31, StreamingDataWidthConverter_Batch_32, StreamingFIFO_91, StreamingFIFO_94, StreamingDataWidthConverter_Batch_33, StreamingFIFO_95, StreamingFIFO_97, StreamingDataWidthConverter_Batch_34, StreamingDataWidthConverter_Batch_35, StreamingFIFO_103, StreamingDataWidthConverter_Batch_36, StreamingDataWidthConverter_Batch_37, StreamingFIFO_105, StreamingFIFO_106, StreamingDataWidthConverter_Batch_38, StreamingFIFO_109, StreamingDataWidthConverter_Batch_39, StreamingDataWidthConverter_Batch_40, StreamingFIFO_114
+[2022-11-14 11:32:21,797]   warnings.warn("\nUnused HW configurations: " + ", ".join(unused_configs))
+[2022-11-14 11:32:21,824] Running step: step_generate_estimate_reports [6/14]
+[2022-11-14 11:32:21,841] Running step: step_hls_codegen [7/14]
+[2022-11-14 11:32:32,735] Running step: step_hls_ipgen [8/14]
+[2022-11-14 11:40:16,914] Running step: step_set_fifo_depths [9/14]
+[2022-11-14 11:40:17,940] /workspace/finn/src/finn/transformation/fpgadataflow/insert_fifo.py:189: UserWarning: Overriding input FIFO depth to 32
+[2022-11-14 11:40:17,940]   warnings.warn("Overriding input FIFO depth to 32")
+[2022-11-14 11:40:17,941] /workspace/finn/src/finn/transformation/fpgadataflow/insert_fifo.py:236: UserWarning: Overriding output FIFO depth to 32
+[2022-11-14 11:40:17,941]   warnings.warn("Overriding output FIFO depth to 32")
+[2022-11-14 11:40:18,780] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-14 11:40:18,781] No HW configuration for nodes: StreamingFIFO_0, StreamingFIFO_3, StreamingFIFO_4, StreamingFIFO_5, StreamingFIFO_7, StreamingFIFO_9, StreamingFIFO_10, StreamingFIFO_11, StreamingFIFO_13, StreamingFIFO_15, StreamingFIFO_16, StreamingFIFO_17, StreamingFIFO_19, StreamingFIFO_21, StreamingFIFO_22, StreamingFIFO_23, StreamingFIFO_25, StreamingFIFO_27, StreamingFIFO_28, StreamingFIFO_29, StreamingFIFO_30, StreamingFIFO_31, StreamingFIFO_32, StreamingFIFO_33, StreamingMaxPool_Batch_0, StreamingFIFO_37, StreamingFIFO_39, StreamingFIFO_40, StreamingFIFO_41, StreamingFIFO_43, StreamingFIFO_45, StreamingFIFO_46, StreamingFIFO_47, StreamingFIFO_49, StreamingFIFO_51, StreamingFIFO_52, StreamingFIFO_53, StreamingFIFO_54, StreamingFIFO_55, StreamingFIFO_56, StreamingFIFO_57, StreamingFIFO_58, StreamingMaxPool_Batch_1, StreamingFIFO_61, StreamingFIFO_63, StreamingFIFO_64, StreamingFIFO_65, StreamingFIFO_67, StreamingFIFO_69, StreamingFIFO_70, StreamingFIFO_71, StreamingFIFO_73, StreamingFIFO_75, StreamingFIFO_76, StreamingFIFO_77, StreamingFIFO_78, StreamingFIFO_79, StreamingFIFO_80, StreamingFIFO_81, StreamingFIFO_82, StreamingMaxPool_Batch_2, StreamingFIFO_86, StreamingFIFO_87, StreamingFIFO_88, StreamingFIFO_89, StreamingFIFO_90, StreamingFIFO_92, StreamingFIFO_93, StreamingFIFO_96, StreamingFIFO_98, StreamingFIFO_99, StreamingFIFO_100, StreamingFIFO_101, StreamingFIFO_102, UpsampleNearestNeighbour_Batch_0, StreamingFIFO_104, StreamingFIFO_107, StreamingFIFO_108, StreamingFIFO_110, StreamingFIFO_111, StreamingFIFO_112, StreamingFIFO_113, StreamingFIFO_115
+[2022-11-14 11:40:18,781]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-14 11:40:18,977] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for Thresholding_Batch_0
+[2022-11-14 11:40:18,977]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:18,985] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_0
+[2022-11-14 11:40:18,985]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:18,993] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_0
+[2022-11-14 11:40:18,993]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,070] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_0
+[2022-11-14 11:40:19,071]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,122] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_1
+[2022-11-14 11:40:19,122]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,172] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_1
+[2022-11-14 11:40:19,172]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,172] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_0
+[2022-11-14 11:40:19,172]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,189] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_1
+[2022-11-14 11:40:19,189]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,196] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_2
+[2022-11-14 11:40:19,196]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,228] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_2
+[2022-11-14 11:40:19,228]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,228] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_1
+[2022-11-14 11:40:19,229]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,229] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_2
+[2022-11-14 11:40:19,229]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,264] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_3
+[2022-11-14 11:40:19,264]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,296] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_3
+[2022-11-14 11:40:19,296]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,296] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_2
+[2022-11-14 11:40:19,296]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,321] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_3
+[2022-11-14 11:40:19,321]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,328] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_4
+[2022-11-14 11:40:19,328]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,355] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_4
+[2022-11-14 11:40:19,356]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,356] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_3
+[2022-11-14 11:40:19,356]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,378] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_4
+[2022-11-14 11:40:19,378]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,378] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_4
+[2022-11-14 11:40:19,378]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,392] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_5
+[2022-11-14 11:40:19,392]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,423] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_0
+[2022-11-14 11:40:19,423]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,447] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_5
+[2022-11-14 11:40:19,447]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,463] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_5
+[2022-11-14 11:40:19,463]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,463] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_5
+[2022-11-14 11:40:19,463]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,475] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_6
+[2022-11-14 11:40:19,475]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,482] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_6
+[2022-11-14 11:40:19,482]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,508] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_6
+[2022-11-14 11:40:19,508]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,508] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_6
+[2022-11-14 11:40:19,508]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,531] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_7
+[2022-11-14 11:40:19,531]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,538] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_7
+[2022-11-14 11:40:19,538]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,555] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_7
+[2022-11-14 11:40:19,555]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,555] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_7
+[2022-11-14 11:40:19,555]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,565] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_8
+[2022-11-14 11:40:19,565]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,565] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_8
+[2022-11-14 11:40:19,565]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,575] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_9
+[2022-11-14 11:40:19,575]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,591] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_1
+[2022-11-14 11:40:19,591]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,617] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_8
+[2022-11-14 11:40:19,617]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,633] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_8
+[2022-11-14 11:40:19,633]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,633] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_9
+[2022-11-14 11:40:19,633]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,644] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_10
+[2022-11-14 11:40:19,644]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,653] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_9
+[2022-11-14 11:40:19,653]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,676] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_9
+[2022-11-14 11:40:19,676]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,676] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_10
+[2022-11-14 11:40:19,676]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,685] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_11
+[2022-11-14 11:40:19,685]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,692] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_10
+[2022-11-14 11:40:19,692]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,711] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_10
+[2022-11-14 11:40:19,711]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,711] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_11
+[2022-11-14 11:40:19,711]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,717] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_12
+[2022-11-14 11:40:19,718]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,718] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_12
+[2022-11-14 11:40:19,718]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,724] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_13
+[2022-11-14 11:40:19,724]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,733] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_2
+[2022-11-14 11:40:19,733]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,752] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_11
+[2022-11-14 11:40:19,753]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,761] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_11
+[2022-11-14 11:40:19,761]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,761] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_13
+[2022-11-14 11:40:19,761]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,768] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_14
+[2022-11-14 11:40:19,768]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,768] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_14
+[2022-11-14 11:40:19,768]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,782] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_15
+[2022-11-14 11:40:19,782]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,782] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for DuplicateStreams_Batch_0
+[2022-11-14 11:40:19,782]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,789] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_15
+[2022-11-14 11:40:19,789]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,789] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_12
+[2022-11-14 11:40:19,789]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,807] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_12
+[2022-11-14 11:40:19,807]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,808] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_16
+[2022-11-14 11:40:19,808]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,808] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_16
+[2022-11-14 11:40:19,808]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,821] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for UpsampleNearestNeighbour_Batch_0
+[2022-11-14 11:40:19,821]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,821] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_17
+[2022-11-14 11:40:19,821]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,854] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_13
+[2022-11-14 11:40:19,854]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,854] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_18
+[2022-11-14 11:40:19,854]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,875] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_13
+[2022-11-14 11:40:19,875]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,875] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_17
+[2022-11-14 11:40:19,876]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,885] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_19
+[2022-11-14 11:40:19,885]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:19,900] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_20
+[2022-11-14 11:40:19,900]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 11:40:20,057] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_20
+[2022-11-14 11:40:20,057] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_19
+[2022-11-14 11:40:20,058]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:20,058]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:20,058] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_17
+[2022-11-14 11:40:20,058]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:20,058] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_13
+[2022-11-14 11:40:20,059]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:20,060] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_18
+[2022-11-14 11:40:20,060] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_13
+[2022-11-14 11:40:20,061]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:20,061]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:44,744] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_17
+[2022-11-14 11:40:44,745]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:44,745] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for UpsampleNearestNeighbour_Batch_0
+[2022-11-14 11:40:44,746]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:44,747] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_16
+[2022-11-14 11:40:44,747]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:44,748] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_16
+[2022-11-14 11:40:44,748]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:40:44,749] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_12
+[2022-11-14 11:40:44,749]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:08,691] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_12
+[2022-11-14 11:41:08,692]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:08,693] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_15
+[2022-11-14 11:41:08,693]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:08,764] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for DuplicateStreams_Batch_0
+[2022-11-14 11:41:08,765]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:08,766] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_15
+[2022-11-14 11:41:08,767]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:08,993] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_14
+[2022-11-14 11:41:08,993]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:08,995] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_14
+[2022-11-14 11:41:08,995]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:09,196] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_13
+[2022-11-14 11:41:09,196]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:09,198] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_11
+[2022-11-14 11:41:09,198]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:09,622] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_11
+[2022-11-14 11:41:09,623]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:32,631] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_2
+[2022-11-14 11:41:32,631]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:32,849] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_13
+[2022-11-14 11:41:32,849]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:33,030] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_12
+[2022-11-14 11:41:33,031]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:33,033] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_12
+[2022-11-14 11:41:33,033]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:33,198] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_11
+[2022-11-14 11:41:33,198]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:33,200] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_10
+[2022-11-14 11:41:33,200]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:57,034] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_10
+[2022-11-14 11:41:57,035]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:57,212] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_11
+[2022-11-14 11:41:57,212]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:57,366] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_10
+[2022-11-14 11:41:57,367]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:57,368] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_9
+[2022-11-14 11:41:57,368]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:41:57,478] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_9
+[2022-11-14 11:41:57,479]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:12,454] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_10
+[2022-11-14 11:42:12,455]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:20,861] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_9
+[2022-11-14 11:42:20,861]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:20,862] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_8
+[2022-11-14 11:42:20,862]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:21,077] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_8
+[2022-11-14 11:42:21,078]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:21,400] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_1
+[2022-11-14 11:42:21,401]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:22,014] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_9
+[2022-11-14 11:42:22,015]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:44,800] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_8
+[2022-11-14 11:42:44,801]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:44,802] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_8
+[2022-11-14 11:42:44,802]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:44,944] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_7
+[2022-11-14 11:42:44,945]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:44,945] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_7
+[2022-11-14 11:42:44,945]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:45,449] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_7
+[2022-11-14 11:42:45,449]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:42:45,829] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_7
+[2022-11-14 11:42:45,829]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:02,447] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_6
+[2022-11-14 11:43:02,447]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:02,449] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_6
+[2022-11-14 11:43:02,449]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:09,198] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_6
+[2022-11-14 11:43:09,199]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:09,618] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_6
+[2022-11-14 11:43:09,619]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:09,951] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_5
+[2022-11-14 11:43:09,951]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:09,952] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_5
+[2022-11-14 11:43:09,952]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:10,637] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_5
+[2022-11-14 11:43:10,637]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:32,921] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_0
+[2022-11-14 11:43:32,921]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:33,339] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_5
+[2022-11-14 11:43:33,339]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:33,989] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_4
+[2022-11-14 11:43:33,990]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:33,991] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_4
+[2022-11-14 11:43:33,991]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:34,661] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_3
+[2022-11-14 11:43:34,662]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:34,663] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_4
+[2022-11-14 11:43:34,663]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:57,010] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_4
+[2022-11-14 11:43:57,010]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:57,133] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_3
+[2022-11-14 11:43:57,133]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:57,406] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_2
+[2022-11-14 11:43:57,406]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:57,407] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_3
+[2022-11-14 11:43:57,408]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:43:58,963] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_3
+[2022-11-14 11:43:58,964]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:21,186] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_2
+[2022-11-14 11:44:21,187]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:21,189] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_1
+[2022-11-14 11:44:21,190]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:21,191] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_2
+[2022-11-14 11:44:21,191]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:21,293] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_2
+[2022-11-14 11:44:21,293]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:21,458] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_1
+[2022-11-14 11:44:21,458]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:21,800] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_0
+[2022-11-14 11:44:21,800]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:21,801] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_1
+[2022-11-14 11:44:21,801]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:44,827] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_1
+[2022-11-14 11:44:44,828]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:45,334] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_0
+[2022-11-14 11:44:45,335]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:45,503] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_0
+[2022-11-14 11:44:45,504]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:45,505] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_0
+[2022-11-14 11:44:45,505]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:44:45,701] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for Thresholding_Batch_0
+[2022-11-14 11:44:45,702]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 11:45:32,050] Running step: step_create_stitched_ip [10/14]
+[2022-11-14 11:45:48,773] /workspace/results/ZCU102/custom_step_tinyyolo_lower/vivado_stitch_proj_kbfv7iaa/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design
+[2022-11-14 11:45:48,773] finn_design
+[2022-11-14 11:46:32,841] /workspace/results/ZCU102/custom_step_tinyyolo_lower/vivado_stitch_proj_kbfv7iaa/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v
+[2022-11-14 11:46:59,607] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-14 11:47:05,292] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-14 11:50:03,283] pickle loaded: /opt/conda/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi
+[2022-11-14 11:50:03,321] pickle loaded: /opt/conda/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/3/sys.pyi
+[2022-11-14 11:50:17,650] diff parser start
+[2022-11-14 11:50:17,651] line_lengths old: 23; new: 26
+[2022-11-14 11:50:17,651] -> code[equal] old[1:22] new[1:22]
+[2022-11-14 11:50:17,652] copy old[1:21] new[1:21]
+[2022-11-14 11:50:17,654] parse_part from 22 to 26 (to 25 in part parser)
+[2022-11-14 11:50:17,654] -> code[replace] old[23:23] new[23:26]
+[2022-11-14 11:50:17,655] diff parser end
+[2022-11-14 11:50:43,831] diff parser start
+[2022-11-14 11:50:43,832] line_lengths old: 26; new: 26
+[2022-11-14 11:50:43,832] -> code[equal] old[1:25] new[1:25]
+[2022-11-14 11:50:43,833] copy old[1:21] new[1:21]
+[2022-11-14 11:50:43,835] parse_part from 22 to 26 (to 25 in part parser)
+[2022-11-14 11:50:43,836] -> code[replace] old[26:26] new[26:26]
+[2022-11-14 11:50:43,836] diff parser end
+[2022-11-14 11:52:40,593] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-14 11:52:40,691] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-14 11:52:40,790] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_35
+[2022-11-14 11:52:40,790]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-14 11:52:40,802] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_38
+[2022-11-14 11:52:40,802]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-14 11:52:41,581] /workspace/finn/src/finn/custom_op/fpgadataflow/vectorvectoractivation.py:100: UserWarning: Clipping some thresholds in VectorVectorActivation_MatMul_31
+[2022-11-14 11:52:41,582]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-14 11:52:42,637] Running step: step_create_dataflow_partition [3/14]
+[2022-11-14 11:52:42,819] Running step: step_target_fps_parallelization [4/14]
+[2022-11-14 11:52:42,834] Running step: step_apply_folding_config [5/14]
+[2022-11-14 11:52:42,865] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-14 11:52:42,865] No HW configuration for nodes: StreamingMaxPool_Batch_0, StreamingMaxPool_Batch_1, StreamingMaxPool_Batch_2, UpsampleNearestNeighbour_Batch_0
+[2022-11-14 11:52:42,865]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-14 11:52:42,865] /workspace/qonnx/src/qonnx/transformation/general.py:326: UserWarning:
+[2022-11-14 11:52:42,865] Unused HW configurations: StreamingFIFO_1, StreamingFIFO_2, StreamingDataWidthConverter_Batch_0, StreamingDataWidthConverter_Batch_1, StreamingFIFO_6, StreamingDataWidthConverter_Batch_2, StreamingFIFO_8, StreamingDataWidthConverter_Batch_3, StreamingFIFO_12, StreamingDataWidthConverter_Batch_4, StreamingFIFO_14, StreamingDataWidthConverter_Batch_5, StreamingFIFO_18, StreamingDataWidthConverter_Batch_6, StreamingFIFO_20, StreamingDataWidthConverter_Batch_7, StreamingFIFO_24, StreamingDataWidthConverter_Batch_8, StreamingFIFO_26, StreamingDataWidthConverter_Batch_9, StreamingDataWidthConverter_Batch_10, StreamingDataWidthConverter_Batch_11, StreamingFIFO_34, StreamingFIFO_35, StreamingDataWidthConverter_Batch_12, StreamingFIFO_36, StreamingDataWidthConverter_Batch_13, StreamingFIFO_38, StreamingDataWidthConverter_Batch_14, StreamingFIFO_42, StreamingDataWidthConverter_Batch_15, StreamingFIFO_44, StreamingDataWidthConverter_Batch_16, StreamingFIFO_48, StreamingDataWidthConverter_Batch_17, StreamingFIFO_50, StreamingDataWidthConverter_Batch_18, StreamingDataWidthConverter_Batch_19, StreamingDataWidthConverter_Batch_20, StreamingFIFO_59, StreamingDataWidthConverter_Batch_21, StreamingFIFO_60, StreamingDataWidthConverter_Batch_22, StreamingFIFO_62, StreamingDataWidthConverter_Batch_23, StreamingFIFO_66, StreamingDataWidthConverter_Batch_24, StreamingFIFO_68, StreamingDataWidthConverter_Batch_25, StreamingFIFO_72, StreamingDataWidthConverter_Batch_26, StreamingFIFO_74, StreamingDataWidthConverter_Batch_27, StreamingDataWidthConverter_Batch_28, StreamingDataWidthConverter_Batch_29, StreamingFIFO_83, StreamingDataWidthConverter_Batch_30, StreamingFIFO_84, StreamingFIFO_85, StreamingDataWidthConverter_Batch_31, StreamingDataWidthConverter_Batch_32, StreamingFIFO_91, StreamingFIFO_94, StreamingDataWidthConverter_Batch_33, StreamingFIFO_95, StreamingFIFO_97, StreamingDataWidthConverter_Batch_34, StreamingDataWidthConverter_Batch_35, StreamingFIFO_103, StreamingDataWidthConverter_Batch_36, StreamingDataWidthConverter_Batch_37, StreamingFIFO_105, StreamingFIFO_106, StreamingDataWidthConverter_Batch_38, StreamingFIFO_109, StreamingDataWidthConverter_Batch_39, StreamingDataWidthConverter_Batch_40, StreamingFIFO_114
+[2022-11-14 11:52:42,865]   warnings.warn("\nUnused HW configurations: " + ", ".join(unused_configs))
+[2022-11-14 11:52:42,893] Running step: step_generate_estimate_reports [6/14]
+[2022-11-14 11:52:42,908] Running step: step_hls_codegen [7/14]
+[2022-11-14 11:52:53,837] Running step: step_hls_ipgen [8/14]
+[2022-11-14 12:00:31,452] Running step: step_set_fifo_depths [9/14]
+[2022-11-14 12:00:32,458] /workspace/finn/src/finn/transformation/fpgadataflow/insert_fifo.py:189: UserWarning: Overriding input FIFO depth to 32
+[2022-11-14 12:00:32,458]   warnings.warn("Overriding input FIFO depth to 32")
+[2022-11-14 12:00:32,459] /workspace/finn/src/finn/transformation/fpgadataflow/insert_fifo.py:236: UserWarning: Overriding output FIFO depth to 32
+[2022-11-14 12:00:32,459]   warnings.warn("Overriding output FIFO depth to 32")
+[2022-11-14 12:00:33,287] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-14 12:00:33,287] No HW configuration for nodes: StreamingFIFO_0, StreamingFIFO_3, StreamingFIFO_4, StreamingFIFO_5, StreamingFIFO_7, StreamingFIFO_9, StreamingFIFO_10, StreamingFIFO_11, StreamingFIFO_13, StreamingFIFO_15, StreamingFIFO_16, StreamingFIFO_17, StreamingFIFO_19, StreamingFIFO_21, StreamingFIFO_22, StreamingFIFO_23, StreamingFIFO_25, StreamingFIFO_27, StreamingFIFO_28, StreamingFIFO_29, StreamingFIFO_30, StreamingFIFO_31, StreamingFIFO_32, StreamingFIFO_33, StreamingMaxPool_Batch_0, StreamingFIFO_37, StreamingFIFO_39, StreamingFIFO_40, StreamingFIFO_41, StreamingFIFO_43, StreamingFIFO_45, StreamingFIFO_46, StreamingFIFO_47, StreamingFIFO_49, StreamingFIFO_51, StreamingFIFO_52, StreamingFIFO_53, StreamingFIFO_54, StreamingFIFO_55, StreamingFIFO_56, StreamingFIFO_57, StreamingFIFO_58, StreamingMaxPool_Batch_1, StreamingFIFO_61, StreamingFIFO_63, StreamingFIFO_64, StreamingFIFO_65, StreamingFIFO_67, StreamingFIFO_69, StreamingFIFO_70, StreamingFIFO_71, StreamingFIFO_73, StreamingFIFO_75, StreamingFIFO_76, StreamingFIFO_77, StreamingFIFO_78, StreamingFIFO_79, StreamingFIFO_80, StreamingFIFO_81, StreamingFIFO_82, StreamingMaxPool_Batch_2, StreamingFIFO_86, StreamingFIFO_87, StreamingFIFO_88, StreamingFIFO_89, StreamingFIFO_90, StreamingFIFO_92, StreamingFIFO_93, StreamingFIFO_96, StreamingFIFO_98, StreamingFIFO_99, StreamingFIFO_100, StreamingFIFO_101, StreamingFIFO_102, UpsampleNearestNeighbour_Batch_0, StreamingFIFO_104, StreamingFIFO_107, StreamingFIFO_108, StreamingFIFO_110, StreamingFIFO_111, StreamingFIFO_112, StreamingFIFO_113, StreamingFIFO_115
+[2022-11-14 12:00:33,287]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-14 12:00:33,484] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for Thresholding_Batch_0
+[2022-11-14 12:00:33,484]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,492] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_0
+[2022-11-14 12:00:33,492]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,499] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_0
+[2022-11-14 12:00:33,499]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,570] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_0
+[2022-11-14 12:00:33,570]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,619] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_1
+[2022-11-14 12:00:33,619]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,671] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_1
+[2022-11-14 12:00:33,671]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,672] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_0
+[2022-11-14 12:00:33,672]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,686] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_1
+[2022-11-14 12:00:33,686]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,694] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_2
+[2022-11-14 12:00:33,694]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,726] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_2
+[2022-11-14 12:00:33,726]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,726] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_1
+[2022-11-14 12:00:33,726]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,726] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_2
+[2022-11-14 12:00:33,726]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,756] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_3
+[2022-11-14 12:00:33,756]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,786] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_3
+[2022-11-14 12:00:33,786]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,787] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_2
+[2022-11-14 12:00:33,787]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,812] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_3
+[2022-11-14 12:00:33,812]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,819] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_4
+[2022-11-14 12:00:33,819]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,843] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_4
+[2022-11-14 12:00:33,843]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,843] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_3
+[2022-11-14 12:00:33,843]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,858] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_4
+[2022-11-14 12:00:33,858]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,858] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_4
+[2022-11-14 12:00:33,858]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,875] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_5
+[2022-11-14 12:00:33,875]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,909] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_0
+[2022-11-14 12:00:33,909]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,939] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_5
+[2022-11-14 12:00:33,939]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,956] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_5
+[2022-11-14 12:00:33,956]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,956] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_5
+[2022-11-14 12:00:33,956]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,965] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_6
+[2022-11-14 12:00:33,965]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,972] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_6
+[2022-11-14 12:00:33,972]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,995] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_6
+[2022-11-14 12:00:33,996]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:33,996] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_6
+[2022-11-14 12:00:33,996]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,016] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_7
+[2022-11-14 12:00:34,016]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,023] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_7
+[2022-11-14 12:00:34,023]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,038] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_7
+[2022-11-14 12:00:34,039]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,039] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_7
+[2022-11-14 12:00:34,039]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,052] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_8
+[2022-11-14 12:00:34,052]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,053] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_8
+[2022-11-14 12:00:34,053]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,062] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_9
+[2022-11-14 12:00:34,062]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,076] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_1
+[2022-11-14 12:00:34,076]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,097] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_8
+[2022-11-14 12:00:34,097]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,110] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_8
+[2022-11-14 12:00:34,110]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,110] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_9
+[2022-11-14 12:00:34,110]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,116] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_10
+[2022-11-14 12:00:34,116]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,122] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_9
+[2022-11-14 12:00:34,122]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,138] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_9
+[2022-11-14 12:00:34,138]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,138] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_10
+[2022-11-14 12:00:34,138]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,146] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_11
+[2022-11-14 12:00:34,146]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,153] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_10
+[2022-11-14 12:00:34,153]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,166] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_10
+[2022-11-14 12:00:34,166]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,166] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_11
+[2022-11-14 12:00:34,166]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,174] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_12
+[2022-11-14 12:00:34,174]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,175] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_12
+[2022-11-14 12:00:34,175]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,182] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_13
+[2022-11-14 12:00:34,182]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,191] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_2
+[2022-11-14 12:00:34,191]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,213] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_11
+[2022-11-14 12:00:34,213]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,220] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_11
+[2022-11-14 12:00:34,220]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,220] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_13
+[2022-11-14 12:00:34,220]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,226] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_14
+[2022-11-14 12:00:34,226]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,226] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_14
+[2022-11-14 12:00:34,226]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,239] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_15
+[2022-11-14 12:00:34,239]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,239] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for DuplicateStreams_Batch_0
+[2022-11-14 12:00:34,239]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,246] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_15
+[2022-11-14 12:00:34,246]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,247] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_12
+[2022-11-14 12:00:34,247]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,268] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_12
+[2022-11-14 12:00:34,268]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,268] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_16
+[2022-11-14 12:00:34,268]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,269] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_16
+[2022-11-14 12:00:34,269]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,281] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for UpsampleNearestNeighbour_Batch_0
+[2022-11-14 12:00:34,281]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,281] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_17
+[2022-11-14 12:00:34,281]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,322] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_13
+[2022-11-14 12:00:34,322]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,322] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_18
+[2022-11-14 12:00:34,322]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,348] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_13
+[2022-11-14 12:00:34,348]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,348] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_17
+[2022-11-14 12:00:34,348]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,355] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_19
+[2022-11-14 12:00:34,355]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,371] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_20
+[2022-11-14 12:00:34,371]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-14 12:00:34,548] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_20
+[2022-11-14 12:00:34,548] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_17
+[2022-11-14 12:00:34,548] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_19
+[2022-11-14 12:00:34,548] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_13
+[2022-11-14 12:00:34,548]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:34,549]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:34,549]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:34,549]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:34,551] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_18
+[2022-11-14 12:00:34,552]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:34,552] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_13
+[2022-11-14 12:00:34,552]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:58,560] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_17
+[2022-11-14 12:00:58,561]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:58,562] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for UpsampleNearestNeighbour_Batch_0
+[2022-11-14 12:00:58,563]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:58,773] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_16
+[2022-11-14 12:00:58,774]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:58,775] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_16
+[2022-11-14 12:00:58,775]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:00:58,776] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_12
+[2022-11-14 12:00:58,776]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,460] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_12
+[2022-11-14 12:01:23,461]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,462] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_15
+[2022-11-14 12:01:23,462]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,463] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for DuplicateStreams_Batch_0
+[2022-11-14 12:01:23,463]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,464] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_15
+[2022-11-14 12:01:23,464]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,878] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_14
+[2022-11-14 12:01:23,879]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,878] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_14
+[2022-11-14 12:01:23,879]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,881] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_13
+[2022-11-14 12:01:23,881]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,883] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_11
+[2022-11-14 12:01:23,883]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:23,898] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_11
+[2022-11-14 12:01:23,898]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:48,290] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_2
+[2022-11-14 12:01:48,291]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:48,310] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_13
+[2022-11-14 12:01:48,311]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:48,359] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_12
+[2022-11-14 12:01:48,360]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:48,361] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_12
+[2022-11-14 12:01:48,361]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:48,751] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_11
+[2022-11-14 12:01:48,752]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:01:48,754] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_10
+[2022-11-14 12:01:48,754]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:12,481] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_10
+[2022-11-14 12:02:12,482]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:13,135] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_11
+[2022-11-14 12:02:13,135]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:13,208] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_10
+[2022-11-14 12:02:13,209]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:13,211] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_9
+[2022-11-14 12:02:13,211]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:13,665] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_9
+[2022-11-14 12:02:13,665]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:37,413] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_10
+[2022-11-14 12:02:37,414]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:37,515] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_9
+[2022-11-14 12:02:37,515]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:37,517] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_8
+[2022-11-14 12:02:37,517]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:37,750] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_8
+[2022-11-14 12:02:37,751]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:37,989] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_1
+[2022-11-14 12:02:37,989]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:02:38,299] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_9
+[2022-11-14 12:02:38,300]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:00,439] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_8
+[2022-11-14 12:03:00,440]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:00,441] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_8
+[2022-11-14 12:03:00,441]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:00,885] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_7
+[2022-11-14 12:03:00,885]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:00,887] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_7
+[2022-11-14 12:03:00,887]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:01,951] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_7
+[2022-11-14 12:03:01,951]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:02,320] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_7
+[2022-11-14 12:03:02,321]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:24,934] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_6
+[2022-11-14 12:03:24,935]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:24,936] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_6
+[2022-11-14 12:03:24,937]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:25,937] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_6
+[2022-11-14 12:03:25,937]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:26,151] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_6
+[2022-11-14 12:03:26,152]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:26,364] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_5
+[2022-11-14 12:03:26,365]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:26,367] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_5
+[2022-11-14 12:03:26,367]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:27,299] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_5
+[2022-11-14 12:03:27,299]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:50,010] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_0
+[2022-11-14 12:03:50,011]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:50,114] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_5
+[2022-11-14 12:03:50,114]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:50,755] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_4
+[2022-11-14 12:03:50,755]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:50,757] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_4
+[2022-11-14 12:03:50,757]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:51,238] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_3
+[2022-11-14 12:03:51,239]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:03:51,240] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_4
+[2022-11-14 12:03:51,240]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:14,025] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_4
+[2022-11-14 12:04:14,026]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:14,337] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_3
+[2022-11-14 12:04:14,337]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:14,358] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_2
+[2022-11-14 12:04:14,358]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:14,359] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_3
+[2022-11-14 12:04:14,359]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:15,182] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_3
+[2022-11-14 12:04:15,182]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:37,972] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_2
+[2022-11-14 12:04:37,973]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:37,974] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_1
+[2022-11-14 12:04:37,975]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:37,976] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_2
+[2022-11-14 12:04:37,976]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:38,242] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_2
+[2022-11-14 12:04:38,242]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:38,251] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_1
+[2022-11-14 12:04:38,251]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:38,763] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_0
+[2022-11-14 12:04:38,764]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:04:38,765] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_1
+[2022-11-14 12:04:38,766]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:05:02,428] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_1
+[2022-11-14 12:05:02,428]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:05:02,770] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_0
+[2022-11-14 12:05:02,770]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:05:02,795] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_0
+[2022-11-14 12:05:02,795]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:05:02,797] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_0
+[2022-11-14 12:05:02,797]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:05:03,086] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for Thresholding_Batch_0
+[2022-11-14 12:05:03,086]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-14 12:05:48,708] Running step: step_create_stitched_ip [10/14]
+[2022-11-14 12:06:04,755] /workspace/results/KV260_SOM/custom_step_tinyyolo_lower/vivado_stitch_proj_6ilwuuum/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design
+[2022-11-14 12:06:04,756] finn_design
+[2022-11-14 12:06:49,930] /workspace/results/KV260_SOM/custom_step_tinyyolo_lower/vivado_stitch_proj_6ilwuuum/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/hdl/finn_design_wrapper.v

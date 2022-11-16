@@ -149,8 +149,7 @@ def custom_step_tinyyolo_convert_to_hls(model: ModelWrapper, cfg: DataflowBuildC
     return model
 
 def custom_partition_0_update(model: ModelWrapper, cfg: DataflowBuildConfig):
-    print(cfg.output_dir)
-    shutil.copy("partition_0_v07.onnx", cfg.output_dir + "/intermediate_models/partition_0_v07.onnx")
+    shutil.copy("partition_0_v07.onnx", "%s/intermediate_models/partition_0_v07.onnx"%cfg.output_dir)
     for n in model.graph.node:
         if n.op_type == "StreamingFCLayer_Batch":
             n.op_type = "MatrixVectorActivation" 
