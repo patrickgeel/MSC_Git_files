@@ -14,3 +14,4 @@
 [2022-11-16 16:18:06,911]   warnings.warn("\nUnused HW configurations: " + ", ".join(unused_configs))
 [2022-11-16 16:18:07,473] Running step: step_generate_estimate_reports [6/13]
 [2022-11-16 16:18:07,999] Running step: step_hls_codegen [7/13]
+[2022-11-16 16:29:01,108] Running step: step_hls_ipgen [8/13]
