@@ -130,7 +130,7 @@ def custom_step_tinyyolo_lower(model: ModelWrapper, cfg: DataflowBuildConfig):
     return model
 
 def custom_step_tinyyolo_convert_to_hls(model: ModelWrapper, cfg: DataflowBuildConfig):
-    model = model.transform(to_hls.InferQuantizedMatrixVectorActivation)
+    model = model.transform(to_hls.InferQuantizedMatrixVectorActivation())
     model = model.transform(to_hls.InferStreamingMaxPool())
     model = model.transform(to_hls.InferUpsample())
     model = model.transform(to_hls.InferConvInpGen())

@@ -1,0 +1,629 @@
+[2022-11-16 12:03:49,266] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-16 12:03:49,431] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-16 13:19:02,622] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-16 13:19:02,721] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-16 13:19:03,358] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_35
+[2022-11-16 13:19:03,358]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:19:03,380] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_38
+[2022-11-16 13:19:03,380]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:19:04,153] /workspace/finn/src/finn/custom_op/fpgadataflow/vectorvectoractivation.py:100: UserWarning: Clipping some thresholds in VectorVectorActivation_MatMul_31
+[2022-11-16 13:19:04,154]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:19:05,207] Running step: step_create_dataflow_partition [3/14]
+[2022-11-16 13:19:05,463] Running step: step_target_fps_parallelization [4/14]
+[2022-11-16 13:19:05,493] Running step: step_apply_folding_config [5/14]
+[2022-11-16 13:21:52,660] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-16 13:21:52,771] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-16 13:21:53,023] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_35
+[2022-11-16 13:21:53,023]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:21:53,035] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_38
+[2022-11-16 13:21:53,035]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:21:53,795] /workspace/finn/src/finn/custom_op/fpgadataflow/vectorvectoractivation.py:100: UserWarning: Clipping some thresholds in VectorVectorActivation_MatMul_31
+[2022-11-16 13:21:53,795]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:21:54,852] Running step: step_create_dataflow_partition [3/14]
+[2022-11-16 13:21:55,093] Running step: step_target_fps_parallelization [4/14]
+[2022-11-16 13:21:55,125] Running step: step_apply_folding_config [5/14]
+[2022-11-16 13:22:53,057] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-16 13:22:53,175] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-16 13:22:55,086] Running step: step_create_dataflow_partition [3/14]
+[2022-11-16 13:22:55,383] Running step: step_target_fps_parallelization [4/14]
+[2022-11-16 13:22:55,424] Running step: step_apply_folding_config [5/14]
+[2022-11-16 13:22:55,456] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-16 13:22:55,456] No HW configuration for nodes: StreamingMaxPool_Batch_0, StreamingMaxPool_Batch_1, StreamingMaxPool_Batch_2, UpsampleNearestNeighbour_Batch_0
+[2022-11-16 13:22:55,456]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-16 13:22:55,456] /workspace/qonnx/src/qonnx/transformation/general.py:326: UserWarning:
+[2022-11-16 13:22:55,456] Unused HW configurations: StreamingFIFO_1, StreamingFIFO_2, StreamingDataWidthConverter_Batch_0, StreamingDataWidthConverter_Batch_1, StreamingFIFO_6, StreamingDataWidthConverter_Batch_2, StreamingFIFO_8, StreamingDataWidthConverter_Batch_3, StreamingFIFO_12, StreamingDataWidthConverter_Batch_4, StreamingFIFO_14, StreamingDataWidthConverter_Batch_5, StreamingFIFO_18, StreamingDataWidthConverter_Batch_6, StreamingFIFO_20, StreamingDataWidthConverter_Batch_7, StreamingFIFO_24, StreamingDataWidthConverter_Batch_8, StreamingFIFO_26, StreamingDataWidthConverter_Batch_9, StreamingDataWidthConverter_Batch_10, StreamingDataWidthConverter_Batch_11, StreamingFIFO_34, StreamingFIFO_35, StreamingDataWidthConverter_Batch_12, StreamingFIFO_36, StreamingDataWidthConverter_Batch_13, StreamingFIFO_38, StreamingDataWidthConverter_Batch_14, StreamingFIFO_42, StreamingDataWidthConverter_Batch_15, StreamingFIFO_44, StreamingDataWidthConverter_Batch_16, StreamingFIFO_48, StreamingDataWidthConverter_Batch_17, StreamingFIFO_50, StreamingDataWidthConverter_Batch_18, StreamingDataWidthConverter_Batch_19, StreamingDataWidthConverter_Batch_20, StreamingFIFO_59, StreamingDataWidthConverter_Batch_21, StreamingFIFO_60, StreamingDataWidthConverter_Batch_22, StreamingFIFO_62, StreamingDataWidthConverter_Batch_23, StreamingFIFO_66, StreamingDataWidthConverter_Batch_24, StreamingFIFO_68, StreamingDataWidthConverter_Batch_25, StreamingFIFO_72, StreamingDataWidthConverter_Batch_26, StreamingFIFO_74, StreamingDataWidthConverter_Batch_27, StreamingDataWidthConverter_Batch_28, StreamingDataWidthConverter_Batch_29, StreamingFIFO_83, StreamingDataWidthConverter_Batch_30, StreamingFIFO_84, StreamingFIFO_85, StreamingDataWidthConverter_Batch_31, StreamingDataWidthConverter_Batch_32, StreamingFIFO_91, StreamingFIFO_94, StreamingDataWidthConverter_Batch_33, StreamingFIFO_95, StreamingFIFO_97, StreamingDataWidthConverter_Batch_34, StreamingDataWidthConverter_Batch_35, StreamingFIFO_103, StreamingDataWidthConverter_Batch_36, StreamingDataWidthConverter_Batch_37, StreamingFIFO_105, StreamingFIFO_106, StreamingDataWidthConverter_Batch_38, StreamingFIFO_109, StreamingDataWidthConverter_Batch_39, StreamingDataWidthConverter_Batch_40, StreamingFIFO_114
+[2022-11-16 13:22:55,457]   warnings.warn("\nUnused HW configurations: " + ", ".join(unused_configs))
+[2022-11-16 13:22:55,485] Running step: step_generate_estimate_reports [6/14]
+[2022-11-16 13:22:55,531] Running step: step_hls_codegen [7/14]
+[2022-11-16 13:23:19,384] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-16 13:23:19,501] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-16 13:23:21,442] Running step: step_create_dataflow_partition [3/14]
+[2022-11-16 13:23:21,637] Running step: step_target_fps_parallelization [4/14]
+[2022-11-16 13:23:21,658] Running step: step_apply_folding_config [5/14]
+[2022-11-16 13:23:21,723] Running step: step_generate_estimate_reports [6/14]
+[2022-11-16 13:23:21,741] Running step: step_hls_codegen [7/14]
+[2022-11-16 13:23:32,374] Running step: step_hls_ipgen [8/14]
+[2022-11-16 13:31:05,842] Running step: step_set_fifo_depths [9/14]
+[2022-11-16 13:31:06,838] /workspace/finn/src/finn/transformation/fpgadataflow/insert_fifo.py:189: UserWarning: Overriding input FIFO depth to 32
+[2022-11-16 13:31:06,838]   warnings.warn("Overriding input FIFO depth to 32")
+[2022-11-16 13:31:06,842] /workspace/finn/src/finn/transformation/fpgadataflow/insert_fifo.py:236: UserWarning: Overriding output FIFO depth to 32
+[2022-11-16 13:31:06,842]   warnings.warn("Overriding output FIFO depth to 32")
+[2022-11-16 13:31:07,648] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-16 13:31:07,648] No HW configuration for nodes: StreamingFIFO_0, StreamingFIFO_3, StreamingFIFO_4, StreamingFIFO_5, StreamingFIFO_7, StreamingFIFO_9, StreamingFIFO_10, StreamingFIFO_11, StreamingFIFO_13, StreamingFIFO_15, StreamingFIFO_16, StreamingFIFO_17, StreamingFIFO_19, StreamingFIFO_21, StreamingFIFO_22, StreamingFIFO_23, StreamingFIFO_25, StreamingFIFO_27, StreamingFIFO_28, StreamingFIFO_29, StreamingFIFO_30, StreamingFIFO_31, StreamingFIFO_32, StreamingFIFO_33, StreamingMaxPool_Batch_0, StreamingFIFO_37, StreamingFIFO_39, StreamingFIFO_40, StreamingFIFO_41, StreamingFIFO_43, StreamingFIFO_45, StreamingFIFO_46, StreamingFIFO_47, StreamingFIFO_49, StreamingFIFO_51, StreamingFIFO_52, StreamingFIFO_53, StreamingFIFO_54, StreamingFIFO_55, StreamingFIFO_56, StreamingFIFO_57, StreamingFIFO_58, StreamingMaxPool_Batch_1, StreamingFIFO_61, StreamingFIFO_63, StreamingFIFO_64, StreamingFIFO_65, StreamingFIFO_67, StreamingFIFO_69, StreamingFIFO_70, StreamingFIFO_71, StreamingFIFO_73, StreamingFIFO_75, StreamingFIFO_76, StreamingFIFO_77, StreamingFIFO_78, StreamingFIFO_79, StreamingFIFO_80, StreamingFIFO_81, StreamingFIFO_82, StreamingMaxPool_Batch_2, StreamingFIFO_86, StreamingFIFO_87, StreamingFIFO_88, StreamingFIFO_89, StreamingFIFO_90, StreamingFIFO_92, StreamingFIFO_93, StreamingFIFO_96, StreamingFIFO_98, StreamingFIFO_99, StreamingFIFO_100, StreamingFIFO_101, StreamingFIFO_102, UpsampleNearestNeighbour_Batch_0, StreamingFIFO_104, StreamingFIFO_107, StreamingFIFO_108, StreamingFIFO_110, StreamingFIFO_111, StreamingFIFO_112, StreamingFIFO_113, StreamingFIFO_115
+[2022-11-16 13:31:07,648]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-16 13:31:07,884] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for Thresholding_Batch_0
+[2022-11-16 13:31:07,885]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:07,893] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_0
+[2022-11-16 13:31:07,893]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:07,899] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_0
+[2022-11-16 13:31:07,900]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:07,981] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_0
+[2022-11-16 13:31:07,982]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,030] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_1
+[2022-11-16 13:31:08,030]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,081] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_1
+[2022-11-16 13:31:08,082]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,082] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_0
+[2022-11-16 13:31:08,082]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,097] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_1
+[2022-11-16 13:31:08,098]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,104] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_2
+[2022-11-16 13:31:08,104]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,134] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_2
+[2022-11-16 13:31:08,134]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,134] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_1
+[2022-11-16 13:31:08,134]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,134] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_2
+[2022-11-16 13:31:08,135]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,167] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_3
+[2022-11-16 13:31:08,167]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,198] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_3
+[2022-11-16 13:31:08,198]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,198] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_2
+[2022-11-16 13:31:08,198]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,222] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_3
+[2022-11-16 13:31:08,222]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,229] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_4
+[2022-11-16 13:31:08,229]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,249] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_4
+[2022-11-16 13:31:08,249]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,249] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_3
+[2022-11-16 13:31:08,250]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,265] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_4
+[2022-11-16 13:31:08,265]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,266] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_4
+[2022-11-16 13:31:08,266]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,288] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_5
+[2022-11-16 13:31:08,288]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,318] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_0
+[2022-11-16 13:31:08,318]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,340] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_5
+[2022-11-16 13:31:08,341]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,356] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_5
+[2022-11-16 13:31:08,356]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,356] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_5
+[2022-11-16 13:31:08,357]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,365] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_6
+[2022-11-16 13:31:08,365]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,371] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_6
+[2022-11-16 13:31:08,371]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,390] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_6
+[2022-11-16 13:31:08,390]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,390] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_6
+[2022-11-16 13:31:08,391]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,404] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_7
+[2022-11-16 13:31:08,404]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,410] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_7
+[2022-11-16 13:31:08,420]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,445] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_7
+[2022-11-16 13:31:08,445]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,446] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_7
+[2022-11-16 13:31:08,446]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,454] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_8
+[2022-11-16 13:31:08,454]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,455] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_8
+[2022-11-16 13:31:08,455]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,467] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_9
+[2022-11-16 13:31:08,467]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,482] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_1
+[2022-11-16 13:31:08,482]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,508] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_8
+[2022-11-16 13:31:08,508]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,523] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_8
+[2022-11-16 13:31:08,523]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,524] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_9
+[2022-11-16 13:31:08,524]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,534] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_10
+[2022-11-16 13:31:08,534]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,541] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_9
+[2022-11-16 13:31:08,541]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,556] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_9
+[2022-11-16 13:31:08,556]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,557] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_10
+[2022-11-16 13:31:08,557]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,569] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_11
+[2022-11-16 13:31:08,569]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,575] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_10
+[2022-11-16 13:31:08,575]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,588] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_10
+[2022-11-16 13:31:08,588]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,588] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_11
+[2022-11-16 13:31:08,588]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,596] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_12
+[2022-11-16 13:31:08,597]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,597] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_12
+[2022-11-16 13:31:08,598]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,604] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_13
+[2022-11-16 13:31:08,604]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,617] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for StreamingMaxPool_Batch_2
+[2022-11-16 13:31:08,617]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,633] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_11
+[2022-11-16 13:31:08,633]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,641] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_11
+[2022-11-16 13:31:08,641]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,642] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_13
+[2022-11-16 13:31:08,642]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,646] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_14
+[2022-11-16 13:31:08,646]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,647] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_14
+[2022-11-16 13:31:08,647]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,663] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_15
+[2022-11-16 13:31:08,663]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,664] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for DuplicateStreams_Batch_0
+[2022-11-16 13:31:08,665]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,671] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_15
+[2022-11-16 13:31:08,671]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,672] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_12
+[2022-11-16 13:31:08,672]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,689] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_12
+[2022-11-16 13:31:08,689]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,690] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_16
+[2022-11-16 13:31:08,690]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,690] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_16
+[2022-11-16 13:31:08,690]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,703] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for UpsampleNearestNeighbour_Batch_0
+[2022-11-16 13:31:08,703]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,704] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_17
+[2022-11-16 13:31:08,704]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,736] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for FMPadding_Batch_13
+[2022-11-16 13:31:08,736]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,736] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_18
+[2022-11-16 13:31:08,737]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,758] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for ConvolutionInputGenerator_13
+[2022-11-16 13:31:08,759]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,759] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for VectorVectorActivation_17
+[2022-11-16 13:31:08,759]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,767] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_19
+[2022-11-16 13:31:08,767]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,782] /workspace/finn/src/finn/transformation/fpgadataflow/prepare_ip.py:57: UserWarning: Using pre-existing code for MatrixVectorActivation_20
+[2022-11-16 13:31:08,782]   warnings.warn("Using pre-existing code for %s" % node.name)
+[2022-11-16 13:31:08,904] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_17
+[2022-11-16 13:31:08,905]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:08,904] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_20
+[2022-11-16 13:31:08,905]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:08,907] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_19
+[2022-11-16 13:31:08,908]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:08,908] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_18
+[2022-11-16 13:31:08,909]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:08,908] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_13
+[2022-11-16 13:31:08,909]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:08,910] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_13
+[2022-11-16 13:31:08,910]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:32,802] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for UpsampleNearestNeighbour_Batch_0
+[2022-11-16 13:31:32,803]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:32,804] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_17
+[2022-11-16 13:31:32,805]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:32,811] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_16
+[2022-11-16 13:31:32,811]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:32,812] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_16
+[2022-11-16 13:31:32,812]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:32,813] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_12
+[2022-11-16 13:31:32,813]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:56,683] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_12
+[2022-11-16 13:31:56,684]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:56,685] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_15
+[2022-11-16 13:31:56,686]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:56,784] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for DuplicateStreams_Batch_0
+[2022-11-16 13:31:56,785]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:56,787] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_15
+[2022-11-16 13:31:56,787]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:56,995] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_14
+[2022-11-16 13:31:56,996]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:56,997] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_14
+[2022-11-16 13:31:56,997]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:57,019] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_13
+[2022-11-16 13:31:57,020]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:57,022] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_11
+[2022-11-16 13:31:57,023]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:31:57,649] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_11
+[2022-11-16 13:31:57,650]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:20,759] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_2
+[2022-11-16 13:32:20,760]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:20,818] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_13
+[2022-11-16 13:32:20,819]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:20,852] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_12
+[2022-11-16 13:32:20,853]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:20,854] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_12
+[2022-11-16 13:32:20,854]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:21,386] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_11
+[2022-11-16 13:32:21,386]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:21,387] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_10
+[2022-11-16 13:32:21,387]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:44,220] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_10
+[2022-11-16 13:32:44,221]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:44,507] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_11
+[2022-11-16 13:32:44,507]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:44,814] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_10
+[2022-11-16 13:32:44,815]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:44,816] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_9
+[2022-11-16 13:32:44,816]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:32:45,226] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_9
+[2022-11-16 13:32:45,227]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:08,651] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_10
+[2022-11-16 13:33:08,651]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:08,817] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_9
+[2022-11-16 13:33:08,818]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:08,818] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_8
+[2022-11-16 13:33:08,818]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:09,092] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_8
+[2022-11-16 13:33:09,093]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:09,427] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for StreamingMaxPool_Batch_1
+[2022-11-16 13:33:09,428]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:09,595] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_9
+[2022-11-16 13:33:09,596]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:31,182] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_8
+[2022-11-16 13:33:31,182]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:31,184] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_8
+[2022-11-16 13:33:31,184]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:31,488] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for VectorVectorActivation_7
+[2022-11-16 13:33:31,488]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:31,490] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for ConvolutionInputGenerator_7
+[2022-11-16 13:33:31,491]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:33,145] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for FMPadding_Batch_7
+[2022-11-16 13:33:33,145]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:33,239] /workspace/finn/src/finn/transformation/fpgadataflow/hlssynth_ip.py:71: UserWarning: Using pre-existing IP for MatrixVectorActivation_7
+[2022-11-16 13:33:33,240]   warnings.warn("Using pre-existing IP for %s" % node.name)
+[2022-11-16 13:33:46,872] --- Logging error ---
+[2022-11-16 13:33:46,877] Traceback (most recent call last):
+[2022-11-16 13:33:46,877]   File "/opt/conda/lib/python3.8/logging/__init__.py", line 1084, in emit
+[2022-11-16 13:33:46,877]     stream.write(msg + self.terminator)
+[2022-11-16 13:33:46,878] OSError: [Errno 5] Input/output error
+[2022-11-16 13:33:46,878] Call stack:
+[2022-11-16 13:33:46,893]   File "/opt/conda/lib/python3.8/threading.py", line 890, in _bootstrap
+[2022-11-16 13:33:46,893]     self._bootstrap_inner()
+[2022-11-16 13:33:46,893]   File "/opt/conda/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+[2022-11-16 13:33:46,893]     self.run()
+[2022-11-16 13:33:46,893]   File "/opt/conda/lib/python3.8/site-packages/ipykernel/parentpoller.py", line 34, in run
+[2022-11-16 13:33:46,893]     get_logger().warning("Parent appears to have exited, shutting down.")
+[2022-11-16 13:33:46,893] Message: 'Parent appears to have exited, shutting down.'
+[2022-11-16 13:33:46,893] Arguments: ()
+[2022-11-16 13:33:55,574] Process ForkPoolWorker-20:
+[2022-11-16 13:33:55,583] Traceback (most recent call last):
+[2022-11-16 13:33:55,583]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:33:55,583]     put((job, i, result))
+[2022-11-16 13:33:55,583]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:55,583]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:55,583]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:55,583]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:55,583]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:55,584]     self._send(header + buf)
+[2022-11-16 13:33:55,584]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:55,584]     n = write(self._handle, buf)
+[2022-11-16 13:33:55,584] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:55,584] 
+[2022-11-16 13:33:55,584] During handling of the above exception, another exception occurred:
+[2022-11-16 13:33:55,584] Traceback (most recent call last):
+[2022-11-16 13:33:55,584]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:33:55,584]     self.run()
+[2022-11-16 13:33:55,584]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:33:55,584]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:33:55,585]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:33:55,585]     put((job, i, (False, wrapped)))
+[2022-11-16 13:33:55,585]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:55,585]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:55,585]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:55,585]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:55,585]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:55,585]     self._send(header + buf)
+[2022-11-16 13:33:55,585]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:55,585]     n = write(self._handle, buf)
+[2022-11-16 13:33:55,585] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:56,561] Process ForkPoolWorker-12:
+[2022-11-16 13:33:56,563] Traceback (most recent call last):
+[2022-11-16 13:33:56,563]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:33:56,563]     put((job, i, result))
+[2022-11-16 13:33:56,564]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:56,564]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:56,564]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:56,565]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:56,565]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:56,565]     self._send(header + buf)
+[2022-11-16 13:33:56,565]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:56,566]     n = write(self._handle, buf)
+[2022-11-16 13:33:56,566] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:56,566] 
+[2022-11-16 13:33:56,566] During handling of the above exception, another exception occurred:
+[2022-11-16 13:33:56,566] Traceback (most recent call last):
+[2022-11-16 13:33:56,567]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:33:56,567]     self.run()
+[2022-11-16 13:33:56,567]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:33:56,567]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:33:56,567]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:33:56,568]     put((job, i, (False, wrapped)))
+[2022-11-16 13:33:56,568]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:56,568]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:56,568]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:56,568]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:56,569]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:56,569]     self._send(header + buf)
+[2022-11-16 13:33:56,569]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:56,569]     n = write(self._handle, buf)
+[2022-11-16 13:33:56,569] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:56,819] Process ForkPoolWorker-11:
+[2022-11-16 13:33:56,821] Traceback (most recent call last):
+[2022-11-16 13:33:56,821]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:33:56,822]     put((job, i, result))
+[2022-11-16 13:33:56,822]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:56,822]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:56,822]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:56,822]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:56,822]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:56,823]     self._send(header + buf)
+[2022-11-16 13:33:56,823]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:56,823]     n = write(self._handle, buf)
+[2022-11-16 13:33:56,823] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:56,823] 
+[2022-11-16 13:33:56,823] During handling of the above exception, another exception occurred:
+[2022-11-16 13:33:56,824] Traceback (most recent call last):
+[2022-11-16 13:33:56,824]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:33:56,824]     self.run()
+[2022-11-16 13:33:56,824]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:33:56,824]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:33:56,824]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:33:56,825]     put((job, i, (False, wrapped)))
+[2022-11-16 13:33:56,825]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:56,825]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:56,825]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:56,825]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:56,825]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:56,826]     self._send(header + buf)
+[2022-11-16 13:33:56,826]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:56,826]     n = write(self._handle, buf)
+[2022-11-16 13:33:56,826] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:56,851] Process ForkPoolWorker-18:
+[2022-11-16 13:33:56,853] Traceback (most recent call last):
+[2022-11-16 13:33:56,853]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:33:56,854]     put((job, i, result))
+[2022-11-16 13:33:56,854]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:56,854]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:56,854]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:56,854]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:56,854]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:56,854]     self._send(header + buf)
+[2022-11-16 13:33:56,854]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:56,854]     n = write(self._handle, buf)
+[2022-11-16 13:33:56,854] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:56,854] 
+[2022-11-16 13:33:56,855] During handling of the above exception, another exception occurred:
+[2022-11-16 13:33:56,855] Traceback (most recent call last):
+[2022-11-16 13:33:56,855]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:33:56,855]     self.run()
+[2022-11-16 13:33:56,855]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:33:56,855]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:33:56,855]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:33:56,855]     put((job, i, (False, wrapped)))
+[2022-11-16 13:33:56,856]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:56,856]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:56,856]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:56,856]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:56,856]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:56,856]     self._send(header + buf)
+[2022-11-16 13:33:56,856]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:56,856]     n = write(self._handle, buf)
+[2022-11-16 13:33:56,856] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:57,084] Process ForkPoolWorker-19:
+[2022-11-16 13:33:57,089] Traceback (most recent call last):
+[2022-11-16 13:33:57,089]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:33:57,089]     put((job, i, result))
+[2022-11-16 13:33:57,089]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:57,090]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:57,090]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:57,090]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:57,090]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:57,091]     self._send(header + buf)
+[2022-11-16 13:33:57,091]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:57,091]     n = write(self._handle, buf)
+[2022-11-16 13:33:57,091] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:57,092] 
+[2022-11-16 13:33:57,092] During handling of the above exception, another exception occurred:
+[2022-11-16 13:33:57,092] Traceback (most recent call last):
+[2022-11-16 13:33:57,092]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:33:57,092]     self.run()
+[2022-11-16 13:33:57,092]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:33:57,092]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:33:57,093]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:33:57,093]     put((job, i, (False, wrapped)))
+[2022-11-16 13:33:57,093]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:57,093]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:57,093]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:57,093]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:57,093]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:57,093]     self._send(header + buf)
+[2022-11-16 13:33:57,093]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:57,093]     n = write(self._handle, buf)
+[2022-11-16 13:33:57,093] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:57,480] Process ForkPoolWorker-15:
+[2022-11-16 13:33:57,484] Traceback (most recent call last):
+[2022-11-16 13:33:57,485]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:33:57,485]     put((job, i, result))
+[2022-11-16 13:33:57,485]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:57,485]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:57,485]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:57,485]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:57,486]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:57,486]     self._send(header + buf)
+[2022-11-16 13:33:57,486]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:57,486]     n = write(self._handle, buf)
+[2022-11-16 13:33:57,486] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:57,486] 
+[2022-11-16 13:33:57,486] During handling of the above exception, another exception occurred:
+[2022-11-16 13:33:57,487] Traceback (most recent call last):
+[2022-11-16 13:33:57,487]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:33:57,487]     self.run()
+[2022-11-16 13:33:57,487]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:33:57,487]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:33:57,487]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:33:57,488]     put((job, i, (False, wrapped)))
+[2022-11-16 13:33:57,488]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:57,488]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:57,488]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:57,488]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:57,488]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:57,488]     self._send(header + buf)
+[2022-11-16 13:33:57,488]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:57,489]     n = write(self._handle, buf)
+[2022-11-16 13:33:57,489] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:57,629] Process ForkPoolWorker-13:
+[2022-11-16 13:33:57,632] Traceback (most recent call last):
+[2022-11-16 13:33:57,632]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:33:57,633]     put((job, i, result))
+[2022-11-16 13:33:57,633]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:57,633]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:57,633]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:57,633]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:57,633]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:57,634]     self._send(header + buf)
+[2022-11-16 13:33:57,634]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:57,634]     n = write(self._handle, buf)
+[2022-11-16 13:33:57,634] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:33:57,634] 
+[2022-11-16 13:33:57,634] During handling of the above exception, another exception occurred:
+[2022-11-16 13:33:57,635] Traceback (most recent call last):
+[2022-11-16 13:33:57,635]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:33:57,635]     self.run()
+[2022-11-16 13:33:57,635]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:33:57,635]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:33:57,635]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:33:57,636]     put((job, i, (False, wrapped)))
+[2022-11-16 13:33:57,636]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:33:57,636]     self._writer.send_bytes(obj)
+[2022-11-16 13:33:57,636]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:33:57,636]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:33:57,636]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:33:57,636]     self._send(header + buf)
+[2022-11-16 13:33:57,636]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:33:57,636]     n = write(self._handle, buf)
+[2022-11-16 13:33:57,636] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:34:18,497] Process ForkPoolWorker-17:
+[2022-11-16 13:34:18,501] Traceback (most recent call last):
+[2022-11-16 13:34:18,501]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:34:18,502]     put((job, i, result))
+[2022-11-16 13:34:18,502]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:34:18,502]     self._writer.send_bytes(obj)
+[2022-11-16 13:34:18,502]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:34:18,502]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:34:18,503]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:34:18,503]     self._send(header + buf)
+[2022-11-16 13:34:18,503]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:34:18,503]     n = write(self._handle, buf)
+[2022-11-16 13:34:18,503] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:34:18,503] 
+[2022-11-16 13:34:18,503] During handling of the above exception, another exception occurred:
+[2022-11-16 13:34:18,504] Traceback (most recent call last):
+[2022-11-16 13:34:18,504]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:34:18,504]     self.run()
+[2022-11-16 13:34:18,504]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:34:18,504]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:34:18,505]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:34:18,505]     put((job, i, (False, wrapped)))
+[2022-11-16 13:34:18,505]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:34:18,505]     self._writer.send_bytes(obj)
+[2022-11-16 13:34:18,505]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:34:18,505]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:34:18,505]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:34:18,506]     self._send(header + buf)
+[2022-11-16 13:34:18,506]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:34:18,506]     n = write(self._handle, buf)
+[2022-11-16 13:34:18,506] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:34:18,898] Process ForkPoolWorker-16:
+[2022-11-16 13:34:18,902] Traceback (most recent call last):
+[2022-11-16 13:34:18,902]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:34:18,903]     put((job, i, result))
+[2022-11-16 13:34:18,903]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:34:18,903]     self._writer.send_bytes(obj)
+[2022-11-16 13:34:18,903]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:34:18,903]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:34:18,904]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:34:18,904]     self._send(header + buf)
+[2022-11-16 13:34:18,904]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:34:18,904]     n = write(self._handle, buf)
+[2022-11-16 13:34:18,904] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:34:18,905] 
+[2022-11-16 13:34:18,905] During handling of the above exception, another exception occurred:
+[2022-11-16 13:34:18,905] Traceback (most recent call last):
+[2022-11-16 13:34:18,905]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:34:18,905]     self.run()
+[2022-11-16 13:34:18,906]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:34:18,906]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:34:18,906]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:34:18,906]     put((job, i, (False, wrapped)))
+[2022-11-16 13:34:18,906]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:34:18,906]     self._writer.send_bytes(obj)
+[2022-11-16 13:34:18,906]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:34:18,906]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:34:18,907]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:34:18,907]     self._send(header + buf)
+[2022-11-16 13:34:18,907]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:34:18,907]     n = write(self._handle, buf)
+[2022-11-16 13:34:18,907] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:34:19,534] Process ForkPoolWorker-14:
+[2022-11-16 13:34:19,538] Traceback (most recent call last):
+[2022-11-16 13:34:19,538]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+[2022-11-16 13:34:19,538]     put((job, i, result))
+[2022-11-16 13:34:19,539]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:34:19,539]     self._writer.send_bytes(obj)
+[2022-11-16 13:34:19,539]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:34:19,539]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:34:19,540]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:34:19,540]     self._send(header + buf)
+[2022-11-16 13:34:19,540]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:34:19,540]     n = write(self._handle, buf)
+[2022-11-16 13:34:19,540] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:34:19,541] 
+[2022-11-16 13:34:19,541] During handling of the above exception, another exception occurred:
+[2022-11-16 13:34:19,541] Traceback (most recent call last):
+[2022-11-16 13:34:19,541]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+[2022-11-16 13:34:19,541]     self.run()
+[2022-11-16 13:34:19,542]   File "/opt/conda/lib/python3.8/multiprocessing/process.py", line 108, in run
+[2022-11-16 13:34:19,542]     self._target(*self._args, **self._kwargs)
+[2022-11-16 13:34:19,542]   File "/opt/conda/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+[2022-11-16 13:34:19,542]     put((job, i, (False, wrapped)))
+[2022-11-16 13:34:19,542]   File "/opt/conda/lib/python3.8/multiprocessing/queues.py", line 368, in put
+[2022-11-16 13:34:19,542]     self._writer.send_bytes(obj)
+[2022-11-16 13:34:19,543]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+[2022-11-16 13:34:19,543]     self._send_bytes(m[offset:offset + size])
+[2022-11-16 13:34:19,543]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+[2022-11-16 13:34:19,543]     self._send(header + buf)
+[2022-11-16 13:34:19,543]   File "/opt/conda/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+[2022-11-16 13:34:19,543]     n = write(self._handle, buf)
+[2022-11-16 13:34:19,543] BrokenPipeError: [Errno 32] Broken pipe
+[2022-11-16 13:34:43,911] Running step: custom_step_v07_to_v08 [1/14]
+[2022-11-16 13:34:43,997] Running step: custom_step_tinyyolo_convert_to_hls [2/14]
+[2022-11-16 13:34:44,234] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_35
+[2022-11-16 13:34:44,234]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:34:44,247] /workspace/finn/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py:599: UserWarning: Clipping some thresholds in MatrixVectorActivation_MatMul_38
+[2022-11-16 13:34:44,247]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:34:44,999] /workspace/finn/src/finn/custom_op/fpgadataflow/vectorvectoractivation.py:100: UserWarning: Clipping some thresholds in VectorVectorActivation_MatMul_31
+[2022-11-16 13:34:44,999]   warnings.warn("Clipping some thresholds in %s" % self.onnx_node.name)
+[2022-11-16 13:34:46,009] Running step: step_create_dataflow_partition [3/14]
+[2022-11-16 13:34:46,171] Running step: step_target_fps_parallelization [4/14]
+[2022-11-16 13:34:46,186] Running step: step_apply_folding_config [5/14]
+[2022-11-16 13:34:46,210] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-16 13:34:46,210] No HW configuration for nodes: StreamingMaxPool_Batch_0, StreamingMaxPool_Batch_1, StreamingMaxPool_Batch_2, UpsampleNearestNeighbour_Batch_0
+[2022-11-16 13:34:46,210]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-16 13:34:46,210] /workspace/qonnx/src/qonnx/transformation/general.py:326: UserWarning:
+[2022-11-16 13:34:46,211] Unused HW configurations: StreamingFIFO_1, StreamingFIFO_2, StreamingDataWidthConverter_Batch_0, StreamingDataWidthConverter_Batch_1, StreamingFIFO_6, StreamingDataWidthConverter_Batch_2, StreamingFIFO_8, StreamingDataWidthConverter_Batch_3, StreamingFIFO_12, StreamingDataWidthConverter_Batch_4, StreamingFIFO_14, StreamingDataWidthConverter_Batch_5, StreamingFIFO_18, StreamingDataWidthConverter_Batch_6, StreamingFIFO_20, StreamingDataWidthConverter_Batch_7, StreamingFIFO_24, StreamingDataWidthConverter_Batch_8, StreamingFIFO_26, StreamingDataWidthConverter_Batch_9, StreamingDataWidthConverter_Batch_10, StreamingDataWidthConverter_Batch_11, StreamingFIFO_34, StreamingFIFO_35, StreamingDataWidthConverter_Batch_12, StreamingFIFO_36, StreamingDataWidthConverter_Batch_13, StreamingFIFO_38, StreamingDataWidthConverter_Batch_14, StreamingFIFO_42, StreamingDataWidthConverter_Batch_15, StreamingFIFO_44, StreamingDataWidthConverter_Batch_16, StreamingFIFO_48, StreamingDataWidthConverter_Batch_17, StreamingFIFO_50, StreamingDataWidthConverter_Batch_18, StreamingDataWidthConverter_Batch_19, StreamingDataWidthConverter_Batch_20, StreamingFIFO_59, StreamingDataWidthConverter_Batch_21, StreamingFIFO_60, StreamingDataWidthConverter_Batch_22, StreamingFIFO_62, StreamingDataWidthConverter_Batch_23, StreamingFIFO_66, StreamingDataWidthConverter_Batch_24, StreamingFIFO_68, StreamingDataWidthConverter_Batch_25, StreamingFIFO_72, StreamingDataWidthConverter_Batch_26, StreamingFIFO_74, StreamingDataWidthConverter_Batch_27, StreamingDataWidthConverter_Batch_28, StreamingDataWidthConverter_Batch_29, StreamingFIFO_83, StreamingDataWidthConverter_Batch_30, StreamingFIFO_84, StreamingFIFO_85, StreamingDataWidthConverter_Batch_31, StreamingDataWidthConverter_Batch_32, StreamingFIFO_91, StreamingFIFO_94, StreamingDataWidthConverter_Batch_33, StreamingFIFO_95, StreamingFIFO_97, StreamingDataWidthConverter_Batch_34, StreamingDataWidthConverter_Batch_35, StreamingFIFO_103, StreamingDataWidthConverter_Batch_36, StreamingDataWidthConverter_Batch_37, StreamingFIFO_105, StreamingFIFO_106, StreamingDataWidthConverter_Batch_38, StreamingFIFO_109, StreamingDataWidthConverter_Batch_39, StreamingDataWidthConverter_Batch_40, StreamingFIFO_114
+[2022-11-16 13:34:46,211]   warnings.warn("\nUnused HW configurations: " + ", ".join(unused_configs))
+[2022-11-16 13:34:46,237] Running step: step_generate_estimate_reports [6/14]
+[2022-11-16 13:34:46,251] Running step: step_hls_codegen [7/14]
+[2022-11-16 13:34:57,409] Running step: step_hls_ipgen [8/14]
