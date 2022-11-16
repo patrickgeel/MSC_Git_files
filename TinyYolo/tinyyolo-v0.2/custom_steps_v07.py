@@ -124,6 +124,7 @@ def custom_step_tinyyolo_lower(model: ModelWrapper, cfg: DataflowBuildConfig):
 
     if "lowered_python" in cfg._resolve_verification_steps():
         build_steps.verify_step(model, cfg, "lowered_python", need_parent=False)
+    
     return model
 
 def custom_step_tinyyolo_convert_to_hls(model: ModelWrapper, cfg: DataflowBuildConfig):
