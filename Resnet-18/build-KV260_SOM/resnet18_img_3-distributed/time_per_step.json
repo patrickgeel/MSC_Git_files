@@ -1,0 +1,8 @@
+{
+  "step_resnet18_tidy": 7.696017742156982,
+  "step_resnet18_streamline": 38.02116847038269,
+  "step_resnet18_convert_to_hls": 16.09716510772705,
+  "step_create_dataflow_partition": 1.282702922821045,
+  "step_apply_folding_config": 0.09526824951171875,
+  "step_generate_estimate_reports": 0.23777389526367188
+}
