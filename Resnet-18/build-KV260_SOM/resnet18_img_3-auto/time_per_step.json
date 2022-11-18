@@ -1,8 +1,8 @@
 {
-  "step_resnet18_tidy": 7.569577693939209,
-  "step_resnet18_streamline": 38.45191550254822,
-  "step_resnet18_convert_to_hls": 16.112810373306274,
-  "step_create_dataflow_partition": 1.3224952220916748,
-  "step_apply_folding_config": 0.09341931343078613,
-  "step_generate_estimate_reports": 0.2342383861541748
+  "step_resnet18_tidy": 7.837913274765015,
+  "step_resnet18_streamline": 38.17206311225891,
+  "step_resnet18_convert_to_hls": 16.621431350708008,
+  "step_create_dataflow_partition": 1.2892279624938965,
+  "step_apply_folding_config": 0.10357832908630371,
+  "step_generate_estimate_reports": 0.24122238159179688
 }

@@ -1,0 +1,160 @@
+{
+  "Thresholding_Batch_0": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 16,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "ConvolutionInputGenerator_0": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 364,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_0": {
+    "BRAM_18K": 11,
+    "BRAM_efficiency": 0.017045454545454544,
+    "LUT": 17548,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "ConvolutionInputGenerator_1": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 540,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_1": {
+    "BRAM_18K": 6,
+    "BRAM_efficiency": 0.6666666666666666,
+    "LUT": 614,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "StreamingMaxPool_Batch_0": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 0,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "ConvolutionInputGenerator_2": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 412,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_2": {
+    "BRAM_18K": 16,
+    "BRAM_efficiency": 0.5,
+    "LUT": 1351,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "ConvolutionInputGenerator_3": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 492,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_3": {
+    "BRAM_18K": 30,
+    "BRAM_efficiency": 0.5333333333333333,
+    "LUT": 2211,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "StreamingMaxPool_Batch_1": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 0,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "ConvolutionInputGenerator_4": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 380,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_4": {
+    "BRAM_18K": 40,
+    "BRAM_efficiency": 0.8,
+    "LUT": 1466,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "ConvolutionInputGenerator_5": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 396,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_5": {
+    "BRAM_18K": 72,
+    "BRAM_efficiency": 0.8888888888888888,
+    "LUT": 1488,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_6": {
+    "BRAM_18K": 15,
+    "BRAM_efficiency": 0.9481481481481482,
+    "LUT": 2403,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_7": {
+    "BRAM_18K": 32,
+    "BRAM_efficiency": 0.8888888888888888,
+    "LUT": 1593,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_8": {
+    "BRAM_18K": 4,
+    "BRAM_efficiency": 0.1388888888888889,
+    "LUT": 1164,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "LabelSelect_Batch_0": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 0,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "total": {
+    "BRAM_18K": 226.0,
+    "LUT": 32438.0,
+    "URAM": 0.0,
+    "DSP": 0.0
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "critical_path_cycles": 2859867,
+  "max_cycles": 1806336,
+  "max_cycles_node_name": "MatrixVectorActivation_1",
+  "estimated_throughput_fps": 110.72137188208617,
+  "estimated_latency_ns": 14299335.0
+}

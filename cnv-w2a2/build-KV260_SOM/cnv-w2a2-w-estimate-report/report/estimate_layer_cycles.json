@@ -1,0 +1,21 @@
+{
+  "Thresholding_Batch_0": 3072,
+  "ConvolutionInputGenerator_0": 24588,
+  "MatrixVectorActivation_0": 8100,
+  "ConvolutionInputGenerator_1": 457344,
+  "MatrixVectorActivation_1": 1806336,
+  "StreamingMaxPool_Batch_0": 980,
+  "ConvolutionInputGenerator_2": 85632,
+  "MatrixVectorActivation_2": 165888,
+  "ConvolutionInputGenerator_3": 119808,
+  "MatrixVectorActivation_3": 115200,
+  "StreamingMaxPool_Batch_1": 125,
+  "ConvolutionInputGenerator_4": 12288,
+  "MatrixVectorActivation_4": 41472,
+  "ConvolutionInputGenerator_5": 4608,
+  "MatrixVectorActivation_5": 9216,
+  "MatrixVectorActivation_6": 1024,
+  "MatrixVectorActivation_7": 4096,
+  "MatrixVectorActivation_8": 80,
+  "LabelSelect_Batch_0": 10
+}

@@ -1,15 +1,15 @@
-[2022-11-18 17:26:21,018] Running step: step_resnet18_tidy [1/6]
-[2022-11-18 17:26:29,283] Running step: step_resnet18_streamline [2/6]
-[2022-11-18 17:27:07,597] Running step: step_resnet18_convert_to_hls [3/6]
-[2022-11-18 17:27:07,604] /workspace/qonnx/src/qonnx/transformation/infer_data_layouts.py:119: UserWarning: Assuming 4D input is NCHW
-[2022-11-18 17:27:07,604]   warnings.warn("Assuming 4D input is NCHW")
-[2022-11-18 17:27:07,752]  FINN Experimental not available. Using non-packed convolution
-[2022-11-18 17:27:24,540] Running step: step_create_dataflow_partition [4/6]
-[2022-11-18 17:27:26,345] Running step: step_apply_folding_config [5/6]
-[2022-11-18 17:27:26,404] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
-[2022-11-18 17:27:26,405] No HW configuration for nodes: DownSampler_3, AddStreams_Batch_16, AddStreams_Batch_17, DownSampler_4, DownSampler_5, DownSampler_6, AddStreams_Batch_18, AddStreams_Batch_19, AddStreams_Batch_20, AddStreams_Batch_21, AddStreams_Batch_22, AddStreams_Batch_23
-[2022-11-18 17:27:26,405]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
-[2022-11-18 17:27:26,405] /workspace/qonnx/src/qonnx/transformation/general.py:326: UserWarning:
-[2022-11-18 17:27:26,405] Unused HW configurations: MatrixVectorActivation_31, MatrixVectorActivation_32, MatrixVectorActivation_33, MatrixVectorActivation_34, MatrixVectorActivation_35, MatrixVectorActivation_36, DuplicateStreams_Batch_11, MatrixVectorActivation_37, MatrixVectorActivation_38, MatrixVectorActivation_39, DuplicateStreams_Batch_12, MatrixVectorActivation_40, MatrixVectorActivation_41, MatrixVectorActivation_42, Thresholding_Batch_35, DuplicateStreams_Batch_13, MatrixVectorActivation_43, MatrixVectorActivation_44, MatrixVectorActivation_45, MatrixVectorActivation_46, Thresholding_Batch_36, DuplicateStreams_Batch_14, Thresholding_Batch_37, Thresholding_Batch_38, MatrixVectorActivation_47, MatrixVectorActivation_48, MatrixVectorActivation_49, Thresholding_Batch_39, DuplicateStreams_Batch_15, Thresholding_Batch_40, Thresholding_Batch_41, MatrixVectorActivation_50, MatrixVectorActivation_51, MatrixVectorActivation_52, Thresholding_Batch_42, MatrixVectorActivation_53, ChannelwiseOp_Batch_0, ChannelwiseOp_Batch_1, ChannelwiseOp_Batch_2
-[2022-11-18 17:27:26,405]   warnings.warn("\nUnused HW configurations: " + ", ".join(unused_configs))
-[2022-11-18 17:27:27,098] Running step: step_generate_estimate_reports [6/6]
+[2022-11-18 17:38:11,281] Running step: step_resnet18_tidy [1/6]
+[2022-11-18 17:38:19,587] Running step: step_resnet18_streamline [2/6]
+[2022-11-18 17:38:57,520] Running step: step_resnet18_convert_to_hls [3/6]
+[2022-11-18 17:38:57,525] /workspace/qonnx/src/qonnx/transformation/infer_data_layouts.py:119: UserWarning: Assuming 4D input is NCHW
+[2022-11-18 17:38:57,525]   warnings.warn("Assuming 4D input is NCHW")
+[2022-11-18 17:38:57,683]  FINN Experimental not available. Using non-packed convolution
+[2022-11-18 17:39:14,787] Running step: step_create_dataflow_partition [4/6]
+[2022-11-18 17:39:16,503] Running step: step_apply_folding_config [5/6]
+[2022-11-18 17:39:16,570] /workspace/qonnx/src/qonnx/transformation/general.py:322: UserWarning:
+[2022-11-18 17:39:16,570] No HW configuration for nodes: DownSampler_3, AddStreams_Batch_16, AddStreams_Batch_17, DownSampler_4, DownSampler_5, DownSampler_6, AddStreams_Batch_18, AddStreams_Batch_19, AddStreams_Batch_20, AddStreams_Batch_21, AddStreams_Batch_22, AddStreams_Batch_23
+[2022-11-18 17:39:16,570]   warnings.warn("\nNo HW configuration for nodes: " + ", ".join(missing_configurations))
+[2022-11-18 17:39:16,570] /workspace/qonnx/src/qonnx/transformation/general.py:326: UserWarning:
+[2022-11-18 17:39:16,570] Unused HW configurations: MatrixVectorActivation_31, MatrixVectorActivation_32, MatrixVectorActivation_33, MatrixVectorActivation_34, MatrixVectorActivation_35, MatrixVectorActivation_36, DuplicateStreams_Batch_11, MatrixVectorActivation_37, MatrixVectorActivation_38, MatrixVectorActivation_39, DuplicateStreams_Batch_12, MatrixVectorActivation_40, MatrixVectorActivation_41, MatrixVectorActivation_42, Thresholding_Batch_35, DuplicateStreams_Batch_13, MatrixVectorActivation_43, MatrixVectorActivation_44, MatrixVectorActivation_45, MatrixVectorActivation_46, Thresholding_Batch_36, DuplicateStreams_Batch_14, Thresholding_Batch_37, Thresholding_Batch_38, MatrixVectorActivation_47, MatrixVectorActivation_48, MatrixVectorActivation_49, Thresholding_Batch_39, DuplicateStreams_Batch_15, Thresholding_Batch_40, Thresholding_Batch_41, MatrixVectorActivation_50, MatrixVectorActivation_51, MatrixVectorActivation_52, Thresholding_Batch_42, MatrixVectorActivation_53, ChannelwiseOp_Batch_0, ChannelwiseOp_Batch_1, ChannelwiseOp_Batch_2
+[2022-11-18 17:39:16,571]   warnings.warn("\nUnused HW configurations: " + ", ".join(unused_configs))
+[2022-11-18 17:39:17,093] Running step: step_generate_estimate_reports [6/6]
