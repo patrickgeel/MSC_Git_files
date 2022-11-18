@@ -1,0 +1,1322 @@
+{
+  "Defaults": {},
+  "StreamingFIFO_0": {
+    "ram_style": "auto",
+    "depth": 64,
+    "impl_style": "rtl"
+  },
+  "FMPadding_Batch_0": {
+    "SIMD": 3
+  },
+  "StreamingFIFO_1": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_0": {
+    "SIMD": 3,
+    "ram_style": "distributed"
+  },
+  "MatrixVectorActivation_0": {
+    "PE": 64,
+    "SIMD": 3,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_0": {
+    "impl_style": "hls"
+  },
+  "FMPadding_Batch_1": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_5": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_1": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "Pool_Batch_0": {
+    "PE": 4
+  },
+  "StreamingDataWidthConverter_Batch_1": {
+    "impl_style": "hls"
+  },
+  "DuplicateStreams_Batch_0": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_2": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_3": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_4": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_14": {
+    "ram_style": "auto",
+    "depth": 256,
+    "impl_style": "rtl"
+  },
+  "FMPadding_Batch_2": {
+    "SIMD": 4
+  },
+  "MatrixVectorActivation_2": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_1": {
+    "PE": 1,
+    "SIMD": 16,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_16": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_17": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_5": {
+    "impl_style": "hls"
+  },
+  "ConvolutionInputGenerator_2": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingFIFO_18": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_6": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_20": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_3": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_0": {
+    "PE": 2
+  },
+  "Thresholding_Batch_0": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_1": {
+    "PE": 2
+  },
+  "StreamingFIFO_26": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_7": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_1": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "Thresholding_Batch_3": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "Thresholding_Batch_2": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_29": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_31": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "FMPadding_Batch_3": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_30": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_32": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_3": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_8": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_34": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_4": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_1": {
+    "PE": 2
+  },
+  "Thresholding_Batch_4": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_2": {
+    "PE": 2
+  },
+  "Thresholding_Batch_5": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_2": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_9": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_6": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_42": {
+    "ram_style": "auto",
+    "depth": 64,
+    "impl_style": "rtl"
+  },
+  "StreamingFIFO_43": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "FMPadding_Batch_4": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_44": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_4": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_10": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_46": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_5": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_3": {
+    "PE": 2
+  },
+  "Thresholding_Batch_7": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_11": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_50": {
+    "ram_style": "auto",
+    "depth": 64,
+    "impl_style": "rtl"
+  },
+  "FMPadding_Batch_5": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_51": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_5": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_12": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_53": {
+    "ram_style": "auto",
+    "depth": 1024,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_6": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_4": {
+    "PE": 2
+  },
+  "Thresholding_Batch_8": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_5": {
+    "PE": 2
+  },
+  "Thresholding_Batch_9": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_3": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_13": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_14": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_15": {
+    "impl_style": "hls"
+  },
+  "DownSampler_0": {
+    "SIMD": 4
+  },
+  "FMPadding_Batch_6": {
+    "SIMD": 4
+  },
+  "DownSampler_1": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_66": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_16": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_17": {
+    "impl_style": "hls"
+  },
+  "ConvolutionInputGenerator_6": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "MatrixVectorActivation_7": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_8": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_18": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_72": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_73": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_71": {
+    "ram_style": "auto",
+    "depth": 512,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_9": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_6": {
+    "PE": 2
+  },
+  "Thresholding_Batch_10": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_4": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_19": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_11": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_80": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "FMPadding_Batch_7": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_81": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_7": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_20": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_83": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_10": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_7": {
+    "PE": 2
+  },
+  "Thresholding_Batch_12": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_8": {
+    "PE": 2
+  },
+  "Thresholding_Batch_13": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_5": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_21": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_22": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_14": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "Thresholding_Batch_15": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_95": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_96": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_11": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "FMPadding_Batch_8": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_97": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_98": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_8": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_23": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_100": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_12": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_9": {
+    "PE": 2
+  },
+  "Thresholding_Batch_16": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_24": {
+    "impl_style": "hls"
+  },
+  "FMPadding_Batch_9": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_105": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_9": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_25": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_107": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_13": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_10": {
+    "PE": 2
+  },
+  "Thresholding_Batch_17": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_11": {
+    "PE": 2
+  },
+  "Thresholding_Batch_18": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_6": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_26": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_27": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_28": {
+    "impl_style": "hls"
+  },
+  "DownSampler_2": {
+    "SIMD": 4
+  },
+  "FMPadding_Batch_10": {
+    "SIMD": 4
+  },
+  "DownSampler_3": {
+    "SIMD": 128
+  },
+  "StreamingFIFO_120": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_29": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_30": {
+    "impl_style": "hls"
+  },
+  "ConvolutionInputGenerator_10": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "MatrixVectorActivation_14": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_15": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_31": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_126": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_127": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_125": {
+    "ram_style": "auto",
+    "depth": 512,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_16": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_12": {
+    "PE": 2
+  },
+  "Thresholding_Batch_19": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_7": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_32": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_33": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_34": {
+    "impl_style": "hls"
+  },
+  "MatrixVectorActivation_17": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "FMPadding_Batch_11": {
+    "SIMD": 4
+  },
+  "MatrixVectorActivation_18": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_137": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_138": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_139": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_35": {
+    "impl_style": "hls"
+  },
+  "ConvolutionInputGenerator_11": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingFIFO_140": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_36": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_142": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_19": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_13": {
+    "PE": 2
+  },
+  "Thresholding_Batch_20": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_14": {
+    "PE": 2
+  },
+  "Thresholding_Batch_21": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_8": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_37": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_22": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "Thresholding_Batch_23": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_152": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_153": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "FMPadding_Batch_12": {
+    "SIMD": 4
+  },
+  "StreamingDataWidthConverter_Batch_38": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_154": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_155": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_12": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_39": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_157": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_20": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "AddStreams_Batch_15": {
+    "PE": 2
+  },
+  "Thresholding_Batch_24": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_40": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_161": {
+    "ram_style": "auto",
+    "depth": 32,
+    "impl_style": "rtl"
+  },
+  "FMPadding_Batch_13": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_162": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_13": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_41": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_164": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_21": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_42": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_16": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_43": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_25": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_44": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_17": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_45": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_26": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_9": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_46": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_47": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_48": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_49": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_180": {
+    "ram_style": "auto",
+    "depth": 32,
+    "impl_style": "rtl"
+  },
+  "DownSampler_4": {
+    "SIMD": 256
+  },
+  "DownSampler_5": {
+    "SIMD": 256
+  },
+  "DownSampler_6": {
+    "SIMD": 256
+  },
+  "FMPadding_Batch_14": {
+    "SIMD": 4
+  },
+  "StreamingDataWidthConverter_Batch_50": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_51": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_52": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_183": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_22": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_23": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "MatrixVectorActivation_24": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "ConvolutionInputGenerator_14": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_54": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_55": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_56": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_53": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_194": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_195": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_196": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_190": {
+    "ram_style": "auto",
+    "depth": 512,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_25": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_57": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_18": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_58": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_27": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_59": {
+    "impl_style": "hls"
+  },
+  "FMPadding_Batch_15": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_203": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_15": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_60": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_205": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_26": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_61": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_19": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_62": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_28": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_63": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_20": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_64": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_29": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "DuplicateStreams_Batch_10": {
+    "PE": 2
+  },
+  "StreamingDataWidthConverter_Batch_65": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_66": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_30": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "Thresholding_Batch_31": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingFIFO_221": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_222": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "FMPadding_Batch_16": {
+    "SIMD": 4
+  },
+  "MatrixVectorActivation_27": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_67": {
+    "impl_style": "hls"
+  },
+  "StreamingDataWidthConverter_Batch_68": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_223": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_69": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_225": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingFIFO_226": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_16": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingFIFO_227": {
+    "ram_style": "auto",
+    "depth": 16384,
+    "impl_style": "vivado"
+  },
+  "StreamingDataWidthConverter_Batch_70": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_229": {
+    "ram_style": "auto",
+    "depth": 8192,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_28": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_71": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_21": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_72": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_32": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_73": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_235": {
+    "ram_style": "auto",
+    "depth": 32,
+    "impl_style": "rtl"
+  },
+  "FMPadding_Batch_17": {
+    "SIMD": 4
+  },
+  "StreamingFIFO_236": {
+    "ram_style": "auto",
+    "depth": 4096,
+    "impl_style": "vivado"
+  },
+  "ConvolutionInputGenerator_17": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "StreamingDataWidthConverter_Batch_74": {
+    "impl_style": "hls"
+  },
+  "StreamingFIFO_238": {
+    "ram_style": "auto",
+    "depth": 2048,
+    "impl_style": "vivado"
+  },
+  "MatrixVectorActivation_29": {
+    "PE": 2,
+    "SIMD": 64,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_75": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_22": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_76": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_33": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_77": {
+    "impl_style": "hls"
+  },
+  "AddStreams_Batch_23": {
+    "PE": 1
+  },
+  "StreamingDataWidthConverter_Batch_78": {
+    "impl_style": "hls"
+  },
+  "Thresholding_Batch_34": {
+    "PE": 2,
+    "ram_style": "distributed",
+    "mem_mode": "const",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_79": {
+    "impl_style": "hls"
+  },
+  "ConvolutionInputGenerator_18": {
+    "SIMD": 4,
+    "ram_style": "distributed"
+  },
+  "Pool_Batch_1": {
+    "PE": 4
+  },
+  "StreamingDataWidthConverter_Batch_80": {
+    "impl_style": "hls"
+  },
+  "MatrixVectorActivation_30": {
+    "PE": 2,
+    "SIMD": 32,
+    "ram_style": "auto",
+    "resType": "lut",
+    "mem_mode": "decoupled",
+    "runtime_writeable_weights": 0
+  },
+  "StreamingDataWidthConverter_Batch_81": {
+    "impl_style": "hls"
+  },
+  "LabelSelect_Batch_0": {
+    "PE": 1
+  }
+}
