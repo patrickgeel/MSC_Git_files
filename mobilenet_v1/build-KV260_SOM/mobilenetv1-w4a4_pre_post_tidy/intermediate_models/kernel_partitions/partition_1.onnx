@@ -1,0 +1,48 @@
+
+fuse_model:þ
+’
+LabelSelect_Batch_0_out0
+global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
+NumChannels *
+backend"fpgadataflow *
+dataType"UINT8 *
+	direction"out *
+	intfWidth *
+numInputVectors@@@@ *
+streamWidth *
+slrÿÿÿÿÿÿÿÿÿ *
+partition_id *‘
+code_gen_dir_ipgen"x/workspace/results/KV260_SOM/mobilenetv1-w4a4_pre_post_tidy/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_9jrxmq7o *·
+
+ipgen_path"¥/workspace/results/KV260_SOM/mobilenetv1-w4a4_pre_post_tidy/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_9jrxmq7o/project_StreamingDataflowPartition_2_IODMA_0 *Á
+ip_path"²/workspace/results/KV260_SOM/mobilenetv1-w4a4_pre_post_tidy/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_9jrxmq7o/project_StreamingDataflowPartition_2_IODMA_0/sol1/impl/ip *E
+ip_vlnv"7xilinx.com:hls:StreamingDataflowPartition_2_IODMA_0:1.0 :finn.custom_op.fpgadataflow
+fuse-graphZ2
+LabelSelect_Batch_0_out0
+
+
+
+
+b$
+
+global_out
+
+
+
+
+rL
+
+global_out
+finn_datatypeUINT16%
+tensor_layout['N', 'H', 'W', 'C']r3
+LabelSelect_Batch_0_out0
+finn_datatypeUINT16Brm
+vivado_stitch_projW/workspace/results/KV260_SOM/mobilenetv1-w4a4_pre_post_tidy/vivado_stitch_proj_pscnluy2r
+clk_ns10.0rÝ
+wrapper_filenameÈ/workspace/results/KV260_SOM/mobilenetv1-w4a4_pre_post_tidy/vivado_stitch_proj_pscnluy2/finn_vivado_stitch_proj.gen/sources_1/bd/StreamingDataflowPartition_2/hdl/StreamingDataflowPartition_2_wrapper.vrG
+vivado_stitch_vlnv1xilinx_finn:finn:StreamingDataflowPartition_2:1.0r®
+vivado_stitch_ifnames”{"clk": ["ap_clk"], "rst": ["ap_rst_n"], "s_axis": [["s_axis_0", 16]], "m_axis": [], "aximm": [["m_axi_gmem0", 16]], "axilite": ["s_axi_control_0"]}r
+	exec_modertlsimru
+floorplan_jsonc/workspace/results/KV260_SOM/mobilenetv1-w4a4_pre_post_tidy/vitis_floorplan_9yj8qlui/floorplan.jsonr
+platform
+zynq-iodma
