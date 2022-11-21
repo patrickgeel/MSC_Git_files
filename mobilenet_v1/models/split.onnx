@@ -1,12 +1,12 @@
 
-fuse_model:Ä
-ê
-	global_inMul_26_out0GenericPartition_0"GenericPartition*7
-model"+/tmp/partitioning_yykxmh6q/partition_0.onnx†:qonnx.custom_op.general
-ë
+fuse_model:‡
+Ä
+	global_inMul_26_out0GenericPartition_0"GenericPartition*'
+model"partition//partition_0.onnx†:qonnx.custom_op.general
+Å
 Mul_26_out0
-global_outGenericPartition_1"GenericPartition*7
-model"+/tmp/partitioning_yykxmh6q/partition_1.onnx†:qonnx.custom_op.general
+global_outGenericPartition_1"GenericPartition*'
+model"partition//partition_1.onnx†:qonnx.custom_op.general
 fuse-graphZ%
 	global_in
 
