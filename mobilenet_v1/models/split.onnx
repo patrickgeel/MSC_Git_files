@@ -1,0 +1,38 @@
+
+fuse_model:Ä
+ê
+	global_inMul_26_out0GenericPartition_0"GenericPartition*7
+model"+/tmp/partitioning_yykxmh6q/partition_0.onnx†:qonnx.custom_op.general
+ë
+Mul_26_out0
+global_outGenericPartition_1"GenericPartition*7
+model"+/tmp/partitioning_yykxmh6q/partition_1.onnx†:qonnx.custom_op.general
+fuse-graphZ%
+	global_in
+
+
+
+‡
+‡b
+
+global_out
+
+
+j&
+Mul_26_out0
+
+
+Ä
+
+rJ
+	global_in
+finn_datatypeUINT8%
+tensor_layout['N', 'C', 'H', 'W']rB
+
+global_out
+finn_datatypeUINT32
+tensor_layout
+['N', 'C']rN
+Mul_26_out0
+finn_datatypeFLOAT32%
+tensor_layout['N', 'C', 'H', 'W']B
