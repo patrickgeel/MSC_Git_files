@@ -1,0 +1,1 @@
+{"Add": "1", "BatchNormalization": "27", "Conv": "27", "Div": "4", "MatMul": "1", "Mul": "55", "MultiThreshold": "27", "QuantAvgPool2d": "1", "Reshape": "1", "Sub": "1", "TopK": "1"}
