@@ -6,6 +6,9 @@ from qonnx.core.modelwrapper import ModelWrapper
 
 def main():
     model = ModelWrapper("models/mobilenetv1-w4a4_pre_post_tidy.onnx")
+    model_dir = "/home/pgeel/bulk/FINNv0.8.1_repo/build_KV260/finn/notebooks/MSC_Git_files/mobilenet_v1/models"
+
+    print(model_dir)
     splits = []
     for n in model.graph.node:
         if n.op_type == "Mul":
@@ -15,7 +18,7 @@ def main():
         split_node = sn[0] 
         print("--"*20,split_node, "--"*20)
         # Split model to get a new model
-        model_file = split_model(split_node)
+        model_file = split_model(split_node,model_dir)
         print(model_file)
 
         # Estimate reports
