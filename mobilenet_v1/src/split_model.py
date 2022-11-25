@@ -1,11 +1,11 @@
 from qonnx.core.modelwrapper import ModelWrapper
 from qonnx.util.basic import get_by_name
 from qonnx.transformation.create_generic_partitions import PartitionFromDict
+import os
 
 
-def split_model(split_node):
-    model_dir = "/home/pgeel/bulk/FINNv0.8.1_repo/TY_build_KV260/finn/notebooks/MSC_Git_files/mobilenet_v1/models"
-    base_model = "{}/mobilenetv1-w4a4_pre_post_tidy.onnx".format(model_dir)
+def split_model(split_node,model_dir):
+    base_model = os.path.join(model_dir ,"mobilenetv1-w4a4_pre_post_tidy.onnx")
 
     model = ModelWrapper(base_model)
     # split_node = "BatchNormalization_4_out0"
