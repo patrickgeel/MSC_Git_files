@@ -36,10 +36,10 @@ def set_folding(current_dict, new_dict_file_name,model,fold_dir="/home/pgeel/bul
     fn.close()
     
 
-def main():    
-    model = ModelWrapper("../build-KV260_SOM/partition_1/intermediate_models/step_create_dataflow_partition.onnx")
+def main():
+    model = ModelWrapper("../build-KV260_SOM/BatchNormalization_4_out0/intermediate_models/step_create_dataflow_partition.onnx")
     current_dict = json.load(open("ZCU104_folding.json"))
-    new_file = "Partition_1_folding"
+    new_file = "BatchNormalization_4_out0_folding"
     set_folding(current_dict=current_dict,new_dict_file_name=new_file,model=model)
     
 if __name__ == "__main__":

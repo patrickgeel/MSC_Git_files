@@ -1,0 +1,38 @@
+
+fuse_model:Ê
+§
+	global_inBatchNormalization_4_out0GenericPartition_0"GenericPartition*@
+model"4../models/BatchNormalization_4_out0/partition_0.onnx :qonnx.custom_op.general
+¨
+BatchNormalization_4_out0
+global_outGenericPartition_1"GenericPartition*@
+model"4../models/BatchNormalization_4_out0/partition_1.onnx :qonnx.custom_op.general
+fuse-graphZ%
+	global_in
+
+
+
+à
+àb
+
+global_out
+
+
+j4
+BatchNormalization_4_out0
+
+
+€
+8
+8rJ
+	global_in
+finn_datatypeUINT8%
+tensor_layout['N', 'C', 'H', 'W']rB
+
+global_out
+finn_datatypeUINT32
+tensor_layout
+['N', 'C']r\
+BatchNormalization_4_out0
+finn_datatypeFLOAT32%
+tensor_layout['N', 'C', 'H', 'W']B
