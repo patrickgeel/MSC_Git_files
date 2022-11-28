@@ -53,7 +53,7 @@ def fits_kv260(resource_report):
     with open(resource_report, 'r') as f:
         usage = json.load(f)['total']
         for k,v in max_usage.items():
-            ok.append(v>=usage[k])
+            ok.append(v*1.1>=usage[k])
         print(usage)
     return all(ok)
 
@@ -105,4 +105,7 @@ def bit_build(model_file,final_output_dir,folding_config_file,split_node):
             build_cfg.DataflowOutputType.DEPLOYMENT_PACKAGE,
         ]
     )
-    build.build_dataflow_cfg(model_file, cfg)
+    try:    
+        build.build_dataflow_cfg(model_file, cfg)        
+    except:
+        pass

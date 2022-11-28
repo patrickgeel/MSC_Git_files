@@ -32,13 +32,8 @@ def get_processes():
         # Check if estimate fits on KV260, If fits make a bit file
         resource_report = "{}/report/estimate_layer_resources.json".format(final_output_dir)
         if fits_kv260(resource_report):
+            final_output_dir = "build-{}/fit/{}".format("KV260",split_node)
             processes.append(Process(target=bit_build,args=(model_file,final_output_dir,folding_config_file,split_node,)))
-            # try:    
-            #     final_output_dir = "build-{}/fit/{}".format("KV260",split_node)
-            #     if not os.path.exists(final_output_dir):
-            #         bit_build(model_file,final_output_dir,folding_config_file,split_node)
-            # except:
-            #     pass
         else:
             print("--"*20,"Does not fit", "--"*20)
             print("\t"*20, split_node)
@@ -46,4 +41,8 @@ def get_processes():
     return processes
 
 if __name__ == "__main__":
-    print(get_processes())
+    pids = get_processes()
+    for p in pids:
+        p.start()
+    for p in pids:
+        p.join()
