@@ -10,18 +10,18 @@ def get_processes():
     model_dir = "/home/pgeel/bulk/FINNv0.8.1_repo/build_KV260/finn/notebooks/MSC_Git_files/mobilenet_v1/models"
     
     processes = []
-
+    op_type = "BatchNormalization"
     print(model_dir)
     splits = []
     for n in model.graph.node:
-        if n.op_type == "BatchNormalization":
+        if n.op_type == op_type:
             splits.append(n.output)
 
     for sn in splits[0::5]:
         split_node = sn[0] 
         print("--"*20,split_node, "--"*20)
         # Split model to get a new model
-        model_file = split_model(split_node,model_dir)
+        model_file = split_model(split_node,op_type,model_dir)
         print(model_file)
 
         # Estimate reports

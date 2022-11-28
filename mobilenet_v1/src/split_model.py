@@ -4,13 +4,15 @@ from qonnx.transformation.create_generic_partitions import PartitionFromDict
 import os
 
 
-def split_model(split_node,model_dir):
+def split_model(split_node,op_type,model_dir):
+    '''
+    Splits and returns the model at the desired node
+    '''
     base_model = os.path.join(model_dir ,"mobilenetv1-w4a4_pre_post_tidy.onnx")
-
     model = ModelWrapper(base_model)
-    # split_node = "BatchNormalization_4_out0"
 
     up = model.find_upstream(split_node, lambda x: x.name == "Div_0")
+
     wanted, unwanted = [],[]
     for ind,n in enumerate(model.graph.node):
         
@@ -19,7 +21,7 @@ def split_model(split_node,model_dir):
         else:
             unwanted.append(ind)
         
-    parent = model.transform(PartitionFromDict(partitioning={0:wanted,1:unwanted},partition_dir="{}/estimate/{}".format(model_dir,split_node)))
-    # parent.save("split.onnx")
-    return "{}/estimate/{}/partition_0.onnx".format(model_dir,split_node)
+    save_dir = "{}/estimate/{}/{}".format(model_dir,op_type,split_node)
+    parent = model.transform(PartitionFromDict(partitioning={0:wanted,1:unwanted},partition_dir=save_dir))
+    return "{}/partition_0.onnx".format(save_dir)
     
