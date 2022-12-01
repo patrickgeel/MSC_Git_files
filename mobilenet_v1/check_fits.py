@@ -25,7 +25,7 @@ def get_processes():
         print(model_file)
 
         # Estimate reports
-        final_output_dir = "build-{}/estimate/{}/{}".format("KV260",op_type,split_node)        
+        final_output_dir = "build-{}/{}/{}".format("KV260",op_type,split_node)        
         folding_config_file = "folding_config/auto_build_folding.json"
         estimate_report(model_file,final_output_dir,folding_config_file)
 
