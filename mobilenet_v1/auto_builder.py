@@ -1,5 +1,5 @@
 import sys 
-sys.path(1, "src/")
+sys.path.insert(1, "src/")
 from split_model import split_model
 from auto_build import bit_build, estimate_report, fits_kv260
 from multiprocessing import Process
@@ -33,7 +33,8 @@ def get_processes():
         print(model_file)
 
         # Estimate reports
-        final_output_dir = "build-{}/{}/{}".format("KV260",op_type,split_node)        
+        final_output_dir = "build-KV260/estimation/{}/{}".format(op_type,split_node)        
+        # final_output_dir = "build-{}/{}/{}".format("KV260",op_type,split_node)        
         folding_config_file = "folding_config/auto_build_folding.json"
         estimate_report(model_file,final_output_dir,folding_config_file)
 

@@ -2,5 +2,5 @@
 **/test.ipynb
 .nfs**
 **.pyc
-mobilenet_v1/build-KV260/estimate/*
+mobilenet_v1/build-KV260/estimation/*
 
