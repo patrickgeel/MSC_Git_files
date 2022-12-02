@@ -4,20 +4,28 @@ import os
 import shutil
 from multiprocessing import Process
 from qonnx.core.modelwrapper import ModelWrapper
+import argparse
+
+parser = argparse.ArgumentParser("auto_builder")
+parser.add_argument("--model_dir", type=str , default="/home/pgeel/bulk/FINNv0.8.1_repo/build_KV260/finn/notebooks/MSC_Git_files/mobilenet_v1/models")
+parser.add_argument("--model_file", type=str, default="models/mobilenetv1-w4a4_pre_post_tidy.onnx")
+parser.add_argument("--split_op_type", type=str, default="Mul")
+parser.add_argument("--jumps_per_op", type=int, default=5, help="This will get every x op_type node")
+args = parser.parse_args()
 
 def get_processes():
-    model = ModelWrapper("models/mobilenetv1-w4a4_pre_post_tidy.onnx")
-    model_dir = "/home/pgeel/bulk/FINNv0.8.1_repo/build_KV260/finn/notebooks/MSC_Git_files/mobilenet_v1/models"
+    model = ModelWrapper(args.model_file)
+    model_dir = args.model_dir
     
     processes = []
-    op_type = "BatchNormalization"
+    op_type = args.split_op_type
     print(model_dir)
     splits = []
     for n in model.graph.node:
         if n.op_type == op_type:
             splits.append(n.output)
 
-    for sn in splits[0::5]:
+    for sn in splits[0::args.jumps_per_op]:
         split_node = sn[0] 
         print("--"*20,split_node, "--"*20)
         # Split model to get a new model
