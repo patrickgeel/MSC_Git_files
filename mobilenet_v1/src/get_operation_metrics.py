@@ -44,7 +44,7 @@ def main():
                     metrics_1[node_split] = ops
     generate_csv_file([metrics_0,metrics_1])
 
-def generate_csv_file(metrics:list):
+def generate_csv_file(metrics):
     df_0 = pd.DataFrame(metrics[0])
     df_1 = pd.DataFrame(metrics[1])
     # print(model_dir)
