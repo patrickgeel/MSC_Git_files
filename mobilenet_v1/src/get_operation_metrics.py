@@ -3,24 +3,24 @@ import pandas as pd
 import argparse
 import numpy as np
 from onnx import load_model
-
+from get_op_count import get_op_counts
 
 parser = argparse.ArgumentParser("get_operations_metrics")
 parser.add_argument("--op_type", type=str,required=True)
 parser.add_argument("--model_dir",type=str, default="../models/")
 args = parser.parse_args()
 
-def get_op_counts(
-    model_dir,
-):
-    ops = []
-    metrics = {}
-    model = load_model(model_dir)
-    for n in model.graph.node:
-        ops.append(n.op_type)
-    operations, counts = np.unique(np.array(ops), return_counts=True)
-    op_dict = dict(zip(operations, counts.astype(str)))
-    return op_dict
+# def get_op_counts(
+#     model_dir,
+# ):
+#     ops = []
+#     metrics = {}
+#     model = load_model(model_dir)
+#     for n in model.graph.node:
+#         ops.append(n.op_type)
+#     operations, counts = np.unique(np.array(ops), return_counts=True)
+#     op_dict = dict(zip(operations, counts.astype(str)))
+#     return op_dict
 
 def main():
     model_dir = "{}/{}/".format(args.model_dir,args.op_type)
