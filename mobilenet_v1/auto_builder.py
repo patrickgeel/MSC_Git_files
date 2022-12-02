@@ -1,11 +1,9 @@
-from src.split_model import split_model
-from src.auto_build import bit_build, estimate_report, fits_kv260
-import os
-import shutil
+import sys 
+sys.path(1, "src/")
+from split_model import split_model
+from auto_build import bit_build, estimate_report, fits_kv260
 from multiprocessing import Process
 from qonnx.core.modelwrapper import ModelWrapper
-import sys 
-sys.path.insert(1,"src/")
 import argparse
 
 parser = argparse.ArgumentParser("auto_builder")
