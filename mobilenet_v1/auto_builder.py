@@ -42,7 +42,7 @@ def get_processes():
         resource_report = "{}/report/estimate_layer_resources.json".format(final_output_dir)
         if fits_kv260(resource_report):
             final_output_dir = "build-{}/{}/{}".format("KV260",op_type, split_node)
-            processes.append(Process(target=bit_build,args=(model_file,final_output_dir,folding_config_file,split_node,)))
+            processes.append(Process(target=bit_build,args=(model_file,final_output_dir,folding_config_file,split_node,)))k
         else:
             print("--"*20,"Does not fit", "--"*20)
             print("\t"*20, split_node)
