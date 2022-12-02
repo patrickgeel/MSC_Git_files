@@ -4,6 +4,8 @@ import os
 import shutil
 from multiprocessing import Process
 from qonnx.core.modelwrapper import ModelWrapper
+import sys 
+sys.path.insert(1,"src/")
 import argparse
 
 parser = argparse.ArgumentParser("auto_builder")
