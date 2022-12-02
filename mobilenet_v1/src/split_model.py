@@ -21,7 +21,7 @@ def split_model(split_node,op_type,model_dir):
         else:
             unwanted.append(ind)
         
-    save_dir = "{}/estimate/{}/{}".format(model_dir,op_type,split_node)
+    save_dir = "{}/{}/{}".format(model_dir,op_type,split_node)
     parent = model.transform(PartitionFromDict(partitioning={0:wanted,1:unwanted},partition_dir=save_dir))
     return "{}/partition_0.onnx".format(save_dir)
     
