@@ -1,0 +1,11 @@
+,Mul_0_out0,Mul_10_out0,Mul_15_out0,Mul_20_out0,Mul_5_out0
+Add,1,1,1,1,1
+BatchNormalization,27,22,19,17,24
+Conv,26,21,19,16,24
+Div,2,2,2,2,2
+MatMul,1,1,1,1,1
+Mul,54,44,39,34,49
+MultiThreshold,27,22,19,17,24
+QuantAvgPool2d,1,1,1,1,1
+Reshape,1,1,1,1,1
+TopK,1,1,1,1,1

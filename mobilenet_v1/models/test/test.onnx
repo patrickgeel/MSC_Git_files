@@ -1,42 +1,0 @@
-
-fuse_model:Ì
-y
-	global_in
-Div_2_out0GenericPartition_0"GenericPartition*!
-model"test/partition_0.onnx :qonnx.custom_op.general
-z
-
-Div_2_out0
-global_outGenericPartition_1"GenericPartition*!
-model"test/partition_1.onnx :qonnx.custom_op.general
-fuse-graphZ%
-	global_in
-
-
-
-à
-àb
-
-global_out
-
-
-j%
-
-Div_2_out0
-
-
-€
-
-rJ
-	global_in
-finn_datatypeUINT8%
-tensor_layout['N', 'C', 'H', 'W']rK
-
-Div_2_out0
-finn_datatypeUINT4%
-tensor_layout['N', 'C', 'H', 'W']rB
-
-global_out
-finn_datatypeUINT32
-tensor_layout
-['N', 'C']B
