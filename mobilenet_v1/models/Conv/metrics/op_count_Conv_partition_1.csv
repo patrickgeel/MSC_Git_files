@@ -1,1 +1,11 @@
-""
+,Conv_6_out0,Conv_10_out0,Conv_0_out0,Conv_2_out0,Conv_4_out0,Conv_12_out0,Conv_8_out0
+Add,1,1,1,1,1,1,1
+BatchNormalization,21,17,27,25,23,15,19
+Conv,20,16,26,24,22,14,18
+Div,2,2,2,2,2,2,2
+MatMul,1,1,1,1,1,1,1
+Mul,43,35,55,51,47,31,39
+MultiThreshold,21,17,27,25,23,15,19
+QuantAvgPool2d,1,1,1,1,1,1,1
+Reshape,1,1,1,1,1,1,1
+TopK,1,1,1,1,1,1,1
