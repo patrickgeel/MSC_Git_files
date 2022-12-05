@@ -19,6 +19,7 @@ def revert_quantAvgPool(model):
 
         model.graph.node.remove(node)
         model.graph.node.append(update)
+    return model
         
 def set_multithreshold_default(model,save_model):
     '''
