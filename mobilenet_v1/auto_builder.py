@@ -1,16 +1,15 @@
-import sys 
-sys.path.insert(1, "src/")
-from split_model import split_model
-from auto_build import bit_build, estimate_report, fits_kv260
+from src.split_model import split_model
+from src.auto_build import bit_build, estimate_report, fits_kv260
 from multiprocessing import Process
 from qonnx.core.modelwrapper import ModelWrapper
 import argparse
+from src.custom_steps import *
 
 parser = argparse.ArgumentParser("auto_builder")
 parser.add_argument("--model_dir", type=str , default="/home/pgeel/bulk/FINNv0.8.1_repo/build_KV260/finn/notebooks/MSC_Git_files/mobilenet_v1/models")
-parser.add_argument("--model_file", type=str, default="models/mobilenetv1-w4a4_pre_post_tidy.onnx")
-parser.add_argument("--split_op_type", type=str, default="Mul")
-parser.add_argument("--jumps_per_op", type=int, default=5, help="This will get every x op_type node")
+parser.add_argument("--model_file", type=str, default="mobilenet_streamline.onnx")
+parser.add_argument("--split_op_type", type=str, default="Conv")
+parser.add_argument("--jumps_per_op", type=int, default=1, help="This will get every x op_type node")
 args = parser.parse_args()
 
 def get_processes():
@@ -33,21 +32,22 @@ def get_processes():
         print(model_file)
 
         # Estimate reports
-    #     final_output_dir = "build-KV260/estimation/{}/{}".format(op_type,split_node)        
-    #     # final_output_dir = "build-{}/{}/{}".format("KV260",op_type,split_node)        
-    #     folding_config_file = "folding_config/auto_build_folding.json"
-    #     estimate_report(model_file,final_output_dir,folding_config_file)
+        final_output_dir = "build-KV260/estimation/{}/{}".format(op_type,split_node)        
+        # final_output_dir = "build-{}/{}/{}".format("KV260",op_type,split_node)        
+        folding_config_file = "folding_config/auto_build_folding.json"
+        estimate_report(model_file,final_output_dir,folding_config_file)
 
-    #     # Check if estimate fits on KV260, If fits make a bit file
-    #     resource_report = "{}/report/estimate_layer_resources.json".format(final_output_dir)
-    #     if fits_kv260(resource_report):
-    #         final_output_dir = "build-{}/{}/{}".format("KV260",op_type, split_node)
-    #         processes.append(Process(target=bit_build,args=(model_file,final_output_dir,folding_config_file,split_node,)))
-    #     else:
-    #         print("--"*20,"Does not fit", "--"*20)
-    #         print("\t"*20, split_node)
-    #         break
-    # return processes
+        # Check if estimate fits on KV260, If fits make a bit file
+        resource_report = "{}/report/estimate_layer_resources.json".format(final_output_dir)
+        if fits_kv260(resource_report):
+            final_output_dir = "build-{}/{}/{}".format("KV260",op_type, split_node)
+            processes.append(Process(target=bit_build,args=(model_file,final_output_dir,folding_config_file,split_node,)))
+        else:
+            print("--"*20,"Does not fit", "--"*20)
+            print("\t"*20, split_node)
+#             ! rm -rf {model_file}
+            break
+    return processes
 
 if __name__ == "__main__":
     pids = get_processes()

@@ -10,8 +10,8 @@ def split_model(split_node,op_type,model_dir):
     '''
     base_model = os.path.join(model_dir ,"mobilenet_streamline.onnx")
     model = ModelWrapper(base_model)
-
-    up = model.find_upstream(split_node, lambda x: x.name == "Div_0")
+    
+    up = model.find_upstream(split_node, lambda x: x.name == model.graph.node[0].name)
 
     wanted, unwanted = [],[]
     for ind,n in enumerate(model.graph.node):

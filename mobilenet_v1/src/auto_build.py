@@ -7,7 +7,7 @@ import json
 
 
 # custom steps for mobilenetv1
-from custom_steps import (
+from src.custom_steps import (
     step_mobilenet_streamline,
     step_mobilenet_convert_to_hls_layers,
     step_mobilenet_convert_to_hls_layers_separate_th,
