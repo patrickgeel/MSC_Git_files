@@ -13,8 +13,8 @@ def revert_quantAvgPool(model):
             "AveragePool",
             inputs=[node.input[0]],
             outputs=[node.output[0]],
-            kernel_shape=[k,k],
-            strides=[s,s],
+            kernel_shape=[k],
+            strides=[s],
         )
 
         model.graph.node.remove(node)
