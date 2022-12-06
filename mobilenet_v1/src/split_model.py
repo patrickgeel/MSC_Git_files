@@ -8,7 +8,7 @@ def split_model(split_node,op_type,model_dir):
     '''
     Splits and returns the model at the desired node
     '''
-    base_model = os.path.join(model_dir ,"mobilenetv1-w4a4_pre_post_tidy.onnx")
+    base_model = os.path.join(model_dir ,"mobilenet_streamline.onnx")
     model = ModelWrapper(base_model)
 
     up = model.find_upstream(split_node, lambda x: x.name == "Div_0")

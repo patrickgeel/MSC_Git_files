@@ -15,6 +15,32 @@ from custom_steps import (
     step_mobilenet_slr_floorplan,
 )
 
+def streamline_step(model_file,final_output_dir,folding_config_file):
+    #Delete previous run results if exist
+    if os.path.exists(final_output_dir):
+        shutil.rmtree(final_output_dir)
+        print("Previous run results deleted!")
+
+    mobilenet_build_steps =  [
+        step_mobilenet_streamline,
+    ]
+
+    cfg = build.DataflowBuildConfig(
+        output_dir          = final_output_dir,
+        steps               = mobilenet_build_steps,
+        mvau_wwidth_max     = 80,
+        target_fps          = 50,
+        synth_clk_period_ns = 10.0,
+        folding_config_file = folding_config_file,
+        board               = "KV260_SOM",
+        shell_flow_type     = build_cfg.ShellFlowType.VIVADO_ZYNQ,
+        generate_outputs=[
+            build_cfg.DataflowOutputType.ESTIMATE_REPORTS,
+        ]
+    )
+    
+    build.build_dataflow_cfg(model_file, cfg)
+
 def estimate_report(model_file,final_output_dir,folding_config_file):
     #Delete previous run results if exist
     if os.path.exists(final_output_dir):
