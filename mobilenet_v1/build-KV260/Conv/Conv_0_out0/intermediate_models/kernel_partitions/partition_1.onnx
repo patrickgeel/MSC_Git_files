@@ -1,0 +1,41 @@
+
+fuse_model:≥
+ø
+MatrixVectorActivation_0_out0
+global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
+NumChannels0†*
+backend"fpgadataflow†*
+dataType"UINT8†*
+	direction"out†*
+	intfWidth@†*
+numInputVectors@@o@o@†*
+streamWidthÄ†*
+slrˇˇˇˇˇˇˇˇˇ†*
+partition_id†:finn.custom_op.fpgadataflow
+fuse-graphZ7
+MatrixVectorActivation_0_out0
+
+
+o
+o
+ b$
+
+global_out
+
+
+o
+o
+ rK
+
+global_out
+finn_datatypeINT24%
+tensor_layout['N', 'H', 'W', 'C']r7
+MatrixVectorActivation_0_out0
+finn_datatypeINT24BrW
+vivado_stitch_projA/workspace/results/KV-260/Conv_0_out0/vivado_stitch_proj_5_woup7hr
+clk_ns10.0r•
+wrapper_filenameê/workspace/results/KV-260/Conv_0_out0/vivado_stitch_proj_5_woup7h/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.vr6
+vivado_stitch_vlnv xilinx_finn:finn:finn_design:1.0rö
+vivado_stitch_ifnamesÄ{"clk": ["ap_clk"], "rst": ["ap_rst_n"], "s_axis": [["s_axis_0", 8]], "m_axis": [["m_axis_0", 384]], "aximm": [], "axilite": []}r
+	exec_modertlsimr_
+floorplan_jsonM/workspace/results/KV-260/Conv_0_out0/vitis_floorplan_tpm7e_wp/floorplan.json
