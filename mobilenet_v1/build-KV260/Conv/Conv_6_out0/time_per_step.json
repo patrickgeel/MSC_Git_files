@@ -1,0 +1,15 @@
+{
+  "step_mobilenet_streamline": 0.8374245166778564,
+  "step_mobilenet_lower_convs": 0.09707903861999512,
+  "step_mobilenet_convert_to_hls_layers_separate_th": 0.2245006561279297,
+  "step_create_dataflow_partition": 0.020573139190673828,
+  "step_apply_folding_config": 0.007127523422241211,
+  "step_generate_estimate_reports": 0.04121756553649902,
+  "step_hls_codegen": 2.5916433334350586,
+  "step_hls_ipgen": 241.86892294883728,
+  "step_set_fifo_depths": 1163.8657460212708,
+  "step_create_stitched_ip": 5.888938903808594e-05,
+  "step_synthesize_bitfile": 2651.7624163627625,
+  "step_make_pynq_driver": 23.74506711959839,
+  "step_deployment_package": 0.1952204704284668
+}
