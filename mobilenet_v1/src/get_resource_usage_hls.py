@@ -3,12 +3,19 @@ import pandas as pd
 import json
 import argparse
 
+import re
+
+def atoi(text):
+    return int(text) if text.isdigit() else text
+
+def natural_keys(text):
+    return [ atoi(c) for c in re.split(r'(\d+)', text) ]
+
 parser = argparse.ArgumentParser("get_resource_usage_hls")
 parser.add_argument("--op_type", type=str,required=True)
 parser.add_argument("--build_dir",type=str, default="../build-KV260/")
 
 args = parser.parse_args()
-
 
 def main():
     total = {}
@@ -16,8 +23,8 @@ def main():
     build_dir = args.build_dir
     print(op_type, build_dir)
     split_nodes = [sn for sn in os.listdir(os.path.join(build_dir,op_type)) if os.path.isdir(os.path.join(build_dir,op_type,sn))]
-
-
+    split_nodes.sort(key=natural_keys)
+    print(split_nodes)
     for split_node in split_nodes:
         with open(f"{build_dir}/{op_type}/{split_node}/report/estimate_layer_resources_hls.json",'r') as fp:
             raw = json.load(fp)
