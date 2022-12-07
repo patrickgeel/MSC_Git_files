@@ -1,6 +1,6 @@
 
-fuse_model:≥
-ø
+fuse_model:…
+’
 MatrixVectorActivation_0_out0
 global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
 NumChannels0†*
@@ -11,7 +11,12 @@ global_out$StreamingDataflowPartition_2_IODMA_0"IODMA*
 numInputVectors@@o@o@†*
 streamWidthÄ†*
 slrˇˇˇˇˇˇˇˇˇ†*
-partition_id†:finn.custom_op.fpgadataflow
+partition_id†*{
+code_gen_dir_ipgen"b/workspace/results/KV-260/Conv_0_out0/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_pppri2vw†*°
+
+ipgen_path"è/workspace/results/KV-260/Conv_0_out0/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_pppri2vw/project_StreamingDataflowPartition_2_IODMA_0†*´
+ip_path"ú/workspace/results/KV-260/Conv_0_out0/code_gen_ipgen_StreamingDataflowPartition_2_IODMA_0_pppri2vw/project_StreamingDataflowPartition_2_IODMA_0/sol1/impl/ip†*E
+ip_vlnv"7xilinx.com:hls:StreamingDataflowPartition_2_IODMA_0:1.0†:finn.custom_op.fpgadataflow
 fuse-graphZ7
 MatrixVectorActivation_0_out0
 
@@ -32,10 +37,12 @@ global_out
 tensor_layout['N', 'H', 'W', 'C']r7
 MatrixVectorActivation_0_out0
 finn_datatypeINT24BrW
-vivado_stitch_projA/workspace/results/KV-260/Conv_0_out0/vivado_stitch_proj_5_woup7hr
-clk_ns10.0r•
-wrapper_filenameê/workspace/results/KV-260/Conv_0_out0/vivado_stitch_proj_5_woup7h/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/hdl/finn_design_wrapper.vr6
-vivado_stitch_vlnv xilinx_finn:finn:finn_design:1.0rö
-vivado_stitch_ifnamesÄ{"clk": ["ap_clk"], "rst": ["ap_rst_n"], "s_axis": [["s_axis_0", 8]], "m_axis": [["m_axis_0", 384]], "aximm": [], "axilite": []}r
+vivado_stitch_projA/workspace/results/KV-260/Conv_0_out0/vivado_stitch_proj_re1tmofpr
+clk_ns10.0r«
+wrapper_filename≤/workspace/results/KV-260/Conv_0_out0/vivado_stitch_proj_re1tmofp/finn_vivado_stitch_proj.gen/sources_1/bd/StreamingDataflowPartition_2/hdl/StreamingDataflowPartition_2_wrapper.vrG
+vivado_stitch_vlnv1xilinx_finn:finn:StreamingDataflowPartition_2:1.0rØ
+vivado_stitch_ifnamesï{"clk": ["ap_clk"], "rst": ["ap_rst_n"], "s_axis": [["s_axis_0", 384]], "m_axis": [], "aximm": [["m_axi_gmem0", 64]], "axilite": ["s_axi_control_0"]}r
 	exec_modertlsimr_
-floorplan_jsonM/workspace/results/KV-260/Conv_0_out0/vitis_floorplan_tpm7e_wp/floorplan.json
+floorplan_jsonM/workspace/results/KV-260/Conv_0_out0/vitis_floorplan_tpm7e_wp/floorplan.jsonr
+platform
+zynq-iodma
