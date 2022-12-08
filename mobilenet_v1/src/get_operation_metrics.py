@@ -10,9 +10,16 @@ parser.add_argument("--op_type", type=str,required=True)
 parser.add_argument("--model_dir",type=str, default="../models")
 args = parser.parse_args()
 
+def atoi(text):
+    return int(text) if text.isdigit() else text
+
+def natural_keys(text):
+    return [ atoi(c) for c in re.split(r'(\d+)', text) ]
+
 def main():
     model_dir = "{}/{}".format(args.model_dir,args.op_type)
     partion_dir = os.listdir(model_dir)
+    print(partion_dir)
     metrics_0, metrics_1 = {}, {}
 
     for mf in partion_dir:
@@ -22,13 +29,15 @@ def main():
             files = [os.path.join(dir, f) for f in os.listdir(
                 dir) if (f.endswith("0.onnx") or f.endswith("1.onnx"))]
             for f in files:
-                partition = f.split("/")[-1].split('.onnx')[0]
-                ops = get_op_counts(f)
+                if f != []:
+                    print(f)
+                    partition = f.split(f"\\")[-1].split('.onnx')[0]
+                    ops = get_op_counts(f)
 
-                if partition == "partition_0":
-                    metrics_0[node_split] = ops
-                elif partition == "partition_1":
-                    metrics_1[node_split] = ops
+                    if partition == "partition_0":
+                        metrics_0[node_split] = ops
+                    elif partition == "partition_1":
+                        metrics_1[node_split] = ops
     generate_csv_file(model_dir,[metrics_0,metrics_1])
 
 def generate_csv_file(model_dir,metrics):
