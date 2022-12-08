@@ -1,7 +1,0 @@
-,Mul_0_out0,Mul_10_out0,Mul_15_out0,Mul_20_out0,Mul_5_out0
-Conv,1,6,8,11,3
-Div,2,2,2,2,2
-Mul,1,11,16,21,6
-Sub,1,1,1,1,1
-BatchNormalization,,5,8,10,3
-MultiThreshold,,5,8,10,3

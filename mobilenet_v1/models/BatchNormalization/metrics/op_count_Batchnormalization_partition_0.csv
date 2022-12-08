@@ -1,7 +1,0 @@
-,BatchNormalization_0_out0,BatchNormalization_10_out0,BatchNormalization_20_out0
-BatchNormalization,1,11,21
-Conv,1,11,21
-Div,2,2,2
-Mul,1,21,41
-Sub,1,1,1
-MultiThreshold,,10,20
