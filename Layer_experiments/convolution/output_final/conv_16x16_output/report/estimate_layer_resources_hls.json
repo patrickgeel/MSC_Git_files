@@ -1,0 +1,10 @@
+{
+  "MatrixVectorActivation_0": {
+    "BRAM_18K": "0",
+    "FF": "3129",
+    "LUT": "45449",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  }
+}
