@@ -1,4 +1,5 @@
 from onnx import helper
+from qonnx.transformation.double_to_single_float import DoubleToSingleFloat
 
 def revert_quantAvgPool(model):
     nodes = [n for n in model.graph.node if n.op_type == 'QuantAvgPool2d']
@@ -25,6 +26,7 @@ def set_multithreshold_default(model,save_model):
     '''
     Pass a modelproto model and the save file
     '''
+    model = model.transform(DoubleToSingleFloat())
     new_attr = [helper.make_attribute("out_scale", 1.0),
                 helper.make_attribute("out_bias", 0.0),
                 helper.make_attribute("data_layout","NCHW")]
