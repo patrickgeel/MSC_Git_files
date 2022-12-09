@@ -38,6 +38,8 @@ from qonnx.transformation.infer_data_layouts import InferDataLayouts
 from finn.transformation.streamline.collapse_repeated import CollapseRepeatedMul
 from qonnx.transformation.remove import RemoveIdentityOps
 from finn.transformation.streamline.round_thresholds import RoundAndClipThresholds
+from qonnx.util.basic import get_by_name
+from qonnx.transformation.create_generic_partitions import PartitionFromDict
 from qonnx.transformation.lower_convs_to_matmul import LowerConvsToMatMul
 from qonnx.transformation.general import (
     GiveReadableTensorNames,
@@ -74,6 +76,24 @@ def step_mobilenet_streamline(model: ModelWrapper, cfg: DataflowBuildConfig):
         model = model.transform(InferDataTypes())
     return model
 
+def custom_step_partition(model: ModelWrapper, cfg: DataflowBuildConfig):
+    upstream_0 = model.find_upstream("Conv_12_out0", lambda x: x.name == "Conv_0")
+    #upstream_1 = model.find_upstream("Add_40_out0", lambda x: x.name == "MultiThreshold_0")
+    wanted_nodes = []
+    unwanted_nodes = []
+    for ind, node in enumerate(model.graph.node):
+        found_0 = get_by_name(upstream_0, node.name, "name") is not None
+    #   found_1 = get_by_name(upstream_1, node.name, "name") is not None
+        if found_0:
+            wanted_nodes.append(ind)
+        else:
+            unwanted_nodes.append(ind)
+    parent=model.transform(PartitionFromDict(
+        partitioning={ 0 : wanted_nodes, 1 : unwanted_nodes }, 
+        partition_dir=cfg.output_dir + "/intermediate_models"
+    ))
+    parent.save(cfg.output_dir + "/intermediate_models/partition_parent.onnx")
+    return ModelWrapper(cfg.output_dir + "/intermediate_models/partition_0.onnx")
 
 def step_mobilenet_lower_convs(model: ModelWrapper, cfg: DataflowBuildConfig):
     model = model.transform(LowerConvsToMatMul())

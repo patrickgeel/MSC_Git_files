@@ -1,0 +1,38 @@
+
+fuse_model:‹
+•
+	global_inConv_12_out0GenericPartition_0"GenericPartition*;
+model"/test_build/intermediate_models/partition_0.onnx :qonnx.custom_op.general
+–
+Conv_12_out0
+global_outGenericPartition_1"GenericPartition*;
+model"/test_build/intermediate_models/partition_1.onnx :qonnx.custom_op.general
+fuse-graphZ%
+	global_in
+
+
+
+à
+àb
+
+global_out
+
+
+j'
+Conv_12_out0
+
+
+€
+
+rJ
+	global_in
+finn_datatypeUINT8%
+tensor_layout['N', 'C', 'H', 'W']rC
+
+global_out
+finn_datatypeFLOAT32
+tensor_layout
+['N', 'C']rM
+Conv_12_out0
+finn_datatypeINT32%
+tensor_layout['N', 'C', 'H', 'W']B
