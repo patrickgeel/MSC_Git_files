@@ -22,7 +22,7 @@ def revert_quantAvgPool(model):
         model.graph.node.append(update)
     return model
         
-def set_multithreshold_default(model,save_model):
+def set_multithreshold_default(model):#,save_model):
     '''
     Pass a modelproto model and the save file
     '''
@@ -43,4 +43,5 @@ def set_multithreshold_default(model,save_model):
             if not datalayout: n.attribute.append(new_attr[2])
 
             n.domain = "ai.onnx.contrib"
-    model.save(save_model)
+#     model.save(save_model)
+    return model
