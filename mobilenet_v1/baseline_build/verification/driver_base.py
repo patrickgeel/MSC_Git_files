@@ -404,22 +404,59 @@ class FINNExampleOverlay(Overlay):
         packing and copying to device buffers, execute on accelerator, then unpack
         output and return output numpy array from accelerator."""
         # if single input, convert to list to normalize how we process the input
+        res = {}
         if not type(input_npy) is list:
             input_npy = [input_npy]
         assert self.num_inputs == len(
             input_npy
         ), "Not all accelerator inputs are specified."
         for i in range(self.num_inputs):
+            start = time.time()
             ibuf_folded = self.fold_input(input_npy[i], ind=i)
+            end = time.time()
+            runtime = end - start
+            res["fold_input[ms]"] = runtime * 1000
+
+            start = time.time()
             ibuf_packed = self.pack_input(ibuf_folded, ind=i)
+            end = time.time()
+            runtime = end - start
+            res["pack_input[ms]"] = runtime * 1000
+            
+            start = time.time()
             self.copy_input_data_to_device(ibuf_packed, ind=i)
+            end = time.time()
+            runtime = end - start
+            res["copy_input_data_to_device[ms]"] = runtime * 1000
+            
         self.execute_on_buffers()
         outputs = []
         for o in range(self.num_outputs):
+            start = time.time()
             self.copy_output_data_from_device(self.obuf_packed[o], ind=o)
+            end = time.time()
+            runtime = end - start
+            res["copy_output_data_from_device[ms]"] = runtime * 1000
+            
+            start = time.time()
             obuf_folded = self.unpack_output(self.obuf_packed[o], ind=o)
+            end = time.time()
+            res["unpack_output[ms]"] = runtime * 1000
+            
+            start = time.time()
             obuf_normal = self.unfold_output(obuf_folded, ind=o)
+            end = time.time()
             outputs.append(obuf_normal)
+            res["unfold_output[ms]"] = runtime * 1000
+                        
+            start = time.time()
+            self.execute_on_buffers()
+            end = time.time()
+            runtime = end - start
+            res["runtime[ms]"] = runtime * 1000
+        
+        res["throughput[images/s]"] = self.batch_size / runtime
+        print(res)
         if self.num_outputs == 1:
             return outputs[0]
         else:
