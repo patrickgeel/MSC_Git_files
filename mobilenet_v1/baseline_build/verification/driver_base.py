@@ -28,7 +28,7 @@
 
 import numpy as np
 import os
-import time
+import time, json
 from pynq import Overlay, allocate
 from pynq.ps import Clocks
 from qonnx.core.datatype import DataType
@@ -456,7 +456,11 @@ class FINNExampleOverlay(Overlay):
             res["runtime[ms]"] = runtime * 1000
         
         res["throughput[images/s]"] = self.batch_size / runtime
-        print(res)
+
+        # write to json file
+        with open("hw_metrics.json", "w") as outfile:
+            json.dump(res, outfile)
+            
         if self.num_outputs == 1:
             return outputs[0]
         else:
