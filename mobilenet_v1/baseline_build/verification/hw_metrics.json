@@ -1,0 +1,1 @@
+{"fold_input[ms]": 0.07200241088867188, "pack_input[ms]": 166410.61663627625, "copy_input_data_to_device[ms]": 0.45752525329589844, "copy_output_data_from_device[ms]": 0.40435791015625, "unpack_output[ms]": 0.40435791015625, "unfold_output[ms]": 0.40435791015625, "runtime[ms]": 5.935907363891602, "throughput[images/s]": 168.46624091255975}
