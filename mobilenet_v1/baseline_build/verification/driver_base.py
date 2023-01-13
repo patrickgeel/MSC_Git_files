@@ -429,8 +429,13 @@ class FINNExampleOverlay(Overlay):
             runtime = end - start
             res["copy_input_data_to_device[ms]"] = runtime * 1000
             
+        start = time.time()    
         self.execute_on_buffers()
+        end = time.time()
         outputs = []
+        runtime = end - start
+        res["runtime[ms]"] = runtime * 1000
+            
         for o in range(self.num_outputs):
             start = time.time()
             self.copy_output_data_from_device(self.obuf_packed[o], ind=o)
@@ -448,12 +453,6 @@ class FINNExampleOverlay(Overlay):
             end = time.time()
             outputs.append(obuf_normal)
             res["unfold_output[ms]"] = runtime * 1000
-                        
-            start = time.time()
-            self.execute_on_buffers()
-            end = time.time()
-            runtime = end - start
-            res["runtime[ms]"] = runtime * 1000
         
         res["throughput[images/s]"] = self.batch_size / runtime
 
