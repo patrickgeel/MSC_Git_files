@@ -1,0 +1,2 @@
+,BatchNormalization,Conv,Div,Mul,MultiThreshold,Sub
+Baseline,12,13,2,24,12,1

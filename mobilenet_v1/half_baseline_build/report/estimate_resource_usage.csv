@@ -1,0 +1,7 @@
+,Total Resource usage,KV260 max resource usage
+BRAM_18K,142.0,144.0
+BRAM_efficiency,17.33077034714966,
+LUT,62508.0,117120.0
+URAM,0.0,64.0
+URAM_efficiency,21.0,
+DSP,96.0,1248.0
