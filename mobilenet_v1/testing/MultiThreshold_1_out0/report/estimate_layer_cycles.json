@@ -1,0 +1,9 @@
+{
+  "ConvolutionInputGenerator_0": 334683,
+  "MatrixVectorActivation_0": 221778,
+  "Thresholding_Batch_0": 394272,
+  "FMPadding_Batch_0": 204304,
+  "ConvolutionInputGenerator_1": 222456,
+  "VectorVectorActivation_0": 221778,
+  "Thresholding_Batch_1": 394272
+}

@@ -1,0 +1,15 @@
+{
+  "ConvolutionInputGenerator_0": {},
+  "MatrixVectorActivation_0": {
+    "op_mac_8bx8b": 10645344,
+    "param_weight_8b": 864
+  },
+  "Thresholding_Batch_0": {
+    "param_threshold_33b": 480
+  },
+  "total": {
+    "op_mac_8bx8b": 10645344.0,
+    "param_weight_8b": 864.0,
+    "param_threshold_33b": 480.0
+  }
+}

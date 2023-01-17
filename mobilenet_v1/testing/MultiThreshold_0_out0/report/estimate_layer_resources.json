@@ -1,0 +1,32 @@
+{
+  "ConvolutionInputGenerator_0": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 740,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "MatrixVectorActivation_0": {
+    "BRAM_18K": 11,
+    "BRAM_efficiency": 0.03409090909090909,
+    "LUT": 2077,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 48
+  },
+  "Thresholding_Batch_0": {
+    "BRAM_18K": 0,
+    "BRAM_efficiency": 1,
+    "LUT": 48,
+    "URAM": 0,
+    "URAM_efficiency": 1,
+    "DSP": 0
+  },
+  "total": {
+    "BRAM_18K": 11.0,
+    "LUT": 2865.0,
+    "URAM": 0.0,
+    "DSP": 48.0
+  }
+}

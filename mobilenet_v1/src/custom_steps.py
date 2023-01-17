@@ -76,7 +76,7 @@ def step_mobilenet_streamline(model: ModelWrapper, cfg: DataflowBuildConfig):
         model = model.transform(InferDataTypes())
     return model
 
-def custom_step_partition(model: ModelWrapper, cfg: DataflowBuildConfig, str: split):
+def custom_step_partition(model: ModelWrapper, cfg: DataflowBuildConfig):
     upstream_0 = model.find_upstream("MultiThreshold_6_out0", lambda x: x.name == "Conv_0")
     wanted_nodes = []
     unwanted_nodes = []
