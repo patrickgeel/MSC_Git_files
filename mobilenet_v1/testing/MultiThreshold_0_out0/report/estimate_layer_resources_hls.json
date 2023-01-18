@@ -1,0 +1,26 @@
+{
+  "ConvolutionInputGenerator_0": {
+    "BRAM_18K": "0",
+    "FF": "576",
+    "LUT": "2566",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  },
+  "MatrixVectorActivation_0": {
+    "BRAM_18K": "0",
+    "FF": "1392",
+    "LUT": "1553",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "48"
+  },
+  "Thresholding_Batch_0": {
+    "BRAM_18K": "0",
+    "FF": "620",
+    "LUT": "966",
+    "DSP48E": 0,
+    "URAM": "0",
+    "DSP": "0"
+  }
+}

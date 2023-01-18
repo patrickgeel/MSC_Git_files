@@ -1,0 +1,60 @@
+{
+  "ConvolutionInputGenerator_0": {},
+  "MatrixVectorActivation_0": {
+    "op_mac_8bx8b": 10645344,
+    "param_weight_8b": 864
+  },
+  "Thresholding_Batch_0": {
+    "param_threshold_33b": 480
+  },
+  "FMPadding_Batch_0": {},
+  "ConvolutionInputGenerator_1": {},
+  "VectorVectorActivation_0": {
+    "op_mac_4bx4b": 3548448,
+    "param_weight_4b": 288
+  },
+  "Thresholding_Batch_1": {
+    "param_threshold_33b": 480
+  },
+  "MatrixVectorActivation_1": {
+    "op_mac_4bx4b": 25233408,
+    "param_weight_4b": 2048
+  },
+  "Thresholding_Batch_2": {
+    "param_threshold_33b": 960
+  },
+  "FMPadding_Batch_1": {},
+  "ConvolutionInputGenerator_2": {},
+  "VectorVectorActivation_1": {
+    "op_mac_4bx4b": 1806336,
+    "param_weight_4b": 576
+  },
+  "Thresholding_Batch_3": {
+    "param_threshold_33b": 960
+  },
+  "MatrixVectorActivation_2": {
+    "op_mac_4bx4b": 25690112,
+    "param_weight_4b": 8192
+  },
+  "Thresholding_Batch_4": {
+    "param_threshold_32b": 1920
+  },
+  "FMPadding_Batch_2": {},
+  "ConvolutionInputGenerator_3": {},
+  "VectorVectorActivation_2": {
+    "op_mac_4bx4b": 3612672,
+    "param_weight_4b": 1152
+  },
+  "Thresholding_Batch_5": {
+    "param_threshold_16b": 1920
+  },
+  "total": {
+    "op_mac_8bx8b": 10645344.0,
+    "param_weight_8b": 864.0,
+    "param_threshold_33b": 2880.0,
+    "op_mac_4bx4b": 59890976.0,
+    "param_weight_4b": 12256.0,
+    "param_threshold_32b": 1920.0,
+    "param_threshold_16b": 1920.0
+  }
+}
